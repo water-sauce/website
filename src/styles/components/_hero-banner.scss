@@ -1,0 +1,47 @@
+.hero {
+	height: calc(55vh);
+	min-height: 400px;
+	text-align: center;
+	background: $grey;
+	margin-top: 76px;
+	h1, h4 {
+		color: $white;
+	}
+}
+
+
+.hero-left {
+	height: calc(55vh);
+	min-height: 400px;
+	text-align: left;
+	margin-top: 100px;
+	background: $grey;
+}
+
+.hero-flex-left{
+	align-self: center;
+	justify-content: right;
+}
+
+.hero-text {
+	max-width: 550px;
+	color: $white;
+	margin: 0 1rem 0 auto;
+	h1 {
+		@include font-size(28px);
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		margin-bottom: 1.25rem;
+	}
+	h4 {
+		@include font-size(18px);
+		font-weight: 200;
+	}
+}
+
+#seo-hero {
+	background-image: url("images/backgrounds/library.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: $white;
+}

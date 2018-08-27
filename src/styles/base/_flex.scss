@@ -1,0 +1,10 @@
+.flex-container {
+	@include flexbox();
+	padding: 0;
+	margin: 0;
+	-webkit-flex-flow: row wrap;
+}
+
+.flex-item {
+	@include flex(1 50%);
+}

@@ -1,0 +1,33 @@
+@import
+  './styles/abstracts/variables',
+  './styles/abstracts/mixins',
+  './styles/abstracts/functions',
+  './styles/abstracts/placeholders',
+  './styles/abstracts/utilities';
+
+@import
+  './styles/base/font',
+  './styles/base/flex';
+
+@import 
+  './styles/themes/general-settings.scss';
+
+@import
+  './styles/layout/header',
+  './styles/layout/footer',
+  './styles/layout/product-info',
+  './styles/layout/info';
+
+@import
+  './styles/components/buttons',
+  './styles/components/cards',
+  './styles/components/product-nav',
+  './styles/components/about-nav',
+  './styles/components/logos-layout',
+  './styles/components/hero-banner',
+  './styles/components/quote-banner',
+  './styles/components/sub-hero-services-banner',
+  './styles/components/contact-banner',
+  './styles/components/home-page',
+  './styles/components/about-pages-elements',
+  './styles/components/team-page';

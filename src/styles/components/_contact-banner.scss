@@ -1,0 +1,140 @@
+.ReactModal__Overlay {
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+
+.main-contact-modal {
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	bottom: 0;
+	padding: 20px;
+	right: 0;
+	visibility: visible;
+	width: 25vw;
+	max-width: 300px;
+	min-width: 250px;
+    z-index: 99999;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 5%;
+	@include transition( all 0.3s );
+	
+	@media only screen and (max-width: $mq-med-bootstrap) {
+		width: 100%;
+		max-width: 100vw;
+		left: 0;
+	    overflow: scroll;
+	}
+	#slide-in-contact-form {
+		position: absolute;
+		left: -275px;
+		top: 50%;
+		width: 250px;
+    	@include transform(translate(0, -50%));
+		@include transition( all 0.42s );
+
+		@media only screen and (max-width: $mq-med-bootstrap) {
+			margin-top: 2em;
+			position: relative;
+			top: auto;
+			width: 100%;
+			@include transform(none);
+		}
+		input[type="text"] {
+		    padding: 8px;
+			@include border-radius(0px);
+		}
+		textarea {
+			width: 100%;
+		    padding: 8px;
+			@include border-radius(0px);
+		}
+	}
+	.h2 {
+		color: $white !important;
+	}
+	.demo-modal-message {
+		position: absolute;
+	    margin-right: 10px;
+	    top: calc(50% - 130px);
+	    overflow: auto;
+	}
+	.form-group {
+		margin-bottom: 8px;
+		@include font-size( 14px );
+		input, textarea {
+			@include font-size( 14px );
+		}
+	}
+}
+
+.input-lg {
+	@include font-size( 14px );
+}
+
+.cta-banner {
+	position: relative;
+	background: $primary-blue;
+	padding: 6rem 0;
+	text-align: center;
+
+	.cta-wrapper {
+		padding: 1rem 3rem;
+		position: relative;
+		display: inline-block;
+		z-index: 99;
+		h4 {
+			@include font-size(42px);
+			line-height: 48px;
+		}
+	}
+
+	.cta-information {
+		margin-top: 1rem;
+		position: relative;
+		z-index: 20;
+	}
+
+	&-branding {
+		color: $white;
+		background: $orange;
+		border-bottom: 10px solid $true-blue;
+		#contact-lion {
+			position: absolute;
+			height: 450px;
+			left: 0;
+			bottom: 0;
+		}
+		.cta-wrapper {
+			border: 3px solid $white;
+		}
+	}
+
+	&-seo {
+		background: $light-blue;
+		color: $dark-blue;
+		border-bottom: 10px solid $salmon;
+		#contact-parrot {
+			position: absolute;
+			height: 500px;
+			left: 0;
+			bottom: 0;
+		}
+		#contact-owl {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 325px;
+			@include rotation(180deg);
+		}
+		.cta-wrapper {
+			border: 3px solid $dark-blue;
+			background: rgba(212,237,248,0.5);
+		}
+	}
+
+	
+}

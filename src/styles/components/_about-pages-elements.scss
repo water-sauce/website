@@ -1,0 +1,154 @@
+.about-name {
+	margin: 15px 0 0;
+	color: $primary-blue;
+	@include font-size(14px);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 18px;
+}
+
+a.about-name {
+	&:hover {
+		color: darken( $primary-blue, 25%);
+	}
+}
+
+.about-title {
+	margin: 0 0 30px;
+	font-weight: 300;
+	@include font-size(13px);
+	color: $p-public;
+	text-transform: capitalize;
+	clear: both;
+	a {
+		color: $primary-blue;
+	}
+}
+
+.about-card {
+	margin: 0 0 45px;
+	&-investors {
+		@media only screen and (max-width: $mq-large) {
+			height: 190px;
+		}
+	}
+	&-articles {
+		@media only screen and (max-width: $mq-large) {
+			height: 250px;
+		}
+		div	{
+			display: flex;
+			flex-direction: column;
+			h4 {
+				font-weight: 400;
+				order: 2;
+				@media only screen and (min-width: $mq-ipad) {
+					max-width: 310px;
+				}
+			}
+			p {
+				order: 1;
+			}
+		}
+	}
+	img {
+		width: 310px;
+		@media only screen and (max-width: $mq-ipad) {
+			width: auto;
+		}
+	}
+}
+
+
+.perk-icon {
+	display: block;
+	height: 60px;
+	width: 64px;
+	margin: 0 auto;
+	&#dollar-icon {
+		background: url("images/icons/perks-icons.png") 0 0;
+	}
+	&#heart-icon {
+		background: url("images/icons/perks-icons.png") -66px 0;
+	}
+	&#plane-icon {
+		background: url("images/icons/perks-icons.png") -128px 0;
+	}
+	&#tooth-icon {
+		background: url("images/icons/perks-icons.png") -194px 0;
+	}
+	&#glasses-icon {
+		background: url("images/icons/perks-icons.png") -258px 0;
+	}
+	&#clock-icon {
+		background: url("images/icons/perks-icons.png") -320px 0;
+	}
+	&#beer-icon {
+		background: url("images/icons/perks-icons.png") -380px 0;
+	}
+	&#gym-icon {
+		background: url("images/icons/perks-icons.png") -446px 0;
+	}
+	&#train-icon {
+		background: url("images/icons/perks-icons.png") -512px 0;
+	}
+	&#laptop-icon {
+		background: url("images/icons/perks-icons.png") -576px 0;
+	}
+	&#balloon-icon {
+		background: url("images/icons/perks-icons.png") -642px 0;
+		height: 61px;
+	}
+	&#english-icon {
+		background: url("images/icons/perks-icons.png") -704px 0;
+	}
+	&#snacks-icon {
+		background: url("images/icons/perks-icons.png") -768px 0;
+	}
+	&#buildings-icon {
+		background: url("images/icons/perks-icons.png") -838px 0;
+	}
+	&#bonus-icon {
+		background: url("images/icons/perks-icons.png") -908px 0;
+	    width: 74px;
+	}
+	&#four-oh-one-k-icon {
+		background: url("images/icons/perks-icons.png") -996px 0;
+		width: 70px;
+	}
+	&#apple-icon {
+		background: url("images/icons/perks-icons.png") -1069px 0;
+	}
+	&#cold-brew-icon {
+		background: url("images/icons/perks-icons.png") -1126px 0;
+		width: 60px;
+		height: 63px;
+	}
+	&#stock-icon {
+		background: url("images/icons/perks-icons.png") -1187px 0;
+		width: 47px;
+	}
+}
+
+.perk-description {
+	margin: 15px auto 0;
+	color: $secondary-grey;
+	max-width: 115px;
+	text-align: center;
+	@include font-size(14px);
+	text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.angellist_jobs-tags {
+	display: none;
+}
+
+.angellist_jobs-title-link, 
+.angellist_jobs-title-link:hover, 
+.angellist_jobs-title-link:visited, 
+.angellist_jobs-title-link:active {
+	color: $primary-blue !important;
+	text-decoration: underline;
+}

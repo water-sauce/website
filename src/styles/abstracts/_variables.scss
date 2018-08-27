@@ -1,0 +1,185 @@
+/*=====================================================================================   Datanyze Color Variables=====================================================================================*/
+$white: #FFFFFF;
+$black: #000000;
+$black-font: #333333;
+
+// BLUES
+$dark-blue: #1B1C6A;
+$true-blue: #696AFD;
+$light-blue: #D4EDF8;
+
+// PURPS/PINKS
+$dark-purple: #623F6E;
+$pink-purple: #B271AE;
+$true-pink: #E3B5E0;
+
+// SUNSET/SUNRISE
+$red: #B53131;
+$salmon: #E57777;
+$orange: #FFA762;
+$yellow: #FFE8A0;
+
+$grey: #262627;
+
+
+
+
+// NEW STYLING
+$h2-public: #444d69;
+$p-public: #8391A1;
+$paragraph-grey: #5e6a73;
+
+
+// main headers, title
+$primary-grey: #3e4f63;
+// #475b71;
+
+// links, icons, assets && blue button, main action/CTA
+$primary-blue: #41C3E5;
+
+
+// logo "DATA"
+$logo-grey: #2E3133;
+// logo "NYZE"
+$logo-blue: #54C2E0;
+
+// paragraphs, sub-headers
+$secondary-grey: #768698;
+// left-nav bg
+$secondary-blue: #293846;
+
+// onboarding elements
+$onboarding-green: #31C6A7;
+// main background color
+$main-bg: #F4F7FA;
+
+
+// premium color
+$color-premium-purple: #af5bec;
+
+// pricing page colors
+$color-purple: #ab62e2;
+$color-salesforce: #02A0DF;
+$color-hubspot: #F7761F;
+$color-marketo: #716EB3;
+
+
+// ---BUTTON---
+// green
+$green-success: #93D04C;
+// yellow
+$yellow-warning: #FFC839;
+// red
+$red-warning: #DC4A39;
+
+
+// ---GREYS---
+// table header
+$grey-header: #A3ABB5;
+// input hint
+$grey-input: #d9e1e7;
+// border default
+$grey-border: #e4e0e0;
+// faded text grey
+$grey-faded-text: #dadee3;
+// light table border
+$grey-light-table-border: #e7eaec;
+// light table border
+$grey-ccc: #CCCCCC;
+
+$insider-grey: #F5F6F9;
+
+$grey-header-bg: #e5ebf0;
+
+// ---RECURRING ELEMENTS---
+$side-nav-links: #6f8498;
+$side-nav-dark-blue: #1a2530;
+
+$insider-light-blue: #e8f7fc;
+
+// $color-primary: #ED7B25;
+// $color-secondary: #585693;
+// $color-tertiary: #000000;
+
+
+// PUBLIC SITE
+$color-violet: #4A5474;
+$color-teal: #74d8c2;
+
+
+// market share
+$color-slate-blue: #4A5474;
+$color-pink: #F88B8B;
+
+/*====================================================================================
+=   Datanyze Media Query Variables
+=====================================================================================*/
+$ipad-screen: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
+$iphone5-screen: "only screen and (min-device-width : 320px) and (max-device-width : 568px) and (-webkit-min-device-pixel-ratio: 1)";
+$iphone6-screen: "only screen and (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio: 1)";
+
+
+/*====================================================================================
+=   Datanyze Breakpoints
+=====================================================================================*/
+//== Media queries breakpoints
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$mq-xsmall-xs` as of v3.0.1
+$mq-xsmall: 25em; // ~400
+//** Deprecated `$mq-xsmall-xs-min` as of v3.2.0
+$mq-xsmall-min:              $mq-xsmall !default;
+//** Deprecated `$mq-xsmall-phone` as of v3.0.1
+$mq-xsmall-phone:               $mq-xsmall-min !default;
+
+
+// Small screen
+//** Deprecated `$mq-small` as of v3.0.1
+$mq-small: 40em; // ~640
+$mq-small-min:              $mq-small !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+
+
+// iPad screen
+$mq-ipad: 48em; // ~768px
+$mq-ipad-min:              	$mq-ipad !default;
+$mq-tablet:               	$mq-ipad-min !default;
+
+
+$mq-med-bootstrap: 62em;
+
+// Medium screen
+$mq-med: 62em; // ~992px
+$mq-med-min:              	$mq-med !default;
+$screen-tablet:           	$mq-med-min !default;
+
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$mq-large: 75em; // ~1200px
+$mq-large-min:              $mq-large !default;
+//** Deprecated `$mq-large-desktop` as of v3.0.1
+$mq-large-desktop:          $mq-large-min !default;
+
+
+// So media queries don't overlap when required, provide a maximum
+$mq-xsmall-max:             ($mq-small-min - 1) !default;
+$mq-small-max:              ($mq-med-min - 1) !default;
+$mq-med-max:              	($mq-large-min - 1) !default;
+
+
+// xLarge screen / wide desktop
+//** Deprecated `$mq-large` as of v3.0.1
+$mq-xlarge: 120em; // ~1920
+$mq-xlarge-min:              $mq-xlarge !default;
+//** Deprecated `$mq-large-desktop` as of v3.0.1
+$mq-xlarge-desktop:          $mq-xlarge-min !default;
+
+
+// xLarge screen / wide desktop
+//** Deprecated `$mq-large` as of v3.0.1
+$mq-xxlarge: 145em; // ~2320
+$mq-xxlarge-min:              $mq-xxlarge !default;
+//** Deprecated `$mq-large-desktop` as of v3.0.1
+$mq-xxlarge-desktop:          $mq-xxlarge-min !default;

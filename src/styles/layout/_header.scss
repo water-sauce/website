@@ -1,0 +1,75 @@
+.Datanyze-logo {
+    width: 150px;
+}
+
+.navbar::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: #6769ff; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #6769ff 0%,#e57777 88%,#ffa762 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #6769ff 0%,#e57777 88%,#ffa762 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 30px;
+    height: 100px; 
+    z-index: 999999999;
+    @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.25));
+    background: $white;
+    @include transition(all ease-in-out .2s);
+    a {
+    	color: $black-font;
+    	display: block;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        &.nav {
+            margin-top: 5px;
+        }
+        li {
+            display: inline-block;
+            margin-right: 12px;
+            margin-bottom: 0;
+            list-style: none;
+            a {
+                padding: 11px 8px;
+                color: $black-font;
+                @include font-size(16px);
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                text-decoration: none;
+            }
+        }
+    }
+    .dropdown-menu {
+        padding: 12px 0;
+        a {
+            color: $secondary-grey;
+            padding: 5px 22px;
+            font-weight: 400;
+            white-space: nowrap;
+            width: 100%;
+            &:hover {
+                background: transparent;
+                text-decoration: underline;
+            }
+        }
+    }
+    .dropdown-toggle {
+        text-transform: capitalize;
+    }
+}
+
+
+

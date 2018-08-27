@@ -1,0 +1,71 @@
+.button {
+	padding: 11px 28px 9px;
+	@include border-radius(2px);
+	@include font-size(12px);
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 400;
+	&:hover {
+		cursor: pointer;
+	}
+	&-large {
+		padding: 16px 48px;
+		max-width: 100%;
+	}
+	&-blue {
+		background: $true-blue;
+		color: $white;
+		&:hover {
+			background: darken($true-blue, 5%);
+			color: $white;
+		}
+	}
+	&-salmon {
+		background: $salmon;
+		color: $white;
+		&:hover {
+			background: darken($salmon, 5%);
+			color: $white;
+		}
+	}
+	&-primary {
+		background: $primary-blue;
+		color: $white;
+		&:hover {
+			background: darken($primary-blue, 5%);
+			color: $white;
+		}
+	}
+	&-white {
+		background: $white;
+		color: $primary-blue;
+		&:hover {
+			background: darken($white, 5%);
+			color: $primary-blue;
+		}
+		&-google {
+			color: $primary-grey;
+			&:hover {
+				color: $primary-grey;
+			}
+		}
+	}
+	
+	&-search {
+		padding: 6px 12px;
+		margin-right: 18px;
+		border: 1px solid $white;
+		letter-spacing: 0.25px;
+		color: $white;
+		background: transparent;
+	    margin-top: 6px;
+		&:hover {
+			font-weight: 500;
+			color: $white;
+			i {
+				font-weight: 500;
+			}
+		}
+	}
+}

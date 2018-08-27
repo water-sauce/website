@@ -1,0 +1,60 @@
+{
+    "name": "web-public",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@fortawesome/fontawesome": "^1.1.4",
+        "@fortawesome/fontawesome-free-brands": "^5.0.9",
+        "@fortawesome/fontawesome-free-solid": "^5.0.8",
+        "@fortawesome/react-fontawesome": "0.0.17",
+        "bootstrap": "^3.3.7",
+        "dev-server": "0.0.2",
+        "eslint_d": "^5.2.2",
+        "husky": "^0.14.3",
+        "lint-staged": "^6.0.0",
+        "node-sass-chokidar": "^1.2.2",
+        "npm-run-all": "^4.1.2",
+        "prettier": "^1.10.2",
+        "react": "^16.3.1",
+        "react-bootstrap": "^0.32.0",
+        "react-button": "^1.2.1",
+        "react-document-meta": "^2.1.2",
+        "react-dom": "^16.2.0",
+        "react-helmet": "^5.2.0",
+        "react-modal": "^3.3.2",
+        "react-redux": "^5.0.6",
+        "react-router": "^4.2.0",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.1.4",
+        "redux": "^3.7.2",
+        "redux-thunk": "^2.2.0",
+        "stylelint_d": "^1.2.0"
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,json,css}": [
+            "prettier --tab-width 4 --write",
+            "git add"
+        ]
+    },
+    "scripts": {
+        "precommit": "lint-staged",
+        "build-css": "node-sass-chokidar src/ -o src/",
+        "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+        "start-js": "react-scripts start",
+        "start": "npm-run-all -p watch-css start-js",
+        "build-js": "react-scripts build",
+        "build": "npm-run-all build-css build-js",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "sass": "sass --watch src/styles/main.scss:src/main.css",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "css-loader": "^0.28.10",
+        "node-sass": "^4.7.2",
+        "sass-loader": "^6.0.6",
+        "style-loader": "^0.20.2",
+        "webpack": "^3.11.0"
+    }
+}

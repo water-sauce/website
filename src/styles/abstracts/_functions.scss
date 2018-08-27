@@ -1,0 +1,65 @@
+h4 {
+	line-height: 26px;
+}
+
+.hero {
+	position: relative;
+	// @include filter-gradient(#083b72, #18a5d4, horizontal);
+	// @include linear-gradient(left, rgba(8,59,114,1) 0%, rgba(24,165,212,1) 100%);
+	// background-color: rgba(8,59,114,1);
+}
+
+.vertical-align-middle {
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	@include transform(translate(0, -50%));
+	@media only screen and (max-width: $mq-small) {
+		margin-top: 4rem;
+		z-index: 0;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		@include transform(translate(0, 0));
+	}
+	&-home {
+		top: calc(27.5% - 38px);
+		overflow: hidden;
+		@include transform(translate(0, 0));
+	}
+}
+
+%a-hover, .a-hover {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+%a-underline, .a-underline {
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
+%a-underline-important, .a-underline-important {
+	text-decoration: underline !important;
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+%a-none, .a-none {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+%display-flex-until-med {
+	display: flex;
+	@media only screen and (max-width: $mq-med) {
+		display: block;
+	}
+}

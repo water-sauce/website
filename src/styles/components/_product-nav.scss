@@ -1,0 +1,54 @@
+.product-nav-links {
+	margin-bottom: 50px;
+	list-style: none;
+	padding: 0;
+}
+
+.product-nav-icons {
+	color: $white;
+	font-weight: 300;
+	opacity: 0.3;
+	@extend %a-none;
+	&:hover {
+		color: $white;
+		opacity: 1;
+		.product-icons {
+			opacity: 1;
+		}
+	}
+	&.active {
+		span,
+		.product-icons {
+			opacity: 1;
+		}
+	}
+	.product-icons {
+		margin: 0 auto 15px;
+		opacity: 0.3;
+	}
+
+}
+
+.product-icons {
+	display: block;
+	width: 78px;
+	height: 62px;
+	clear: both;
+	opacity: 1;
+	background: url("../src/images/icons/product-icons.png");
+	@media only screen and (max-width: $mq-small) {
+		margin: 0 auto 15px;
+	}
+	&#technology-tracking {
+		background-position: 0 0;
+	}
+	&#data-enrichment {
+		background-position: 160px 0;
+	}
+	&#prospecting {
+		background-position: 240px 0;
+	}
+	&#predictive-analytics {
+		background-position: 320px 0;
+	}
+}

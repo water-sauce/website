@@ -1,0 +1,147 @@
+.quote-banner {
+	position: relative;
+	height: 420px;
+	width: 100%;
+	@media only screen and (max-width: $mq-ipad) {
+		height: 475px;
+	}
+	&-dark-blue {
+		background: $dark-blue;
+	}
+	&-primary-blue {
+		background: $primary-blue;
+	}
+	&-home {
+		padding: 30px 0 0;
+	    height: calc(60vh);
+	    min-height: 600px;
+	    max-height: 600px;
+	    z-index: 0;
+	}
+	.customer-quote {
+		position: relative;
+		max-width: 575px;
+	    z-index: 5;
+		font-weight: 300;
+		@include font-size(20px);
+		@media only screen and (max-width: $mq-ipad) {
+			@include font-size(18px);
+		}
+	}
+	.quote-rep-photo {
+		position: absolute;
+		bottom: -11px;
+		#dyn-rep {
+			left: -11px;
+		}
+		&#rep-home-1,
+		&#rep-home-2 {
+			bottom: -150px;
+		    max-width: 120%;
+		}
+	}
+	.quote-rep-circle {	
+		margin: 0 auto;
+		max-width: 185px;
+		@include border-radius(100%);
+		border: 1px solid $white;
+	}
+	.quote-logo {
+		margin-bottom: 30px;
+	}
+	.customer-quotee {
+		margin: 40px 0 3px;
+		z-index: 9;
+		@include font-size(12px);
+		text-transform: uppercase;
+	    font-weight: bold;
+    	letter-spacing: 1.5px;
+	}
+	.customer-title {
+		line-height: 14px;
+		@include font-size(14px);
+		font-weight: 300;
+	}
+	.color-white {
+		.customer-quotee,
+		.customer-title {
+			color: $white;
+		}
+	}
+	.under-rep-photo {
+		.customer-quotee {
+			margin: 10px 0 0;
+			color: $white;
+		}
+		.customer-title {
+			color: $white;
+		}
+	}
+	
+	.quotemark {
+		position: absolute;
+		top: 25%;
+		right: 20%;
+	}
+	.text-white {
+		p {
+			color: $white;
+		}
+	}
+}
+
+.quote-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	@include background-size(cover !important);
+	background-attachment: fixed !important;
+	@media only screen and (max-width: $mq-xsmall) {
+		background-attachment: scroll !important;
+	}
+	&-marketo {
+		background: url("images/quote-banner/backgrounds/marketo-bg.png") center center no-repeat;
+	}
+	&-dyn {
+		background: url("images/quote-banner/backgrounds/dyn-bg.png") center center no-repeat $dark-blue;
+	}
+	&-outreach {
+		background: url("images/quote-banner/backgrounds/outreach-bg.png") center center no-repeat #88aac1;
+	}
+	&-knowledgetree {
+		background: url("images/quote-banner/backgrounds/knowledgetree-bg.png") center center no-repeat #372a25;
+	}
+	// &-localytics {
+	// 	background: url("images/quote-banner/backgrounds/localytics-bg.png") center center no-repeat;
+	// }
+	&-kissmetrics {
+		background: url("images/quote-banner/backgrounds/kissmetrics-bg.png") center center no-repeat #372a25;
+	}
+	&-captora {
+		background: url("images/quote-banner/backgrounds/captora-bg.png") center center no-repeat;
+	}
+	&-new-relic {
+		background: url("images/quote-banner/backgrounds/new-relic-bg.png") center center no-repeat #372a25;
+	}
+	&-hubspot {
+		background: url("images/quote-banner/backgrounds/hubspot-bg.png") center center no-repeat;
+	}
+	&-newrelic-home {
+		background: url("images/quote-banner/backgrounds/new-relic-home-bg.png") center center no-repeat #91a4be;
+	}
+	&-doubledutch-home {
+		background: url("images/quote-banner/backgrounds/double-dutch-home-bg.png") center center no-repeat #91a4be;
+	}
+}
+
+.quote-section {
+	position: relative;
+	height: 420px;
+    overflow: hidden;
+	@media only screen and (max-width: $mq-ipad) {
+		height: 475px;
+	}
+}

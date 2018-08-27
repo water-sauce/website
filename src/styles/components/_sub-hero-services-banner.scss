@@ -1,0 +1,13 @@
+.sub-hero-services-banner {
+	background: $light-blue;
+	padding: 6rem 0;
+	text-align: center;
+	p {
+		max-width: 750px;
+		@include font-size(18px);
+		line-height: 26px;
+		letter-spacing: 0.1rem;
+		margin: 0 auto;
+		display: block;
+	}
+}

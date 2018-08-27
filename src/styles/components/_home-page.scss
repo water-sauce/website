@@ -1,0 +1,146 @@
+.home-triangle {
+	position: absolute;
+	bottom: 0;
+	&-left {
+		left: 0;
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    border-width: 18vh 0 0 80vw;
+	    border-color: transparent transparent transparent $white;
+	}
+	&-right {
+		right: 0;
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    border-width: 0 0 12vh 33vw;
+	    border-color: transparent transparent $white transparent;
+	}
+}
+
+.bg-header-home {
+	position: relative;
+	background: url("images/animations/home-page/home-machine.png") 50% 50% no-repeat;
+	@include background-size(contain);
+	height: 333px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+#home-mobile-machine {
+	position: relative;
+	background: url("images/animations/home-page/home-machine-mobile.png") 50% 50% no-repeat;
+	@include background-size(contain);
+	height: 350px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.dial-spin {
+	position: absolute;
+	width: 51px;
+	height: 51px;
+	background: url("images/animations/home-page/bg-dial-spinner.png") no-repeat;
+	-webkit-animation: dial-spin-first 2s linear infinite;
+  	@media only screen and (max-width: $mq-xlarge) {
+		left: 316px;
+		top: 73px;
+	}
+	@media only screen and (max-width: $mq-large) {
+		left: 226px;
+		top: 77px;
+	}
+	@media only screen and (max-width: $mq-med-bootstrap) {
+		height: 40px;
+		width: 40px;
+		background-size: 40px 40px;
+	    left: 172px;
+    	top: 97px;
+	}
+}
+
+.dial-spin-2 {
+	background: url("images/animations/home-page/bg-dial-spinner.png") no-repeat;
+	width: 51px;
+	height: 51px;
+	position: absolute;
+	-webkit-animation: dial-spin-second 2.6s linear infinite;
+  	@media only screen and (max-width: $mq-xlarge) {
+		right: 404px;
+		top: 202px;
+	}
+	@media only screen and (max-width: $mq-large) {
+		right: 309px;
+		top: 200px;
+	}
+	@media only screen and (max-width: $mq-med-bootstrap) {
+		height: 40px;
+		width: 40px;
+		background-size: 40px 40px;
+	    right: 236px;
+    	top: 193px;
+	}
+}
+
+.dial-spin-3 {
+	position: absolute;
+	width: 51px;
+	height: 51px;
+
+	background: url("images/animations/home-page/bg-dial.png") no-repeat;
+	-webkit-transform: rotate(-170deg);
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: dial-spin-3;
+	-webkit-animation-duration: 4.8s;
+	-webkit-animation-delay: 1s;
+  	@media only screen and (max-width: $mq-xlarge) {
+		left: 488px;
+		bottom: 10px;
+	}
+	@media only screen and (max-width: $mq-large) {
+	    left: 389px;
+    	bottom: 14px;
+	}
+	@media only screen and (max-width: $mq-med-bootstrap) {
+		height: 40px;
+		width: 40px;
+		background-size: 40px 40px;
+	    left: 299px;
+    	bottom: 50px;
+	}
+}
+
+
+
+@include keyframes(dial-spin-first) {
+	100% {
+		@include transform(rotate(360deg))
+	}
+}
+
+@include keyframes(dial-spin-second) {
+	100% {
+		@include transform(rotate(-360deg))
+	}
+}
+
+// @include keyframes(dial-spin-3) {
+// 	from {
+// 		@include transform(rotate(-170deg));
+// 	}
+// 	to {
+// 		@include transform(rotate(29deg));
+// 	}
+// }
+
+
+@-webkit-keyframes dial-spin-3 {
+from{
+    -webkit-transform: rotate(-170deg);
+  }
+
+to{
+  -webkit-transform: rotate(29deg);
+  }
+}

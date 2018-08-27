@@ -1,0 +1,85 @@
+footer {
+    bottom: 0;
+    width: 100vw;
+    margin: 0;
+	position: relative;
+	background: $grey;
+	padding: 35px 0 0;
+    z-index: 1;
+	.row {
+		position: relative;
+		z-index: 10;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+			color: $white;
+			@include font-size(12px);
+			line-height: 22px;
+			&:nth-child(1) {
+				margin: 25px 0 10px;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+			}
+			a {
+				color: $white;
+				@extend %a-hover;
+				@include font-size(12px);
+				font-weight: 100;
+				letter-spacing: 0.5px;
+				@media only screen and (max-width: $mq-med) {
+			    	word-break: break-word;
+			    }
+			}
+			&.footer-info {
+				color: $white;
+				@include font-size(12px);
+				font-weight: 100;
+				letter-spacing: 0.5px;
+			}
+		}
+		&.copyright-footer {
+			display: inline-block;
+			margin-bottom: 10px;
+			li {
+				margin-right: 4px;
+				display: inline-block;
+				text-transform: capitalize;
+			}
+		}
+		&.social-links-footer {
+			float: right;			
+			@media only screen and (max-width: $mq-ipad) {
+				display: block;
+				float: none;
+			}
+			li {
+				margin-left: 6px;
+				display: inline-block;
+			}
+			.fa {
+				@include font-size(22px);
+				color: $white;
+			}
+		}
+	}
+	.footer-map {
+		position: absolute;
+		top: 0;
+		right: 0;		
+		width: 1200px;
+		max-width: 100%;
+		height: 100%;
+	    z-index: 1;
+		background: url("../src/images/backgrounds/datanyze-map.png") no-repeat;
+		@include background-size(cover);
+	}
+	#omega-section {
+		position: relative;
+		padding-bottom: 12px;
+		z-index: 9;
+	}
+}
+

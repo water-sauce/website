@@ -1,0 +1,36 @@
+.info-wrapper {
+    max-width: 1000px;
+    margin: 5rem auto;
+    display: block;
+    position: relative;
+}
+
+.info-grid {
+    padding: 3.25rem 0 0;
+    margin-left: 18rem;
+    margin-right: 2.5rem;
+    p {
+        @include font-size(18px);
+        line-height: 22px;
+        font-family: valkyrie-text;
+        line-height: 1.45;
+        font-feature-settings: 'onum' 1;
+    }
+}
+
+title-block {
+    display: block;
+    float: left;
+    position: absolute;
+    margin-left: 0;
+    left: 1rem;
+    width: calc(3.5rem * 3);
+    text-align: right;
+    list-style-type: none;
+    clear: both;
+    margin-bottom: 1rem;
+    font-feature-settings: 'onum' 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    @include font-size(18px);
+}
