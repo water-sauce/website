@@ -1,9 +1,6 @@
 import React, { Component, Fragment } from "react";
 import TeamPhoto from "../components/TeamPhoto";
 
-import sm_icon from "../images/icons/city-icons-sm.png";
-import spb_icon from "../images/icons/city-icons-spb.png";
-
 const teammates_sm = [
     {
         employee_name: "Ilya Semin",
@@ -49,7 +46,7 @@ class TeamPage extends Component {
                         }`}
                         onClick={() => this.toggle_teammates("sm")}
                     >
-                        <img src={sm_icon} alt="San Mateo icon | Datanyze" />
+                        <img  alt="San Mateo icon | Datanyze" />
                         <span>San Mateo, CA</span>
                     </a>
                     &nbsp;
@@ -62,7 +59,6 @@ class TeamPage extends Component {
                         onClick={() => this.toggle_teammates("spb")}
                     >
                         <img
-                            src={spb_icon}
                             alt="St. Petersburg icon | Datanyze"
                         />
                         St. Petersburg, Russia

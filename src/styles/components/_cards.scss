@@ -70,19 +70,6 @@
 			}
 		}
 	}
-
-	&#technology-icon {
-		background: url("images/icon-backgrounds/tech-tracking-bg.png") -7.5% 60px no-repeat;
-	}
-	&#predictive-analytics {
-		background: url("images/icon-backgrounds/predictive-analytics-bg.png") -7.5% 60px no-repeat;
-	}
-	&#prospecting {
-		background: url("images/icon-backgrounds/prospecting-bg.png") -7.5% 60px no-repeat;
-	}
-	&#data-enrichment {
-		background: url("images/icon-backgrounds/data-enrichment-bg.png") 9% 38px no-repeat;
-	}
 	&.active {
 		outline: 1px solid $primary-blue;
 		border: 1px solid $primary-blue;

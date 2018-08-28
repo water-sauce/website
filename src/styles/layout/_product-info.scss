@@ -9,22 +9,6 @@
 			margin: 1rem auto 0;
 		}
 	}
-	&#predictive-analytics-section {
-		background: url("../src/images/icon-backgrounds/predictive-analytics-bg.png") 50% 25% no-repeat;
-		@include background-size(cover);
-	}
-	&#technology-tracking-section {
-		background:  url("../src/images/icon-backgrounds/tech-tracking-bg.png") 50% 25% no-repeat;
-		@include background-size(cover);
-	}
-	&#data-enrichment-section {
-		background: url("../src/images/icon-backgrounds/data-enrichment-bg.png") 50% 25% no-repeat;
-		@include background-size(cover);
-	}
-	&#prospecting-section {
-		background: url("../src/images/icon-backgrounds/prospecting-bg.png") 50% 25% no-repeat;
-		@include background-size(cover);
-	}	
 	h2 {
 		color: $h2-public;
 		@include font-size(36px);

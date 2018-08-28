@@ -8,7 +8,6 @@ import ProductNav from "../components/ProductNav";
 import ContactBanner from "../components/ContactBanner";
 
 // pages
-import AllSolutionsPage from "./AllSolutionsPage";
 import SEOPage from "./SEOPage";
 import FundraisingMaterialsPage from "./FundraisingMaterialsPage";
 import DataEnrichmentPage from "./DataEnrichmentPage";
@@ -18,17 +17,6 @@ class Services extends Component {
         return (
             <div>
                 <Switch>
-                    <Route
-                        exact
-                        path="/all-solutions"
-                        render={() => (
-                            <HeroBanner
-                                title="All Services"
-                                description="Powering a new era for sales and marketing teams, Datanyze is the leading CRM data enrichment company. As your prospects evolve, so should your data. Datanyze provides accurate, real-time information on 40+ million companies, so you always have a competitive edge."
-                            >
-                            </HeroBanner>
-                        )}
-                    />
                     <Route
                         exact
                         path="/seo"
@@ -65,11 +53,6 @@ class Services extends Component {
                     />
                 </Switch>
                 <Switch>
-                    <Route
-                        exact
-                        path="/all-solutions"
-                        component={AllSolutionsPage}
-                    />
                     <Route
                         exact
                         path="/seo"

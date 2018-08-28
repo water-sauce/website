@@ -498,7 +498,6 @@ footer {
     max-width: 100%;
     height: 100%;
     z-index: 1;
-    background: url("../src/images/backgrounds/datanyze-map.png") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -516,34 +515,6 @@ footer {
   .below-hero-section-technographics img {
     display: block;
     margin: 1rem auto 0; }
-  .below-hero-section#predictive-analytics-section {
-    background: url("../src/images/icon-backgrounds/predictive-analytics-bg.png") 50% 25% no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .below-hero-section#technology-tracking-section {
-    background: url("../src/images/icon-backgrounds/tech-tracking-bg.png") 50% 25% no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .below-hero-section#data-enrichment-section {
-    background: url("../src/images/icon-backgrounds/data-enrichment-bg.png") 50% 25% no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .below-hero-section#prospecting-section {
-    background: url("../src/images/icon-backgrounds/prospecting-bg.png") 50% 25% no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
   .below-hero-section h2 {
     color: #444d69;
     font-size: 36px;
@@ -705,14 +676,6 @@ title-block {
       border: 1px solid #e4e0e0; }
     .cards-integrations-smaller img {
       max-height: 35px; }
-  .cards#technology-icon {
-    background: url("images/icon-backgrounds/tech-tracking-bg.png") -7.5% 60px no-repeat; }
-  .cards#predictive-analytics {
-    background: url("images/icon-backgrounds/predictive-analytics-bg.png") -7.5% 60px no-repeat; }
-  .cards#prospecting {
-    background: url("images/icon-backgrounds/prospecting-bg.png") -7.5% 60px no-repeat; }
-  .cards#data-enrichment {
-    background: url("images/icon-backgrounds/data-enrichment-bg.png") 9% 38px no-repeat; }
   .cards.active {
     outline: 1px solid #41C3E5;
     border: 1px solid #41C3E5; }
@@ -748,8 +711,7 @@ title-block {
   width: 78px;
   height: 62px;
   clear: both;
-  opacity: 1;
-  background: url("../src/images/icons/product-icons.png"); }
+  opacity: 1; }
   @media only screen and (max-width: 40em) {
     .product-icons {
       margin: 0 auto 15px; } }
@@ -793,16 +755,6 @@ title-block {
       color: #576677;
       border-bottom: 3px solid #41C3E5; }
 
-.logos-layout img {
-  max-height: 75px; }
-
-.logo-img#hubspot {
-  margin-top: 12px; }
-
-.logo-img#marketo {
-  max-height: 65px;
-  margin-top: -4px; }
-
 .hero {
   height: calc(55vh);
   min-height: 400px;
@@ -843,124 +795,6 @@ title-block {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #FFFFFF; }
-
-.quote-banner {
-  position: relative;
-  height: 420px;
-  width: 100%; }
-  @media only screen and (max-width: 48em) {
-    .quote-banner {
-      height: 475px; } }
-  .quote-banner-dark-blue {
-    background: #1B1C6A; }
-  .quote-banner-primary-blue {
-    background: #41C3E5; }
-  .quote-banner-home {
-    padding: 30px 0 0;
-    height: calc(60vh);
-    min-height: 600px;
-    max-height: 600px;
-    z-index: 0; }
-  .quote-banner .customer-quote {
-    position: relative;
-    max-width: 575px;
-    z-index: 5;
-    font-weight: 300;
-    font-size: 20px;
-    font-size: 1.25rem; }
-    @media only screen and (max-width: 48em) {
-      .quote-banner .customer-quote {
-        font-size: 18px;
-        font-size: 1.125rem; } }
-  .quote-banner .quote-rep-photo {
-    position: absolute;
-    bottom: -11px; }
-    .quote-banner .quote-rep-photo #dyn-rep {
-      left: -11px; }
-    .quote-banner .quote-rep-photo#rep-home-1, .quote-banner .quote-rep-photo#rep-home-2 {
-      bottom: -150px;
-      max-width: 120%; }
-  .quote-banner .quote-rep-circle {
-    margin: 0 auto;
-    max-width: 185px;
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
-    background-clip: padding-box;
-    border: 1px solid #FFFFFF; }
-  .quote-banner .quote-logo {
-    margin-bottom: 30px; }
-  .quote-banner .customer-quotee {
-    margin: 40px 0 3px;
-    z-index: 9;
-    font-size: 12px;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.5px; }
-  .quote-banner .customer-title {
-    line-height: 14px;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: 300; }
-  .quote-banner .color-white .customer-quotee,
-  .quote-banner .color-white .customer-title {
-    color: #FFFFFF; }
-  .quote-banner .under-rep-photo .customer-quotee {
-    margin: 10px 0 0;
-    color: #FFFFFF; }
-  .quote-banner .under-rep-photo .customer-title {
-    color: #FFFFFF; }
-  .quote-banner .quotemark {
-    position: absolute;
-    top: 25%;
-    right: 20%; }
-  .quote-banner .text-white p {
-    color: #FFFFFF; }
-
-.quote-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -ms-background-size: cover !important;
-  -o-background-size: cover !important;
-  background-size: cover !important;
-  background-attachment: fixed !important; }
-  @media only screen and (max-width: 25em) {
-    .quote-image {
-      background-attachment: scroll !important; } }
-  .quote-image-marketo {
-    background: url("images/quote-banner/backgrounds/marketo-bg.png") center center no-repeat; }
-  .quote-image-dyn {
-    background: url("images/quote-banner/backgrounds/dyn-bg.png") center center no-repeat #1B1C6A; }
-  .quote-image-outreach {
-    background: url("images/quote-banner/backgrounds/outreach-bg.png") center center no-repeat #88aac1; }
-  .quote-image-knowledgetree {
-    background: url("images/quote-banner/backgrounds/knowledgetree-bg.png") center center no-repeat #372a25; }
-  .quote-image-kissmetrics {
-    background: url("images/quote-banner/backgrounds/kissmetrics-bg.png") center center no-repeat #372a25; }
-  .quote-image-captora {
-    background: url("images/quote-banner/backgrounds/captora-bg.png") center center no-repeat; }
-  .quote-image-new-relic {
-    background: url("images/quote-banner/backgrounds/new-relic-bg.png") center center no-repeat #372a25; }
-  .quote-image-hubspot {
-    background: url("images/quote-banner/backgrounds/hubspot-bg.png") center center no-repeat; }
-  .quote-image-newrelic-home {
-    background: url("images/quote-banner/backgrounds/new-relic-home-bg.png") center center no-repeat #91a4be; }
-  .quote-image-doubledutch-home {
-    background: url("images/quote-banner/backgrounds/double-dutch-home-bg.png") center center no-repeat #91a4be; }
-
-.quote-section {
-  position: relative;
-  height: 420px;
-  overflow: hidden; }
-  @media only screen and (max-width: 48em) {
-    .quote-section {
-      height: 475px; } }
 
 .sub-hero-services-banner {
   background: #D4EDF8;
@@ -1112,188 +946,6 @@ title-block {
       border: 3px solid #1B1C6A;
       background: rgba(212, 237, 248, 0.5); }
 
-.home-triangle {
-  position: absolute;
-  bottom: 0; }
-  .home-triangle-left {
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 18vh 0 0 80vw;
-    border-color: transparent transparent transparent #FFFFFF; }
-  .home-triangle-right {
-    right: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 12vh 33vw;
-    border-color: transparent transparent #FFFFFF transparent; }
-
-.bg-header-home {
-  position: relative;
-  background: url("images/animations/home-page/home-machine.png") 50% 50% no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -ms-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  height: 333px;
-  margin: 0 auto;
-  z-index: 1; }
-
-#home-mobile-machine {
-  position: relative;
-  background: url("images/animations/home-page/home-machine-mobile.png") 50% 50% no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -ms-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  height: 350px;
-  margin: 0 auto;
-  z-index: 1; }
-
-.dial-spin {
-  position: absolute;
-  width: 51px;
-  height: 51px;
-  background: url("images/animations/home-page/bg-dial-spinner.png") no-repeat;
-  -webkit-animation: dial-spin-first 2s linear infinite; }
-  @media only screen and (max-width: 120em) {
-    .dial-spin {
-      left: 316px;
-      top: 73px; } }
-  @media only screen and (max-width: 75em) {
-    .dial-spin {
-      left: 226px;
-      top: 77px; } }
-  @media only screen and (max-width: 62em) {
-    .dial-spin {
-      height: 40px;
-      width: 40px;
-      background-size: 40px 40px;
-      left: 172px;
-      top: 97px; } }
-
-.dial-spin-2 {
-  background: url("images/animations/home-page/bg-dial-spinner.png") no-repeat;
-  width: 51px;
-  height: 51px;
-  position: absolute;
-  -webkit-animation: dial-spin-second 2.6s linear infinite; }
-  @media only screen and (max-width: 120em) {
-    .dial-spin-2 {
-      right: 404px;
-      top: 202px; } }
-  @media only screen and (max-width: 75em) {
-    .dial-spin-2 {
-      right: 309px;
-      top: 200px; } }
-  @media only screen and (max-width: 62em) {
-    .dial-spin-2 {
-      height: 40px;
-      width: 40px;
-      background-size: 40px 40px;
-      right: 236px;
-      top: 193px; } }
-
-.dial-spin-3 {
-  position: absolute;
-  width: 51px;
-  height: 51px;
-  background: url("images/animations/home-page/bg-dial.png") no-repeat;
-  -webkit-transform: rotate(-170deg);
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-name: dial-spin-3;
-  -webkit-animation-duration: 4.8s;
-  -webkit-animation-delay: 1s; }
-  @media only screen and (max-width: 120em) {
-    .dial-spin-3 {
-      left: 488px;
-      bottom: 10px; } }
-  @media only screen and (max-width: 75em) {
-    .dial-spin-3 {
-      left: 389px;
-      bottom: 14px; } }
-  @media only screen and (max-width: 62em) {
-    .dial-spin-3 {
-      height: 40px;
-      width: 40px;
-      background-size: 40px 40px;
-      left: 299px;
-      bottom: 50px; } }
-
-@-webkit-keyframes dial-spin-first {
-  100% {
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@-moz-keyframes dial-spin-first {
-  100% {
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@-o-keyframes dial-spin-first {
-  100% {
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes dial-spin-first {
-  100% {
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@-webkit-keyframes dial-spin-second {
-  100% {
-    -moz-transform: rotate(-360deg);
-    -o-transform: rotate(-360deg);
-    -ms-transform: rotate(-360deg);
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
-
-@-moz-keyframes dial-spin-second {
-  100% {
-    -moz-transform: rotate(-360deg);
-    -o-transform: rotate(-360deg);
-    -ms-transform: rotate(-360deg);
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
-
-@-o-keyframes dial-spin-second {
-  100% {
-    -moz-transform: rotate(-360deg);
-    -o-transform: rotate(-360deg);
-    -ms-transform: rotate(-360deg);
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
-
-@keyframes dial-spin-second {
-  100% {
-    -moz-transform: rotate(-360deg);
-    -o-transform: rotate(-360deg);
-    -ms-transform: rotate(-360deg);
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
-
-@-webkit-keyframes dial-spin-3 {
-  from {
-    -webkit-transform: rotate(-170deg); }
-  to {
-    -webkit-transform: rotate(29deg); } }
-
 .about-name {
   margin: 15px 0 0;
   color: #41C3E5;
@@ -1347,50 +999,6 @@ a.about-name:hover {
   height: 60px;
   width: 64px;
   margin: 0 auto; }
-  .perk-icon#dollar-icon {
-    background: url("images/icons/perks-icons.png") 0 0; }
-  .perk-icon#heart-icon {
-    background: url("images/icons/perks-icons.png") -66px 0; }
-  .perk-icon#plane-icon {
-    background: url("images/icons/perks-icons.png") -128px 0; }
-  .perk-icon#tooth-icon {
-    background: url("images/icons/perks-icons.png") -194px 0; }
-  .perk-icon#glasses-icon {
-    background: url("images/icons/perks-icons.png") -258px 0; }
-  .perk-icon#clock-icon {
-    background: url("images/icons/perks-icons.png") -320px 0; }
-  .perk-icon#beer-icon {
-    background: url("images/icons/perks-icons.png") -380px 0; }
-  .perk-icon#gym-icon {
-    background: url("images/icons/perks-icons.png") -446px 0; }
-  .perk-icon#train-icon {
-    background: url("images/icons/perks-icons.png") -512px 0; }
-  .perk-icon#laptop-icon {
-    background: url("images/icons/perks-icons.png") -576px 0; }
-  .perk-icon#balloon-icon {
-    background: url("images/icons/perks-icons.png") -642px 0;
-    height: 61px; }
-  .perk-icon#english-icon {
-    background: url("images/icons/perks-icons.png") -704px 0; }
-  .perk-icon#snacks-icon {
-    background: url("images/icons/perks-icons.png") -768px 0; }
-  .perk-icon#buildings-icon {
-    background: url("images/icons/perks-icons.png") -838px 0; }
-  .perk-icon#bonus-icon {
-    background: url("images/icons/perks-icons.png") -908px 0;
-    width: 74px; }
-  .perk-icon#four-oh-one-k-icon {
-    background: url("images/icons/perks-icons.png") -996px 0;
-    width: 70px; }
-  .perk-icon#apple-icon {
-    background: url("images/icons/perks-icons.png") -1069px 0; }
-  .perk-icon#cold-brew-icon {
-    background: url("images/icons/perks-icons.png") -1126px 0;
-    width: 60px;
-    height: 63px; }
-  .perk-icon#stock-icon {
-    background: url("images/icons/perks-icons.png") -1187px 0;
-    width: 47px; }
 
 .perk-description {
   margin: 15px auto 0;
@@ -1412,43 +1020,3 @@ a.about-name:hover {
 .angellist_jobs-title-link:active {
   color: #41C3E5 !important;
   text-decoration: underline; }
-
-.toggle-teams {
-  margin-bottom: 2rem; }
-  .toggle-teams a {
-    display: inline-block;
-    margin: 30px;
-    opacity: 0.5;
-    text-align: center; }
-    .toggle-teams a.active {
-      opacity: 1; }
-  .toggle-teams img {
-    display: block;
-    max-width: 150px; }
-  .toggle-teams span {
-    display: block; }
-
-.datanyzer {
-  margin: 0 0 50px; }
-  @media only screen and (min-width: 75em) {
-    .datanyzer {
-      height: 350px; } }
-  @media only screen and (max-width: 75em) {
-    .datanyzer {
-      height: 300px; } }
-  @media only screen and (max-width: 991px) {
-    .datanyzer {
-      height: 260px; } }
-  .datanyzer img {
-    max-width: 100%;
-    width: 100%; }
-    @media only screen and (max-width: 48em) {
-      .datanyzer img {
-        margin: 0 auto;
-        max-width: 160px; } }
-    @media only screen and (max-width: 40em) {
-      .datanyzer img {
-        max-width: 100%; } }
-  .datanyzer .about-title {
-    line-height: 18px;
-    margin: 4px 0; }

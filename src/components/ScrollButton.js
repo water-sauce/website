@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import arrow from "../images/icons/down-arrow.png";
 class ScrollButton extends React.Component {
     // constructor(props){
     //     super(props);
@@ -23,7 +22,6 @@ class ScrollButton extends React.Component {
             <img
                 onClick={this.handleScrollToElement}
                 className="down-arrow m-t-1"
-                src={arrow}
                 alt="scroll button"
                 // id={this.state.height}
             />

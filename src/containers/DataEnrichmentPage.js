@@ -6,9 +6,6 @@ import QuoteBanner from "../components/QuoteBanner";
 import ProductInfoBanner from "../components/ProductInfoBanner";
 import FAQ from "../components/FAQ";
 
-import quote_rep from "../images/quote-banner/reps/knowledgetree-rep.png";
-import quote_logo from "../images/quote-banner/logos/knowledgetree-logo.png";
-import quote_quotemark from "../images/quote-banner/quotemarks/quotemark-light.png";
 
 const title = "What is Data Enrichment?";
 const description =
@@ -151,7 +148,6 @@ const product_info = [
             "Enrich leads, contacts, accounts and opportunities with a new generation of business data that drives actionable insights for sales and marketing success. Integrate Datanyze with Salesforce, Marketo or HubSpot to append accurate technographic and firmographic data. Sales Intelligence has never been so easy.",
         class1: "col-xs-12 col-sm-6",
         class2: "col-xs-12 col-sm-5 col-sm-offset-1",
-        src: require("../images/icons/data-enrichment-icon-1.png"),
         alt: "Business data syncing with HubSpot, Marketo, and Salesforce"
     },
     {
@@ -161,7 +157,6 @@ const product_info = [
             "Ensure that your sales reps stay on top of their account by surfacing key sales triggers like technology changes, traffic increases or funding rounds.",
         class1: "col-xs-12 col-sm-6 col-sm-push-6",
         class2: "col-xs-12 col-sm-5 col-sm-pull-5",
-        src: require("../images/icons/data-enrichment-icon-2.png"),
         alt: "Lighthouse looking for prospect buying signals"
     },
     {
@@ -171,7 +166,6 @@ const product_info = [
             "Help your reps understand their prospects' current technology profile by appending Datanyze technographics to every account.",
         class1: "col-xs-12 col-sm-6",
         class2: "col-xs-12 col-sm-5 col-sm-offset-1",
-        src: require("../images/icons/data-enrichment-icon-3.png"),
         alt: "Technology stack icon for a website"
     },
     {
@@ -181,7 +175,6 @@ const product_info = [
             "Identify your best prospects with firmographic data you can trust. Gain helpful insights and segment accounts by geographic area, address, industry, revenue, size, technologies used and more. And as your customers evolve, Datanyze automatically updates and enriches your CRM with up-to-date accurate data.",
         class1: "col-xs-12 col-sm-6 col-sm-push-6",
         class2: "col-xs-12 col-sm-5 col-sm-pull-6",
-        src: require("../images/icons/data-enrichment-icon-4.png"),
         alt: "Buildings representing firmographic data icon"
     }
 ];
@@ -201,15 +194,12 @@ class DataEnrichmentPage extends Component {
                 <QuoteBanner
                     quote_banner="knowledgetree"
                     text_type="text-white"
-                    rep_img_src={quote_rep}
                     rep_img_id="knowledgetree-rep"
                     rep_img_alt="Peter Mollins - VP of Marketing, KnowledgeTree"
                     rep_quote="“Datanyze helped us identify the top 20% of accounts most likely to convert, making it easy for sales to hone their efforts.”"
                     rep_quotee="Peter Mollins"
                     rep_title="VP of Marketing, KnowledgeTree"
-                    logo_img_src={quote_logo}
                     logo_img_alt="KnowledgeTree logo"
-                    quotemark_img_src={quote_quotemark}
                     quote_img_alt="KnowledgeTree quotemark"
                 />
             </div>

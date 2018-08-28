@@ -5,7 +5,6 @@ import ProductInfoBanner from "../components/ProductInfoBanner";
 
 import FAQ from "../components/FAQ";
 import ContactBanner from "../components/ContactBanner.js";
-import technographics_icon from "../images/icons/technographics-icon-white.png";
 
 const bannerStyle = {
     background: "#2b3644",
@@ -29,7 +28,6 @@ const product_info_1 = [
             "The tools and applications companies use provides insight into their tech buying habits, how they work, the challenges they face and what tech they’ll buy next. For technology providers, technographics is your lens into this world. This data provides a competitive advantage for your business.",
         class1: "col-xs-12 col-sm-5 col-sm-push-7",
         class2: "col-xs-12 col-sm-7 col-sm-pull-5",
-        src: require("../images/icons/technographics-icon-1.png"),
         alt: "Business data syncing with HubSpot, Marketo, and Salesforce"
     }
 ];
@@ -42,7 +40,6 @@ const product_info_2 = [
             "Many technology companies still rely on firmographics data (company size, vertical, location) and demographics data (contact title, work history, social handles) to identify sales targets, to identify ideal customer profiles, total addressable markets and craft marketing messaging. But these data sets don’t tell much about how your prospects work, what tech they use and buy, or what keeps them up at night. Without this context, you’re forced to operate blindly. Companies don’t want to target and sell solutions to prospects who won’t buy. Technographics data solves these business problems.",
         class1: "col-xs-12 col-sm-5",
         class2: "col-xs-12 col-sm-7",
-        src: require("../images/icons/technographics-icon-2.png"),
         alt:
             "A person confused about sales prospecting without the context of technographics"
     },
@@ -54,7 +51,6 @@ const product_info_2 = [
             "Many technology companies still rely on firmographics data (company size, vertical, location) and demographics data (contact title, work history, social handles) to identify sales targets, to identify ideal customer profiles, total addressable markets and craft marketing messaging. But these data sets don’t tell much about how your prospects work, what tech they use and buy, or what keeps them up at night. Without this context, you’re forced to operate blindly. Companies don’t want to target and sell solutions to prospects who won’t buy. Technographics data solves these business problems.",
         class1: "col-xs-12 col-sm-5 col-sm-push-7",
         class2: "col-xs-12 col-sm-7 col-sm-pull-5",
-        src: require("../images/icons/technographics-icon-3.png"),
         alt: "Technographics helps a user understand context and content"
     }
 ];
@@ -434,12 +430,12 @@ const TechnographicsPage = () => (
                     technographic data, <a href="#">see a demo</a> of Datanyze.
                 </Fragment>
             }
-            src={technographics_icon}
+            src={}
             alt="Technographics icon"
             left_col_md={8}
             right_col_md={4}
             right_col_class="text-align-center"
-            img_src={technographics_icon}
+            img_src={}
             include_cta={true}
             cta="Contact Us"
             cta_contact_us_class="m-t-1"

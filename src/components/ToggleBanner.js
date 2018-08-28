@@ -9,13 +9,11 @@ const section_sales = [
         quote_banner: "doubledutch-home",
         rep_quotee: "Russ Hearl",
         rep_title: "VP of Sales, Mid-Market",
-        logo_img_src: require("../images/quote-banner/logos/doubledutch.png"),
         cta: "For Sales Leaders",
         cta_link: "/sales-solutions",
         quote_banner_class: "quote-banner-home",
         extraClass: "color-white",
         rep_img_id: "rep-home-1",
-        rep_img_src: require("../images/quote-banner/reps/doubledutch-rep-home.png")
     }
 ];
 
@@ -27,13 +25,11 @@ const section_marketing = [
         quote_banner: "newrelic-home",
         rep_quotee: "Isaac Wyatt",
         rep_title: "Director of Marketing Operations",
-        logo_img_src: require("../images/quote-banner/logos/new-relic.png"),
         cta: "For Marketing Leaders",
         cta_link: "/marketing-solutions",
         quote_banner_class: "quote-banner-home",
         extraClass: "color-white",
         rep_img_id: "rep-home-2",
-        rep_img_src: require("../images/quote-banner/reps/new-relic-rep-home.png")
     }
 ];
 
