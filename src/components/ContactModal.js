@@ -65,11 +65,8 @@ class ContactModal extends React.Component {
                             className="text-white-important"
                             style={h4Style}
                         >
-                            See a demo of Datanyze
+                            Get a free SEO Audit
                         </h4>
-                        <p className="text-white">
-                            We'll show you what Datanyze can do for you.
-                        </p>
                     </div>
                     <FontAwesomeIcon
                         onClick={this.closeContactModal}

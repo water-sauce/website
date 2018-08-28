@@ -42,18 +42,10 @@ const Footer = props => (
                         <li>Contact Us</li>
                         <li>
                             Sales:{" "}
-                            <a href="tel:1-650-393-5177">+1 650 393 5177</a>{" "}
-                        </li>
-                        <li>
-                            Support:{" "}
-                            <a href="mailto:support@datanyze.com?Subject=Hello%20Datanyze">
-                                support@datanyze.com
+                            <a href="mailto:calvin@watersauce.com?Subject=Hello%20Water%20Sauce">
+                                calvin@watersauce.com
                             </a>
                         </li>
-                        <br />
-                        <li>Address:</li>
-                        <li className="footer-info">4 W 4th Ave, Suite 501</li>
-                        <li className="footer-info">San Mateo, CA 94402</li>
                     </ul>
                 </Col>
             </Row>
@@ -62,7 +54,7 @@ const Footer = props => (
                 <Col xs={12}>
                     <ul className="copyright-footer">
                         <li className=" preserve-text margin-zero">
-                            ©{CurrentYear} Datanyze. All rights reserved.
+                            ©{CurrentYear} Water Sauce, LLC. All rights reserved.
                         </li>
                         <li>
                             | <a href="/privacy">Privacy</a>
@@ -74,64 +66,6 @@ const Footer = props => (
                             | <a href="/site-map">Site Map</a>
                         </li>
                     </ul>
-                    <ul className="social-links-footer">
-                        <li className="inline-block">
-                            <a
-                                href="https://www.linkedin.com/company/datanyze-inc."
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon
-                                    size="2x"
-                                    icon={["fab", "linkedin"]}
-                                />
-                            </a>
-                        </li>
-                        <li className="inline-block">
-                            <a
-                                href="http://feeds.feedburner.com/datanyze/niRP"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon size="2x" icon="rss" />
-                            </a>
-                        </li>
-                        <li className="inline-block">
-                            <a
-                                href="https://www.google.com/+Datanyze"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon
-                                    size="2x"
-                                    icon={["fab", "google-plus"]}
-                                />
-                            </a>
-                        </li>
-                        <li className="inline-block">
-                            <a
-                                href="https://www.twitter.com/datanyze"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon
-                                    size="2x"
-                                    icon={["fab", "twitter"]}
-                                />
-                            </a>
-                        </li>
-                        <li className="inline-block">
-                            <a
-                                href="https://www.facebook.com/datanyze"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon
-                                    size="2x"
-                                    icon={["fab", "facebook"]}
-                                />
-                            </a>
-                        </li>
                     </ul>
                 </Col>
             </Row>
