@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Row } from "react-bootstrap";
 import PropTypes from "prop-types";
-import ScrollButton from "../components/ScrollButton";
 // import arrow from "../images/icons/down-arrow.png";
 
 class HeroBanner extends Component {
@@ -16,11 +15,6 @@ class HeroBanner extends Component {
                             {this.props.children}
                             <h1>{this.props.title}</h1>
                             <h4>{this.props.description}</h4>
-                            {this.props.include_arrow === true ? (
-                                <ScrollButton />
-                            ) : (
-                                ""
-                            )}
                         </Row>
                     </Grid>
                 </div>

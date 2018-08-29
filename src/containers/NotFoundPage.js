@@ -6,7 +6,7 @@ class NotFoundPage extends Component {
         return (
             <div>
                 <h4>
-                    Looks like you're lost! Try tracking{" "}
+                    Looks like you're lost! Try trecking{" "}
                     <Link to="/">home</Link>
                 </h4>
             </div>

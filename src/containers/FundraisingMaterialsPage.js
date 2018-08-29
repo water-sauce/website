@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import QuoteBanner from "../components/QuoteBanner";
 import InfoBanner from "../components/InfoBanner";
 
 

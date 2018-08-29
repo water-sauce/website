@@ -3,11 +3,10 @@ import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
 import HeroBanner from "../components/HeroBanner";
-import AboutNav from "../components/AboutNav";
 import ContactBanner from "../components/ContactBanner";
 
 import TeamPage from "./TeamPage";
-import CareersPage from "./CareersPage";
+
 class About extends Component {
     render() {
         return (
@@ -25,7 +24,6 @@ class About extends Component {
                         )}
                     />
                 </Switch>
-                <AboutNav />
                 <Switch>
                     <Route exact path="/our-team" component={TeamPage} />
                 </Switch>
