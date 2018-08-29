@@ -45,14 +45,6 @@ const routes = [
         component: Resources,
     },
     {
-        path: "/business-intelligence",
-        component: Resources,
-    },
-    {
-        path: "/careers",
-        component: About,
-    },
-    {
         path: "/our-team",
         component: About,
     }

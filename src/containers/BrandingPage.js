@@ -1,9 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
-import ContactBanner from "../components/ContactBanner";
 
 
 const title = "Branding is storytelling through content";
