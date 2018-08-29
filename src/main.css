@@ -541,9 +541,9 @@ footer {
   position: relative; }
 
 .info-grid {
-  margin: 3rem 0;
+  margin: 4rem 0;
   margin-left: 18rem;
-  margin-right: 2.5rem; }
+  margin-right: 2rem; }
   .info-grid p {
     font-size: 18px;
     font-size: 1.125rem;
@@ -557,8 +557,8 @@ title-block {
   float: left;
   position: absolute;
   margin-left: 0;
-  left: 1rem;
-  width: calc(3.5rem * 3);
+  left: 0.5rem;
+  width: calc(4rem * 3);
   text-align: right;
   list-style-type: none;
   clear: both;
@@ -783,9 +783,24 @@ title-block {
   background-color: #FFFFFF; }
 
 .banner-service {
-  background: #FFFFFF;
-  margin-top: 200px;
-  margin-bottom: 100px; }
+  background: #F0F4EF;
+  margin-top: 100px;
+  padding: 110px 0 100px; }
+  .banner-service .topic {
+    position: absolute;
+    top: calc(50% - 15px);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 500; }
+    .banner-service .topic-left {
+      transform: rotate(-90deg); }
+    .banner-service .topic-right {
+      transform: rotate(90deg); }
+    @media only screen and (max-width: 48em) {
+      .banner-service .topic {
+        display: none; } }
   .banner-service h4 {
     font-size: 54px;
     font-size: 3.375rem;
@@ -793,7 +808,9 @@ title-block {
     margin-bottom: 24px;
     letter-spacing: 0.5px; }
   .banner-service .cta-wrapper {
-    padding: 4rem; }
+    padding: 4rem;
+    position: relative;
+    z-index: 2; }
   .banner-service .container {
     position: relative;
     width: 1000px; }
@@ -806,17 +823,21 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service .container {
         width: calc(100% - 60px); } }
-  .banner-service-branding {
+  .banner-service-web-design {
     color: #FFFFFF; }
-    .banner-service-branding .container {
-      background: #FFA762; }
-    .banner-service-branding #contact-lion {
+    .banner-service-web-design .container {
+      background: #696AFD; }
+    .banner-service-web-design #contact-rose {
       position: absolute;
       height: 425px;
       right: 0;
       bottom: 0;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1); }
+    .banner-service-web-design .topic-left {
+      left: -100px; }
+    .banner-service-web-design .topic-right {
+      right: -100px; }
   .banner-service-seo {
     color: #1B1C6A; }
     .banner-service-seo .container {
@@ -828,17 +849,40 @@ title-block {
       bottom: 0;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1); }
+    .banner-service-seo .topic-left {
+      left: -65px; }
+    .banner-service-seo .topic-right {
+      right: -65px; }
+  .banner-service-branding {
+    color: #FFFFFF; }
+    .banner-service-branding .container {
+      background: #FFA762; }
+    .banner-service-branding #contact-lion {
+      position: absolute;
+      height: 415px;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1); }
+    .banner-service-branding .topic-left {
+      left: -90px; }
+    .banner-service-branding .topic-right {
+      right: -90px; }
   .banner-service-fundraising {
     color: #FFFFFF; }
     .banner-service-fundraising .container {
       background: #B271AE; }
     .banner-service-fundraising #contact-shark {
       position: absolute;
-      height: 400px;
+      height: 350px;
       right: -65px;
-      bottom: 15px;
+      top: -35px;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1); }
+    .banner-service-fundraising .topic-left {
+      left: -150px; }
+    .banner-service-fundraising .topic-right {
+      right: -150px; }
 
 .sub-hero-services-banner {
   background: #D4EDF8;

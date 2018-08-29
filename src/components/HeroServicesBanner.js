@@ -9,6 +9,8 @@ class HeroServicesBanner extends Component {
         return (
             <div className={this.props.cta_banner + " banner-service"}>
                 <Grid className="position-relative">
+                    <p className="topic topic-left">{this.props.topic}</p>
+                    <p className="topic topic-right">{this.props.topic}</p>
                     <Row className="cta-wrapper">
                         <h4>{this.props.title}</h4>
                         <div className="cta-information">

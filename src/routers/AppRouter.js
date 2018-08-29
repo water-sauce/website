@@ -25,6 +25,10 @@ const routes = [
         component: Services,
     },
     {
+        path: "/web-design",
+        component: Services,
+    },
+    {
         path: "/seo",
         component: Services,
     },

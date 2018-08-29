@@ -1,9 +1,27 @@
 .banner-service {
-	background: $white;
-	margin-top: 200px;
-	margin-bottom: 100px;
-	
+	background: $lightest-grey;
+	margin-top: 100px;
+	padding: 110px 0 100px;
 
+	
+	.topic {
+		position: absolute;
+		top: calc(50% - 15px);
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 1.5px;
+		color: black;
+		font-weight: 500;
+		&-left {
+			transform: rotate(-90deg);
+		}
+		&-right {
+			transform: rotate(90deg);
+		}
+		@media only screen and (max-width: $mq-ipad) {
+			display: none;
+		}
+	}
 	
 	h4 {
 		@include font-size(54px);
@@ -14,11 +32,16 @@
 
 	.cta-wrapper {
 		padding: 4rem;
+		position: relative;
+		z-index: 2;
 	}
 
 	.container {
 		position: relative;
 		width: 1000px;
+		// -webkit-box-shadow: inset 0px 0px 13px 0px rgba(71,71,71,0.5);
+		// -moz-box-shadow: inset 0px 0px 13px 0px rgba(71,71,71,0.5);
+		// box-shadow: inset 0px 0px 13px 0px rgba(71,71,71,0.5);
 
 		@media only screen and (max-width: $mq-large) {
 			width: 800px;
@@ -33,21 +56,27 @@
 		}
 	}
 
-
-	&-branding {
+	&-web-design {
 		color: $white;
 
 		.container {
-			background: $orange;
+			background: $true-blue;
 		}
 		
-		#contact-lion {
+		#contact-rose {
 			position: absolute;
 			height: 425px;
 			right: 0;
 			bottom: 0;
 			-webkit-transform: scaleX(-1);
-		    transform: scaleX(-1);
+			transform: scaleX(-1);
+		}
+
+		.topic-left {
+			left: -100px;
+		}
+		.topic-right {
+			right: -100px;
 		}
 	}
 
@@ -64,7 +93,38 @@
 			right: 0;
 			bottom: 0;
 			-webkit-transform: scaleX(-1);
-		    transform: scaleX(-1);
+			transform: scaleX(-1);
+		}
+
+		.topic-left {
+			left: -65px;
+		}
+		.topic-right {
+			right: -65px;
+		}
+	}
+
+	&-branding {
+		color: $white;
+
+		.container {
+			background: $orange;
+		}
+		
+		#contact-lion {
+			position: absolute;
+			height: 415px;
+			right: 0;
+			bottom: 0;
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+		}
+
+		.topic-left {
+			left: -90px;
+		}
+		.topic-right {
+			right: -90px;
 		}
 	}
 
@@ -77,11 +137,17 @@
 
 		#contact-shark {
 			position: absolute;
-			height: 400px;
+			height: 350px;
 			right: -65px;
-			bottom: 15px;
+			top: -35px;
 			-webkit-transform: scaleX(-1);
-		    transform: scaleX(-1);
+			transform: scaleX(-1);
+		}
+		.topic-left {
+			left: -150px;
+		}
+		.topic-right {
+			right: -150px;
 		}
 	}
 }

@@ -24,7 +24,7 @@ const product_info = [
 ];
 
 
-class SEOPage extends Component {
+class BrandingPage extends Component {
     render() {
         return (
             <div>
@@ -35,7 +35,6 @@ class SEOPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
                 
-                <hr />
                 <InfoBanner product_banners={product_info} />
                 
             </div>
@@ -43,4 +42,4 @@ class SEOPage extends Component {
     }
 }
 
-export default SEOPage;
+export default BrandingPage;

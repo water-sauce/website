@@ -36,8 +36,7 @@ class SEOPage extends Component {
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>
-                
-                <hr />
+
                 <InfoBanner product_banners={product_info} />
                 
             </div>

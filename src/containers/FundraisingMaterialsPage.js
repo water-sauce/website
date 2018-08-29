@@ -33,7 +33,6 @@ class FundraisingMaterialsPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <hr />
                 <InfoBanner product_banners={product_info} />
             </div>
         );
