@@ -6,22 +6,20 @@ import InfoBanner from "../components/InfoBanner";
 import ContactBanner from "../components/ContactBanner";
 
 
-const title = "SEO optimization & SEO auditing as a service";
-const description =
-    "Water Sauce will provide a free site audit.";
-
+const title = "Branding is storytelling through content";
+const description = "Water Sauce will help with branding";
 
 
 const product_info = [
     {
-        title_block: "Strategic SEO Optimization",
+        title_block: "Branding to find your voice",
         description:
-            "SEO Optimization is a whole examination of how the various parts of a website contribute to the overall SEO and discoverability strategy. This means (1) optimizing HTML for search engines with the proper markup language, (2) having images compressed, (3) writing meta titles correctly, and (4) a million other things."
+            "Through a combination of market, user, and design research, we help companies define their brand. A brand is unique through its messaging, content, and of course its product. Every touch point across a brand should be enjoyable. Your brand is a form of a user experience - whether it’s a physical product you sell or a software, your brand needs to be part of your overall story."
     },
     {
-        title_block: "SEO Auditing",
+        title_block: "Content Creation for your brand",
         description:
-            "Your website’s overall SEO HTML structure needs help! Google is the ever-revolving algorithm that changes annually. Water Sauce can help you figure out the best way to format your HTML and drive inbound leads. It’s more important than ever to have a web presence and a strong one at that."
+            "Content is a way to engage your audience and user base as well a stream for revenue and traffic. Content Creation is a more than just an inbound marketing strategy. It’s about creating words that will inform or inspire your target audience."
     }
 ];
 

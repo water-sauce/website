@@ -66,7 +66,6 @@ const Footer = props => (
                             | <a href="/site-map">Site Map</a>
                         </li>
                     </ul>
-                    </ul>
                 </Col>
             </Row>
         </Grid>

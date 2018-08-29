@@ -35,19 +35,4 @@
 	height: 62px;
 	clear: both;
 	opacity: 1;
-	@media only screen and (max-width: $mq-small) {
-		margin: 0 auto 15px;
-	}
-	&#technology-tracking {
-		background-position: 0 0;
-	}
-	&#data-enrichment {
-		background-position: 160px 0;
-	}
-	&#prospecting {
-		background-position: 240px 0;
-	}
-	&#predictive-analytics {
-		background-position: 320px 0;
-	}
 }

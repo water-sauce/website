@@ -337,7 +337,7 @@ footer ul li a, .a-hover {
   max-height: 200px; }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #333333;
   font-size: 16px;
   font-size: 1rem; }
@@ -388,17 +388,16 @@ html, body {
   padding-top: 30px;
   height: 100px;
   z-index: 999999999;
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
   background: #FFFFFF;
   -webkit-transition: all ease-in-out 0.2s;
   -moz-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s; }
   .navbar a {
-    color: #333333;
+    color: #333333 !important;
     display: block; }
+  .navbar .navbar-brand {
+    letter-spacing: 1px; }
   .navbar ul {
     margin: 0;
     padding: 0; }
@@ -420,7 +419,7 @@ html, body {
   .navbar .dropdown-menu {
     padding: 12px 0; }
     .navbar .dropdown-menu a {
-      color: #768698;
+      color: #333333;
       padding: 5px 22px;
       font-weight: 400;
       white-space: nowrap;
@@ -537,12 +536,12 @@ footer {
 
 .info-wrapper {
   max-width: 1000px;
-  margin: 5rem auto;
+  margin: 4rem auto;
   display: block;
   position: relative; }
 
 .info-grid {
-  padding: 3.25rem 0 0;
+  margin: 3rem 0;
   margin-left: 18rem;
   margin-right: 2.5rem; }
   .info-grid p {
@@ -575,8 +574,8 @@ title-block {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
   border: none;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -584,8 +583,10 @@ title-block {
   .button:hover {
     cursor: pointer; }
   .button-large {
-    padding: 16px 48px;
-    max-width: 100%; }
+    padding: 1.25rem 3.25rem;
+    max-width: 100%;
+    font-size: 14px;
+    font-size: 0.875rem; }
   .button-blue {
     background: #696AFD;
     color: #FFFFFF; }
@@ -598,22 +599,18 @@ title-block {
     .button-salmon:hover {
       background: #e16262;
       color: #FFFFFF; }
-  .button-primary {
-    background: #41C3E5;
+  .button-true-blue {
+    background: #696AFD;
     color: #FFFFFF; }
-    .button-primary:hover {
-      background: #2bbce2;
+    .button-true-blue:hover {
+      background: #5051fd;
       color: #FFFFFF; }
-  .button-white {
-    background: #FFFFFF;
-    color: #41C3E5; }
-    .button-white:hover {
-      background: #f2f2f2;
-      color: #41C3E5; }
-    .button-white-google {
-      color: #3e4f63; }
-      .button-white-google:hover {
-        color: #3e4f63; }
+  .button-light-blue {
+    background: #D4EDF8;
+    color: #FFFFFF; }
+    .button-light-blue:hover {
+      background: #bee4f4;
+      color: #FFFFFF; }
   .button-search {
     padding: 6px 12px;
     margin-right: 18px;
@@ -712,17 +709,6 @@ title-block {
   height: 62px;
   clear: both;
   opacity: 1; }
-  @media only screen and (max-width: 40em) {
-    .product-icons {
-      margin: 0 auto 15px; } }
-  .product-icons#technology-tracking {
-    background-position: 0 0; }
-  .product-icons#data-enrichment {
-    background-position: 160px 0; }
-  .product-icons#prospecting {
-    background-position: 240px 0; }
-  .product-icons#predictive-analytics {
-    background-position: 320px 0; }
 
 .about-nav-container {
   background: #f5f8fb;
@@ -795,6 +781,64 @@ title-block {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #FFFFFF; }
+
+.banner-service {
+  background: #FFFFFF;
+  margin-top: 200px;
+  margin-bottom: 100px; }
+  .banner-service h4 {
+    font-size: 54px;
+    font-size: 3.375rem;
+    line-height: 68px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px; }
+  .banner-service .cta-wrapper {
+    padding: 4rem; }
+  .banner-service .container {
+    position: relative;
+    width: 1000px; }
+    @media only screen and (max-width: 75em) {
+      .banner-service .container {
+        width: 800px; } }
+    @media only screen and (max-width: 62em) {
+      .banner-service .container {
+        width: 650px; } }
+    @media only screen and (max-width: 48em) {
+      .banner-service .container {
+        width: calc(100% - 60px); } }
+  .banner-service-branding {
+    color: #FFFFFF; }
+    .banner-service-branding .container {
+      background: #FFA762; }
+    .banner-service-branding #contact-lion {
+      position: absolute;
+      height: 425px;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1); }
+  .banner-service-seo {
+    color: #1B1C6A; }
+    .banner-service-seo .container {
+      background: #FFE8A0; }
+    .banner-service-seo #contact-parrot {
+      position: absolute;
+      height: 425px;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1); }
+  .banner-service-fundraising {
+    color: #FFFFFF; }
+    .banner-service-fundraising .container {
+      background: #B271AE; }
+    .banner-service-fundraising #contact-shark {
+      position: absolute;
+      height: 400px;
+      right: -65px;
+      bottom: 15px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1); }
 
 .sub-hero-services-banner {
   background: #D4EDF8;
@@ -912,39 +956,6 @@ title-block {
     margin-top: 1rem;
     position: relative;
     z-index: 20; }
-  .cta-banner-branding {
-    color: #FFFFFF;
-    background: #FFA762;
-    border-bottom: 10px solid #696AFD; }
-    .cta-banner-branding #contact-lion {
-      position: absolute;
-      height: 450px;
-      left: 0;
-      bottom: 0; }
-    .cta-banner-branding .cta-wrapper {
-      border: 3px solid #FFFFFF; }
-  .cta-banner-seo {
-    background: #D4EDF8;
-    color: #1B1C6A;
-    border-bottom: 10px solid #E57777; }
-    .cta-banner-seo #contact-parrot {
-      position: absolute;
-      height: 500px;
-      left: 0;
-      bottom: 0; }
-    .cta-banner-seo #contact-owl {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 325px;
-      -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      transform: rotate(180deg); }
-    .cta-banner-seo .cta-wrapper {
-      border: 3px solid #1B1C6A;
-      background: rgba(212, 237, 248, 0.5); }
 
 .about-name {
   margin: 15px 0 0;

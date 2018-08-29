@@ -98,43 +98,6 @@
 		z-index: 20;
 	}
 
-	&-branding {
-		color: $white;
-		background: $orange;
-		border-bottom: 10px solid $true-blue;
-		#contact-lion {
-			position: absolute;
-			height: 450px;
-			left: 0;
-			bottom: 0;
-		}
-		.cta-wrapper {
-			border: 3px solid $white;
-		}
-	}
-
-	&-seo {
-		background: $light-blue;
-		color: $dark-blue;
-		border-bottom: 10px solid $salmon;
-		#contact-parrot {
-			position: absolute;
-			height: 500px;
-			left: 0;
-			bottom: 0;
-		}
-		#contact-owl {
-			position: absolute;
-			top: 0;
-			right: 0;
-			height: 325px;
-			@include rotation(180deg);
-		}
-		.cta-wrapper {
-			border: 3px solid $dark-blue;
-			background: rgba(212,237,248,0.5);
-		}
-	}
 
 	
 }

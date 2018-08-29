@@ -33,7 +33,7 @@ const routes = [
         component: Services,
     },
     {
-        path: "/data-enrichment",
+        path: "/branding",
         component: Services,
     },
     {

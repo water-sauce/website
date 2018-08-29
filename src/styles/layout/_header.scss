@@ -24,12 +24,15 @@
     padding-top: 30px;
     height: 100px; 
     z-index: 999999999;
-    @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.25));
+    // @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.25));
     background: $white;
     @include transition(all ease-in-out .2s);
     a {
-    	color: $black-font;
+    	color: $black-font !important;
     	display: block;
+    }
+    .navbar-brand {
+        letter-spacing: 1px;
     }
     ul {
         margin: 0;
@@ -55,7 +58,7 @@
     .dropdown-menu {
         padding: 12px 0;
         a {
-            color: $secondary-grey;
+            color: $black-font;
             padding: 5px 22px;
             font-weight: 400;
             white-space: nowrap;

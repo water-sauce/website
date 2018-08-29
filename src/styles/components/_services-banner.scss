@@ -1,0 +1,87 @@
+.banner-service {
+	background: $white;
+	margin-top: 200px;
+	margin-bottom: 100px;
+	
+
+	
+	h4 {
+		@include font-size(54px);
+		line-height: 68px;
+		margin-bottom: 24px;
+		letter-spacing: 0.5px;
+	}
+
+	.cta-wrapper {
+		padding: 4rem;
+	}
+
+	.container {
+		position: relative;
+		width: 1000px;
+
+		@media only screen and (max-width: $mq-large) {
+			width: 800px;
+		}
+
+		@media only screen and (max-width: $mq-med) {
+			width: 650px;
+		}
+
+		@media only screen and (max-width: $mq-ipad) {
+			width: calc(100% - 60px);
+		}
+	}
+
+
+	&-branding {
+		color: $white;
+
+		.container {
+			background: $orange;
+		}
+		
+		#contact-lion {
+			position: absolute;
+			height: 425px;
+			right: 0;
+			bottom: 0;
+			-webkit-transform: scaleX(-1);
+		    transform: scaleX(-1);
+		}
+	}
+
+	&-seo {
+		color: $dark-blue;
+
+		.container {
+			background: $yellow;
+		}
+		
+		#contact-parrot {
+			position: absolute;
+			height: 425px;
+			right: 0;
+			bottom: 0;
+			-webkit-transform: scaleX(-1);
+		    transform: scaleX(-1);
+		}
+	}
+
+	&-fundraising {
+		color: $white;
+
+		.container {
+			background: $pink-purple;
+		}
+
+		#contact-shark {
+			position: absolute;
+			height: 400px;
+			right: -65px;
+			bottom: 15px;
+			-webkit-transform: scaleX(-1);
+		    transform: scaleX(-1);
+		}
+	}
+}

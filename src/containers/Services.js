@@ -1,16 +1,20 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
 import HeroBanner from "../components/HeroBanner";
-import HeroLeftBanner from "../components/HeroLeftBanner";
-import ProductNav from "../components/ProductNav";
+import HeroServicesBanner from "../components/HeroServicesBanner";
 import ContactBanner from "../components/ContactBanner";
 
 // pages
 import SEOPage from "./SEOPage";
 import FundraisingMaterialsPage from "./FundraisingMaterialsPage";
-import DataEnrichmentPage from "./DataEnrichmentPage";
+import BrandingPage from "./BrandingPage";
+// import DataEnrichmentPage from "./DataEnrichmentPage";
+
+import parrot from "../images/banner/parrot-2.png";
+import shark from "../images/banner/shark.png";
+import lion from "../images/banner/lion.png";
 
 class Services extends Component {
     render() {
@@ -21,36 +25,63 @@ class Services extends Component {
                         exact
                         path="/seo"
                         render={() => (
-                            <HeroLeftBanner
-                                title="SEO optimization for any site"
-                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                id="seo-hero"
-                            >
-                            </HeroLeftBanner>
+                            <HeroServicesBanner
+                                cta_banner="banner-service-seo"
+                                title={
+                                    <Fragment>
+                                        Birds of a feather <br /> do SEO together
+                                    </Fragment>
+                                }
+                                img_src_1={parrot}
+                                img_id_1="contact-parrot"
+                                cta="Contact Us"
+                                cta_type="contact_us"
+                                cta_contact_us_class="button-salmon button-large"
+                                showPhoneNumber={true}
+                            />
                         )}
                     />
                     <Route
                         exact
                         path="/fundraising-materials"
                         render={() => (
-                            <HeroBanner
-                                title="Fundraising Materials"
-                                description="It takes the average sales rep 6 hours to book 1 appointment. And most of that time is spent prospecting. Datanyze combines all prospecting tasks into one simple workflow so your reps can cover more accounts in less time."
-                            >
-                            </HeroBanner>
+                            <HeroServicesBanner
+                                cta_banner="banner-service-fundraising"
+                                title={
+                                    <Fragment>
+                                        Be prepared when <br /> entering the tank
+                                    </Fragment>
+                                }
+                                img_src_1={shark}
+                                img_id_1="contact-shark"
+                                cta="Contact Us"
+                                cta_type="contact_us"
+                                cta_contact_us_class="button-true-blue button-large"
+                                showPhoneNumber={true}
+                            />
                         )}
                     />
                     <Route
                         exact
-                        path="/data-enrichment"
+                        path="/branding"
                         render={() => (
-                            <HeroBanner
-                                title="Data Enrichment That Helps You Win"
-                                description="Powering a new era for sales and marketing teams, Datanyze is the leading CRM data enrichment company. As your prospects evolve, so should your data. Datanyze provides accurate, real-time information on 40+ million companies, so you always have a competitive edge."
-                            >
-                            </HeroBanner>
+                            <HeroServicesBanner
+                                cta_banner="banner-service-branding"
+                                title={
+                                    <Fragment>
+                                        Let your <br /> brand roar
+                                    </Fragment>
+                                }
+                                img_src_1={lion}
+                                img_id_1="contact-lion"
+                                cta="Contact Us"
+                                cta_type="contact_us"
+                                cta_contact_us_class="button-true-blue button-large"
+                                showPhoneNumber={true}
+                            />
                         )}
                     />
+                    
                 </Switch>
                 <Switch>
                     <Route
@@ -65,8 +96,8 @@ class Services extends Component {
                     />
                     <Route
                         exact
-                        path="/data-enrichment"
-                        component={DataEnrichmentPage}
+                        path="/branding"
+                        component={BrandingPage}
                     />
                 </Switch>
             </div>

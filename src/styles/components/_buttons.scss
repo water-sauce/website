@@ -1,7 +1,7 @@
 .button {
 	padding: 11px 28px 9px;
 	@include border-radius(2px);
-	@include font-size(12px);
+	@include font-size(13px);
 	border: none;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -10,8 +10,9 @@
 		cursor: pointer;
 	}
 	&-large {
-		padding: 16px 48px;
+		padding: 1.25rem 3.25rem;
 		max-width: 100%;
+		@include font-size(14px);
 	}
 	&-blue {
 		background: $true-blue;
@@ -29,28 +30,23 @@
 			color: $white;
 		}
 	}
-	&-primary {
-		background: $primary-blue;
+	&-true-blue {
+		background: $true-blue;
 		color: $white;
 		&:hover {
-			background: darken($primary-blue, 5%);
+			background: darken($true-blue, 5%);
 			color: $white;
 		}
 	}
-	&-white {
-		background: $white;
-		color: $primary-blue;
+	&-light-blue {
+		background: $light-blue;
+		color: $white;
 		&:hover {
-			background: darken($white, 5%);
-			color: $primary-blue;
-		}
-		&-google {
-			color: $primary-grey;
-			&:hover {
-				color: $primary-grey;
-			}
+			background: darken($light-blue, 5%);
+			color: $white;
 		}
 	}
+	
 	
 	&-search {
 		padding: 6px 12px;

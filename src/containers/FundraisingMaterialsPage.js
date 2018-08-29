@@ -1,44 +1,40 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import QuoteBanner from "../components/QuoteBanner";
-import ProductInfoBanner from "../components/ProductInfoBanner";
+import InfoBanner from "../components/InfoBanner";
+
+
+const title = "Fundraising Materials";
+const description =
+    "Water Sauce helps companies raise money";
 
 const product_info = [
     {
-        outerClass: "below-hero-section",
-        title: "Instant Account Data",
+        title_block: "Pitch Deck Collaboration",
         description:
-            "Whether you're prospecting inside Datanyze or out on a company's website, we provide one-click access to company, social and technology insights.",
-        class1: "col-xs-12 col-sm-6",
-        class2: "col-xs-12 col-sm-5 col-sm-offset-1",
-        alt: "Business data syncing with HubSpot, Marketo, and Salesforce"
+            "Water Sauce will work with your team to create or refine your existing pitch deck whilst developing your brand and voice. This includes creating content, icons, animations, and more in order to tell your story to investors as clear and concise as possible. Our level of involvement is completely circumstantial- we can review & refine existing content, or create one from scratch!"
     },
     {
-        outerClass: "below-hero-section below-hero-section-grey",
-        title: "Prospect Anywhere",
+        title_block: "Financial Models",
         description:
-            "Search any contact’s email address without leaving the page you’re browsing. Simply highlight their name and click to reveal our best suggestion.",
-        class1: "col-xs-12 col-sm-6 col-sm-push-6",
-        class2: "col-xs-12 col-sm-5 col-sm-pull-6",
-        alt: "Lighthouse looking for prospect buying signals"
-    },
+            "Not everyone is an accounting or financial expert, and when bootstrapping a startup you may not have someone on your team with this set of skills. When raising a round, questions like “What is your profit margin?”,  “What is your runway forecast for this round?”, and “What are your valuations expectations?” may seem like straightforward questions, but without adequate support you may be left out to dry. We’ve all seen these types of disasters on Shark Tank. Fortunately, our team of experts can aid in the development and presentation of these various metrics & models."
+    }
 ];
 
 class FundraisingMaterialsPage extends Component {
     render() {
         return (
             <div>
-                <ProductInfoBanner product_banners={product_info} />
-                <QuoteBanner
-                    quote_banner="outreach"
-                    text_type="text-white"
-                    rep_img_id="Outreach-rep"
-                    rep_img_alt="Mark Kosoglow - VP of Sales, Outreach"
-                    rep_quote="“Within 2 weeks of using Datanyze, sales rep productivity in 3 key areas increased by nearly 50%, leading to a 50% increase in meetings booked.”"
-                    rep_quotee="Mark Kosoglow"
-                    rep_title="VP of Sales, Outreach"
-                    logo_img_alt="Outreach logo"
-                    quote_img_alt="Outreach quotemark"
-                />
+                <Helmet>
+                    <title>{title}</title>
+                    <link rel="canonical" href="http://mysite.com/example" />
+                    <meta name="twitter:title" content={title} />
+                    <meta name="twitter:description" content={description} />
+                </Helmet>
+
+                <hr />
+                <InfoBanner product_banners={product_info} />
             </div>
         );
     }

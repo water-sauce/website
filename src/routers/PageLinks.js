@@ -2,11 +2,6 @@ const PageLinks = {
     Services: [
         {
             type: "link",
-            name: "All Solutions",
-            link: "/all-solutions"
-        },
-        {
-            type: "link",
             name: "SEO",
             link: "/seo"
         },
@@ -17,8 +12,8 @@ const PageLinks = {
         },
         {
             type: "link",
-            name: "Data Enrichment",
-            link: "/data-enrichment"
+            name: "Branding",
+            link: "/branding"
         },
     ],
     Resources: [
