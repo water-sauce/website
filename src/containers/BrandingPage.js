@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
 
 
@@ -32,9 +33,10 @@ class BrandingPage extends Component {
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>
-                
+
+                <SubHeroServicesBanner paragraph="The word brand means “kind, grade, or make, as indicated by a stamp, trademark, or the like: the best brand of coffee.” Branding is all about authenticity. More than ever with millenials, generation Z, etc. can tell when a brand is original. The internet is a critic on its own- being a voice true to company values speaks volumes." />
+
                 <InfoBanner product_banners={product_info} />
-                
             </div>
         );
     }

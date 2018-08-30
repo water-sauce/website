@@ -1,8 +1,9 @@
 .sub-hero-services-banner {
-	background: $light-blue;
+	background: $grey;
 	padding: 6rem 0;
 	text-align: center;
 	p {
+		color: $white;
 		max-width: 750px;
 		@include font-size(18px);
 		line-height: 26px;

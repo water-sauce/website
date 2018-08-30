@@ -1,15 +1,7 @@
 .banner-service {
 	background: $lightest-grey;
-	// background: repeating-linear-gradient(
-	//     45deg,
-	//     $lightest-grey,
-	//     $lightest-grey 2px,
-	//     #465298 2px,
-	//     #465298 2px
-	//   );
 	background: repeating-linear-gradient(
 	    45deg,
-	    // to down,
 	    transparent,
 	    transparent 5px,
 	    $lightest-grey 5px,
@@ -54,39 +46,35 @@
 	.container {
 		position: relative;
 		width: 1000px;
-		// -webkit-box-shadow: inset 0px 0px 13px 0px rgba(71,71,71,0.5);
-		// -moz-box-shadow: inset 0px 0px 13px 0px rgba(71,71,71,0.5);
-		// box-shadow: inset 0px 0px 13px 0px rgba(71,71,71,0.5);
-
+		color: $white;
+		// @include box-shadow( 0px, 0px, 10px, rgba(71,71,71,0.5), true);
+		
 		@media only screen and (max-width: $mq-large) {
 			width: 800px;
 		}
-
 		@media only screen and (max-width: $mq-med) {
 			width: 650px;
 		}
-
 		@media only screen and (max-width: $mq-ipad) {
 			width: calc(100% - 60px);
+		}
+
+		img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
 		}
 	}
 
 	&-web-design {
-		color: $white;
-
 		.container {
 			background: $true-blue;
 		}
-		
 		#contact-rose {
-			position: absolute;
 			height: 425px;
-			right: 0;
-			bottom: 0;
 			-webkit-transform: scaleX(-1);
 			transform: scaleX(-1);
 		}
-
 		.topic-left {
 			left: -100px;
 		}
@@ -96,21 +84,14 @@
 	}
 
 	&-seo {
-		color: $white;
-
 		.container {
 			background: $true-pink;
 		}
-		
 		#contact-parrot {
-			position: absolute;
 			height: 425px;
-			right: 0;
-			bottom: 0;
 			-webkit-transform: scaleX(-1);
 			transform: scaleX(-1);
 		}
-
 		.topic-left {
 			left: -65px;
 		}
@@ -120,21 +101,14 @@
 	}
 
 	&-branding {
-		color: $white;
-
 		.container {
 			background: $orange;
 		}
-		
 		#contact-lion {
-			position: absolute;
 			height: 415px;
-			right: 0;
-			bottom: 0;
 			-webkit-transform: scaleX(-1);
 			transform: scaleX(-1);
 		}
-
 		.topic-left {
 			left: -90px;
 		}
@@ -144,14 +118,10 @@
 	}
 
 	&-fundraising {
-		color: $white;
-
 		.container {
 			background: $pink-purple;
 		}
-
 		#contact-shark {
-			position: absolute;
 			height: 350px;
 			right: -65px;
 			top: -35px;
@@ -167,17 +137,11 @@
 	}
 
 	&-email-campaigns {
-		color: $white;
-
 		.container {
 			background: $red;
 		}
-
 		#contact-pigeon {
-			position: absolute;
 			height: 430px;
-			right: 0px;
-			bottom: 0;
 		}
 		.topic-left {
 			left: -125px;
@@ -188,19 +152,12 @@
 	}
 
 	&-ux-design {
-		color: $white;
-
 		.container {
 			background: $salmon;
 		}
-		
 		#contact-face {
-			position: absolute;
 			height: 425px;
-			right: 0;
-			bottom: 0;
 		}
-
 		.topic-left {
 			left: -90px;
 		}

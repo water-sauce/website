@@ -12,7 +12,6 @@ import WebDesignPage from "./WebDesignPage";
 import FundraisingMaterialsPage from "./FundraisingMaterialsPage";
 import BrandingPage from "./BrandingPage";
 import EmailCampaignsPage from "./EmailCampaignsPage";
-// import DataEnrichmentPage from "./DataEnrichmentPage";
 
 import rose from "../images/banner/rose.png";
 import parrot from "../images/banner/parrot-4.png";

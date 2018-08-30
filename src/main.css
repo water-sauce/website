@@ -814,7 +814,8 @@ title-block {
     z-index: 2; }
   .banner-service .container {
     position: relative;
-    width: 1000px; }
+    width: 1000px;
+    color: #FFFFFF; }
     @media only screen and (max-width: 75em) {
       .banner-service .container {
         width: 800px; } }
@@ -824,98 +825,75 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service .container {
         width: calc(100% - 60px); } }
-  .banner-service-web-design {
-    color: #FFFFFF; }
-    .banner-service-web-design .container {
-      background: #696AFD; }
-    .banner-service-web-design #contact-rose {
+    .banner-service .container img {
       position: absolute;
-      height: 425px;
-      right: 0;
       bottom: 0;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1); }
-    .banner-service-web-design .topic-left {
-      left: -100px; }
-    .banner-service-web-design .topic-right {
-      right: -100px; }
-  .banner-service-seo {
-    color: #FFFFFF; }
-    .banner-service-seo .container {
-      background: #E3B5E0; }
-    .banner-service-seo #contact-parrot {
-      position: absolute;
-      height: 425px;
-      right: 0;
-      bottom: 0;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1); }
-    .banner-service-seo .topic-left {
-      left: -65px; }
-    .banner-service-seo .topic-right {
-      right: -65px; }
-  .banner-service-branding {
-    color: #FFFFFF; }
-    .banner-service-branding .container {
-      background: #FFA762; }
-    .banner-service-branding #contact-lion {
-      position: absolute;
-      height: 415px;
-      right: 0;
-      bottom: 0;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1); }
-    .banner-service-branding .topic-left {
-      left: -90px; }
-    .banner-service-branding .topic-right {
-      right: -90px; }
-  .banner-service-fundraising {
-    color: #FFFFFF; }
-    .banner-service-fundraising .container {
-      background: #B271AE; }
-    .banner-service-fundraising #contact-shark {
-      position: absolute;
-      height: 350px;
-      right: -65px;
-      top: -35px;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1); }
-    .banner-service-fundraising .topic-left {
-      left: -150px; }
-    .banner-service-fundraising .topic-right {
-      right: -150px; }
-  .banner-service-email-campaigns {
-    color: #FFFFFF; }
-    .banner-service-email-campaigns .container {
-      background: #B53131; }
-    .banner-service-email-campaigns #contact-pigeon {
-      position: absolute;
-      height: 430px;
-      right: 0px;
-      bottom: 0; }
-    .banner-service-email-campaigns .topic-left {
-      left: -125px; }
-    .banner-service-email-campaigns .topic-right {
-      right: -125px; }
-  .banner-service-ux-design {
-    color: #FFFFFF; }
-    .banner-service-ux-design .container {
-      background: #E57777; }
-    .banner-service-ux-design #contact-face {
-      position: absolute;
-      height: 425px;
-      right: 0;
-      bottom: 0; }
-    .banner-service-ux-design .topic-left {
-      left: -90px; }
-    .banner-service-ux-design .topic-right {
-      right: -90px; }
+      right: 0; }
+  .banner-service-web-design .container {
+    background: #696AFD; }
+  .banner-service-web-design #contact-rose {
+    height: 425px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+  .banner-service-web-design .topic-left {
+    left: -100px; }
+  .banner-service-web-design .topic-right {
+    right: -100px; }
+  .banner-service-seo .container {
+    background: #E3B5E0; }
+  .banner-service-seo #contact-parrot {
+    height: 425px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+  .banner-service-seo .topic-left {
+    left: -65px; }
+  .banner-service-seo .topic-right {
+    right: -65px; }
+  .banner-service-branding .container {
+    background: #FFA762; }
+  .banner-service-branding #contact-lion {
+    height: 415px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+  .banner-service-branding .topic-left {
+    left: -90px; }
+  .banner-service-branding .topic-right {
+    right: -90px; }
+  .banner-service-fundraising .container {
+    background: #B271AE; }
+  .banner-service-fundraising #contact-shark {
+    height: 350px;
+    right: -65px;
+    top: -35px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+  .banner-service-fundraising .topic-left {
+    left: -150px; }
+  .banner-service-fundraising .topic-right {
+    right: -150px; }
+  .banner-service-email-campaigns .container {
+    background: #B53131; }
+  .banner-service-email-campaigns #contact-pigeon {
+    height: 430px; }
+  .banner-service-email-campaigns .topic-left {
+    left: -125px; }
+  .banner-service-email-campaigns .topic-right {
+    right: -125px; }
+  .banner-service-ux-design .container {
+    background: #E57777; }
+  .banner-service-ux-design #contact-face {
+    height: 425px; }
+  .banner-service-ux-design .topic-left {
+    left: -90px; }
+  .banner-service-ux-design .topic-right {
+    right: -90px; }
 
 .sub-hero-services-banner {
-  background: #D4EDF8;
+  background: #262627;
   padding: 6rem 0;
   text-align: center; }
   .sub-hero-services-banner p {
+    color: #FFFFFF;
     max-width: 750px;
     font-size: 18px;
     font-size: 1.125rem;
