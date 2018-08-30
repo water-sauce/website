@@ -820,17 +820,32 @@ title-block {
     -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); }
+    @media only screen and (max-width: 48em) {
+      .banner-service .button {
+        width: 100%;
+        display: block;
+        max-width: 350px;
+        margin: 0 auto; } }
   .banner-service h4 {
     font-size: 54px;
     font-size: 3.375rem;
-    line-height: 68px;
+    line-height: 1.4;
     margin-bottom: 24px;
     letter-spacing: 0.5px;
     font-family: 'Libre Baskerville', valkyrie-text, serif; }
+    @media only screen and (max-width: 48em) {
+      .banner-service h4 {
+        text-align: center;
+        letter-spacing: 0.25px;
+        font-size: 36px;
+        font-size: 2.25rem; } }
   .banner-service .cta-wrapper {
     padding: 4rem;
     position: relative;
     z-index: 2; }
+    @media only screen and (max-width: 48em) {
+      .banner-service .cta-wrapper {
+        padding: 2rem; } }
   .banner-service .container {
     position: relative;
     width: 1000px;
@@ -854,6 +869,9 @@ title-block {
     height: 425px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
+    @media only screen and (max-width: 48em) {
+      .banner-service-web-design #contact-rose {
+        height: 350px; } }
   .banner-service-web-design .topic-left {
     left: -100px; }
   .banner-service-web-design .topic-right {
@@ -864,6 +882,9 @@ title-block {
     height: 425px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
+    @media only screen and (max-width: 48em) {
+      .banner-service-seo #contact-parrot {
+        height: 350px; } }
   .banner-service-seo .topic-left {
     left: -65px; }
   .banner-service-seo .topic-right {
@@ -874,6 +895,9 @@ title-block {
     height: 415px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
+    @media only screen and (max-width: 48em) {
+      .banner-service-branding #contact-lion {
+        height: 345px; } }
   .banner-service-branding .topic-left {
     left: -90px; }
   .banner-service-branding .topic-right {
@@ -886,6 +910,11 @@ title-block {
     top: -35px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
+    @media only screen and (max-width: 48em) {
+      .banner-service-fundraising #contact-shark {
+        height: 310px;
+        left: 0;
+        top: 0; } }
   .banner-service-fundraising .topic-left {
     left: -155px; }
   .banner-service-fundraising .topic-right {
@@ -894,6 +923,9 @@ title-block {
     background: #B53131; }
   .banner-service-email-campaigns #contact-pigeon {
     height: 430px; }
+    @media only screen and (max-width: 48em) {
+      .banner-service-email-campaigns #contact-pigeon {
+        height: 310px; } }
   .banner-service-email-campaigns .topic-left {
     left: -125px; }
   .banner-service-email-campaigns .topic-right {
@@ -902,6 +934,9 @@ title-block {
     background: #E57777; }
   .banner-service-ux-design #contact-face {
     height: 425px; }
+    @media only screen and (max-width: 48em) {
+      .banner-service-ux-design #contact-face {
+        height: 325px; } }
   .banner-service-ux-design .topic-left {
     left: -90px; }
   .banner-service-ux-design .topic-right {
