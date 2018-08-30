@@ -11,7 +11,7 @@ class Header extends Component {
                 <Navbar.Header>
                     <Navbar.Brand>
                         <NavLink to="/" exact>
-                            <img src={logo} className="logo" />
+                            <img src={logo} className="logo" alt="Water Sauce logo" />
                             WATER SAUCE
                         </NavLink>
                     </Navbar.Brand>
