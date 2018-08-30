@@ -41,6 +41,14 @@ const routes = [
         component: Services,
     },
     {
+        path: "/email-campaigns",
+        component: Services,
+    },
+    {
+        path: "/ux-design",
+        component: Services,
+    },
+    {
         path: "/what-is-seo-auditing",
         component: Resources,
     },

@@ -11,19 +11,22 @@ import SEOPage from "./SEOPage";
 import WebDesignPage from "./WebDesignPage";
 import FundraisingMaterialsPage from "./FundraisingMaterialsPage";
 import BrandingPage from "./BrandingPage";
+import EmailCampaignsPage from "./EmailCampaignsPage";
 // import DataEnrichmentPage from "./DataEnrichmentPage";
 
 import rose from "../images/banner/rose.png";
-import parrot from "../images/banner/parrot-2.png";
+import parrot from "../images/banner/parrot-4.png";
 import shark from "../images/banner/shark.png";
 import lion from "../images/banner/lion.png";
+import pigeon from "../images/banner/pigeon-2.png";
+import face from "../images/banner/face.png";
 
 class Services extends Component {
 	render() {
 		return (
 			<div>
 				<Switch>
-				
+
 					<Route
 						exact
 						path="/web-design"
@@ -62,11 +65,12 @@ class Services extends Component {
 								img_id_1="contact-parrot"
 								cta="Contact Us"
 								cta_type="contact_us"
-								cta_contact_us_class="button-salmon button-large"
+								cta_contact_us_class="button-true-blue button-large"
 								showPhoneNumber={true}
 							/>
 						)}
 					/>
+
 					<Route
 						exact
 						path="/fundraising-materials"
@@ -88,6 +92,7 @@ class Services extends Component {
 							/>
 						)}
 					/>
+
 					<Route
 						exact
 						path="/branding"
@@ -110,8 +115,50 @@ class Services extends Component {
 						)}
 					/>
 
+					<Route
+						exact
+						path="/email-campaigns"
+						render={() => (
+							<HeroServicesBanner
+								cta_banner="banner-service-email-campaigns"
+								title={
+									<Fragment>
+										Pigeon mail is <br /> <i>so</i> last century
+									</Fragment>
+								}
+								topic="email campaigns"
+								img_src_1={pigeon}
+								img_id_1="contact-pigeon"
+								cta="Contact Us"
+								cta_type="contact_us"
+								cta_contact_us_class="button-true-blue button-large"
+								showPhoneNumber={true}
+							/>
+						)}
+					/>
 
-					
+					<Route
+						exact
+						path="/ux-design"
+						render={() => (
+							<HeroServicesBanner
+								cta_banner="banner-service-ux-design"
+								title={
+									<Fragment>
+										UX is the <br /> human experience
+									</Fragment>
+								}
+								topic="ux design"
+								img_src_1={face}
+								img_id_1="contact-face"
+								cta="Contact Us"
+								cta_type="contact_us"
+								cta_contact_us_class="button-true-blue button-large"
+								showPhoneNumber={true}
+							/>
+						)}
+					/>
+
 				</Switch>
 				<Switch>
 					<Route
@@ -133,6 +180,11 @@ class Services extends Component {
 						exact
 						path="/branding"
 						component={BrandingPage}
+					/>
+					<Route
+						exact
+						path="/email-campaigns"
+						component={EmailCampaignsPage}
 					/>
 				</Switch>
 			</div>

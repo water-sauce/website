@@ -839,9 +839,9 @@ title-block {
     .banner-service-web-design .topic-right {
       right: -100px; }
   .banner-service-seo {
-    color: #1B1C6A; }
+    color: #FFFFFF; }
     .banner-service-seo .container {
-      background: #FFE8A0; }
+      background: #E3B5E0; }
     .banner-service-seo #contact-parrot {
       position: absolute;
       height: 425px;
@@ -883,6 +883,32 @@ title-block {
       left: -150px; }
     .banner-service-fundraising .topic-right {
       right: -150px; }
+  .banner-service-email-campaigns {
+    color: #FFFFFF; }
+    .banner-service-email-campaigns .container {
+      background: #B53131; }
+    .banner-service-email-campaigns #contact-pigeon {
+      position: absolute;
+      height: 430px;
+      right: 0px;
+      bottom: 0; }
+    .banner-service-email-campaigns .topic-left {
+      left: -125px; }
+    .banner-service-email-campaigns .topic-right {
+      right: -125px; }
+  .banner-service-ux-design {
+    color: #FFFFFF; }
+    .banner-service-ux-design .container {
+      background: #E57777; }
+    .banner-service-ux-design #contact-face {
+      position: absolute;
+      height: 425px;
+      right: 0;
+      bottom: 0; }
+    .banner-service-ux-design .topic-left {
+      left: -90px; }
+    .banner-service-ux-design .topic-right {
+      right: -90px; }
 
 .sub-hero-services-banner {
   background: #D4EDF8;

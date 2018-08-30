@@ -20,11 +20,21 @@ const PageLinks = {
             name: "Fundraising Materials",
             link: "/fundraising-materials"
         },
+        {
+            type: "link",
+            name: "Email Campaigns",
+            link: "/email-campaigns"
+        },
+        {
+            type: "link",
+            name: "UX Design",
+            link: "/ux-design"
+        },
     ],
     Resources: [
         {
             type: "link",
-            name: "What is SEO Auditing",
+            name: "What is SEO auditing?",
             link: "/what-is-seo-auditing"
         },
     ],

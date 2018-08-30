@@ -81,10 +81,10 @@
 	}
 
 	&-seo {
-		color: $dark-blue;
+		color: $white;
 
 		.container {
-			background: $yellow;
+			background: $true-pink;
 		}
 		
 		#contact-parrot {
@@ -150,4 +150,48 @@
 			right: -150px;
 		}
 	}
+
+	&-email-campaigns {
+		color: $white;
+
+		.container {
+			background: $red;
+		}
+
+		#contact-pigeon {
+			position: absolute;
+			height: 430px;
+			right: 0px;
+			bottom: 0;
+		}
+		.topic-left {
+			left: -125px;
+		}
+		.topic-right {
+			right: -125px;
+		}
+	}
+
+	&-ux-design {
+		color: $white;
+
+		.container {
+			background: $salmon;
+		}
+		
+		#contact-face {
+			position: absolute;
+			height: 425px;
+			right: 0;
+			bottom: 0;
+		}
+
+		.topic-left {
+			left: -90px;
+		}
+		.topic-right {
+			right: -90px;
+		}
+	}
+
 }
