@@ -11,6 +11,7 @@ import WebDesignPage from "./WebDesignPage";
 import FundraisingMaterialsPage from "./FundraisingMaterialsPage";
 import BrandingPage from "./BrandingPage";
 import EmailCampaignsPage from "./EmailCampaignsPage";
+import UXDesignPage from "./UXDesignPage";
 
 import rose from "../images/banner/rose.png";
 import parrot from "../images/banner/parrot-4.png";
@@ -183,6 +184,11 @@ class Services extends Component {
 						exact
 						path="/email-campaigns"
 						component={EmailCampaignsPage}
+					/>
+					<Route
+						exact
+						path="/ux-design"
+						component={UXDesignPage}
 					/>
 				</Switch>
 			</div>

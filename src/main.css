@@ -337,7 +337,7 @@ footer ul li a, .a-hover {
   max-height: 200px; }
 
 html, body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Prompt', sans-serif;
   color: #333333;
   font-size: 16px;
   font-size: 1rem; }
@@ -418,7 +418,7 @@ html, body {
         color: #333333;
         font-size: 16px;
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 400;
         letter-spacing: 0.5px;
         text-decoration: none; }
   .navbar .dropdown-menu {
@@ -541,20 +541,19 @@ footer {
 
 .info-wrapper {
   max-width: 1000px;
-  margin: 4rem auto;
+  margin: 6rem auto;
   display: block;
   position: relative; }
 
 .info-grid {
-  margin: 4rem 0;
+  margin: 5rem 0;
   margin-left: 18rem;
   margin-right: 2rem; }
   .info-grid p {
     font-size: 18px;
     font-size: 1.125rem;
-    line-height: 22px;
-    font-family: valkyrie-text;
-    line-height: 1.45;
+    font-family: 'Libre Baskerville', valkyrie-text, serif;
+    line-height: 1.65;
     font-feature-settings: 'onum' 1; }
 
 title-block {
@@ -563,14 +562,14 @@ title-block {
   position: absolute;
   margin-left: 0;
   left: 0.5rem;
-  width: calc(4rem * 3);
+  width: calc(4.25rem * 3);
   text-align: right;
   list-style-type: none;
   clear: both;
   margin-bottom: 1rem;
   font-feature-settings: 'onum' 0;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   font-size: 1.125rem; }
 
@@ -807,9 +806,9 @@ title-block {
     top: calc(50% - 15px);
     text-transform: uppercase;
     font-size: 14px;
-    letter-spacing: 1.5px;
-    color: black;
-    font-weight: 500; }
+    letter-spacing: 1.75px;
+    color: #333333;
+    font-weight: 400; }
     .banner-service .topic-left {
       transform: rotate(-90deg); }
     .banner-service .topic-right {
@@ -817,7 +816,7 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service .topic {
         display: none; } }
-  .banner-service .button:hover {
+  .banner-service .button {
     -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); }
@@ -826,7 +825,8 @@ title-block {
     font-size: 3.375rem;
     line-height: 68px;
     margin-bottom: 24px;
-    letter-spacing: 0.5px; }
+    letter-spacing: 0.5px;
+    font-family: 'Libre Baskerville', valkyrie-text, serif; }
   .banner-service .cta-wrapper {
     padding: 4rem;
     position: relative;
@@ -887,9 +887,9 @@ title-block {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
   .banner-service-fundraising .topic-left {
-    left: -150px; }
+    left: -155px; }
   .banner-service-fundraising .topic-right {
-    right: -150px; }
+    right: -155px; }
   .banner-service-email-campaigns .container {
     background: #B53131; }
   .banner-service-email-campaigns #contact-pigeon {
@@ -917,7 +917,8 @@ title-block {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 26px;
-    letter-spacing: 0.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
     margin: 0 auto;
     display: block; }
 

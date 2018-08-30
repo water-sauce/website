@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-// import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
+import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
 
 
@@ -20,7 +20,7 @@ const product_info = [
     {
         title_block: "SEO Auditing",
         description:
-            "Your website’s overall SEO HTML structure needs help! Google is the ever-revolving algorithm that changes annually. Water Sauce can help you figure out the best way to format your HTML and drive inbound leads. It’s more important than ever to have a web presence and a strong one at that."
+            "Your website’s overall SEO HTML structure needs help! Google is the ever-revolving algorithm that constantly changes. Water Sauce can help you figure out the best way to format your HTML and drive inbound leads. It’s more important than ever to have a web presence and a strong one at that."
     }
 ];
 
@@ -35,6 +35,8 @@ class SEOPage extends Component {
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>
+
+                <SubHeroServicesBanner paragraph="Not every SEO strategy is the same. Each company needs a catered, detailed game plan to help them rank high for certain keywords. When Water Sauce audits a website, the audit is strategic to your inbound marketing strategy. Having a solid SEO game plan helps sync all your goals." />
 
                 <InfoBanner product_banners={product_info} />
                 

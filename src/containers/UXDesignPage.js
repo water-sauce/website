@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
-
 
 const title = "UX Design";
 const description =
@@ -10,14 +10,14 @@ const description =
 
 const product_info = [
     {
-        title_block: "The Blueprints - Information Architecture",
+        title_block: "Leave a lasting impression",
         description:
-            "Information Architecture is all about the structuring of the content on a page- what to show, what’s most important, what needs to be ‘above the fold’, etc. Good information architecture helps a user find what they’re looking for with ease. From a site map perspective, it all starts with a home page. What will a new user see when they land on the page?... Where are they intended to navigate to?...  And so forth. Like a house’s blueprints, it is very important to decide where to put the front door, kitchen, and living room before proceeding to the next phase."
+            "Your user interface, information architecture, and branding are all bigger parts of a whole. It’s important to note that changing UX involves a team effort to understanding your customers’ pain points and how best to guide them on your website or product."
     },
     {
-        title_block: "The Construction - Web Development",
+        title_block: "UX is more than user stories",
         description:
-            "Web Development is a process that requires front-end web development, back-end web development, and even an SEO strategy. At a minimum, any website will need HTML and CSS (HTML5 and CSS3 are the latest versions of both). HTML is the house’s framing, while CSS is the roofing, windows, and doors. After this is complete, you’ll have a functioning house… but with no style or furnishings. That leads us to the final step."
+            "What is a user experience (UX)? It’s any touchpoint or interaction a person has with a brand. Take Apple, for example - everything from their website, to their ads, to their messaging, and most importantly their packaging and product is consistent in look and feel. Because of this, Apple products have the ability to make users feel empowered."
     }
 ];
 
@@ -31,6 +31,8 @@ class UXDesignPage extends Component {
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>
+
+                <SubHeroServicesBanner paragraph="UX is just that - an experience. Never underestimate the feeling a good experience can impact branding. The most important thing to us when it comes to UX is the consistent reminder that “users” and “customers” are real human beings with real emotions and needs. Good UX comes from market research, learning about your customer base, and figuring out how their online experience on your website can not only match, but exceed their expectations." />
 
                 <InfoBanner product_banners={product_info} />
             </div>

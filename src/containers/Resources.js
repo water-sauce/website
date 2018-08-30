@@ -16,7 +16,7 @@ class Resources extends Component {
                         render={() => (
                             <HeroBanner
                                 title="SEO Auditing"
-                                description="Datanyze is the fuel for your business strategy. With over 100 billion raw data points, the possibilities for making your organization smarter are endless."
+                                description=""
                             />
                         )}
                     />
@@ -26,7 +26,7 @@ class Resources extends Component {
                         render={() => (
                             <HeroBanner
                                 title="Web Design"
-                                description="Datanyze is the fuel for your business strategy. With over 100 billion raw data points, the possibilities for making your organization smarter are endless."
+                                description=""
                             />
                         )}
                     />
@@ -35,11 +35,11 @@ class Resources extends Component {
                     <Route
                         render={() => (
                             <ContactBanner
-                                title="Ready to try technographics?"
-                                description="Get in touch with a Datanyze rep today!"
+                                title="Ready for a free SEO Audit?"
+                                description=""
                                 cta="Contact Us"
                                 cta_type="contact_us"
-                                cta_contact_us_class="button-white"
+                                cta_contact_us_class="button-large button-salmon"
                                 showPhoneNumber={true}
                             />
                         )}
