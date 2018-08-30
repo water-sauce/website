@@ -27,6 +27,14 @@
     // @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.25));
     background: $white;
     @include transition(all ease-in-out .2s);
+
+    .logo {
+        display: inline-block;
+        height: 30px;
+        margin-right: 15px;
+        margin-top: -5px;
+    }
+
     a {
     	color: $black-font !important;
     	display: block;

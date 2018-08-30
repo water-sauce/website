@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Grid } from "react-bootstrap";
 import PageLinks from "../routers/PageLinks";
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+// import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 
 const CurrentYear = new Date().getFullYear();
 

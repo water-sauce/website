@@ -19,7 +19,7 @@
 		letter-spacing: 1.5px;
 		color: black;
 		font-weight: 500;
-		&-left {
+		&-left { 
 			transform: rotate(-90deg);
 		}
 		&-right {
@@ -27,6 +27,12 @@
 		}
 		@media only screen and (max-width: $mq-ipad) {
 			display: none;
+		}
+	}
+
+	.button {
+		&:hover {
+			@include box-shadow( 0px, 2px, 5px, rgba(0,0,0,0.5));
 		}
 	}
 	
@@ -48,7 +54,7 @@
 		width: 1000px;
 		color: $white;
 		// @include box-shadow( 0px, 0px, 10px, rgba(71,71,71,0.5), true);
-		
+
 		@media only screen and (max-width: $mq-large) {
 			width: 800px;
 		}

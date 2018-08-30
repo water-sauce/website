@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import ContactModal from "../components/ContactModal";
 

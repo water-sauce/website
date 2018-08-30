@@ -2,9 +2,8 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
-import HeroBanner from "../components/HeroBanner";
+// import HeroBanner from "../components/HeroBanner";
 import HeroServicesBanner from "../components/HeroServicesBanner";
-import ContactBanner from "../components/ContactBanner";
 
 // pages
 import SEOPage from "./SEOPage";
