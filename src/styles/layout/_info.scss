@@ -9,11 +9,20 @@
     margin: 5rem 0;
     margin-left: 18rem;
     margin-right: 2rem;
+    @media only screen and (max-width: $mq-ipad) {
+        margin: 0 auto;
+    }
+
     p {
         @include font-size(18px);
         font-family: 'Libre Baskerville', valkyrie-text, serif;
         line-height: 1.65;
         font-feature-settings: 'onum' 1;
+        @media only screen and (max-width: $mq-ipad) {
+            position: relative;
+            width: 100%;
+            padding: 1rem;
+        }
     }
 }
 
@@ -32,4 +41,9 @@ title-block {
     text-transform: uppercase;
     font-weight: 400;
     @include font-size(18px);
+    @media only screen and (max-width: $mq-ipad) {
+        position: relative;
+        width: 100%;
+        padding: 1rem;
+    }
 }
