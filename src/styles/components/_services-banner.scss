@@ -1,12 +1,16 @@
 .banner-service {
-	background: $lightest-grey;
-	background: repeating-linear-gradient(
-	    45deg,
-	    transparent,
-	    transparent 5px,
-	    $lightest-grey 5px,
-	    $lightest-grey 10px
-	  );
+	// background: $lightest-grey;
+	// background: 
+	// 	repeating-linear-gradient( 45deg, transparent, transparent 5px, $lightest-grey 5px, $lightest-grey 10px ),;
+
+	background: 
+	   linear-gradient(135deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
+	   linear-gradient(225deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
+	   linear-gradient(315deg, $lightest-grey 25%, transparent 25%),
+	   linear-gradient(45deg, $lightest-grey 25%, transparent 25%);	
+	background-size: 25px 25px;
+	background-color: $white;
+
 	margin-top: 100px;
 	padding: 110px 0 100px;
 
@@ -50,6 +54,7 @@
 		margin-bottom: 24px;
 		letter-spacing: 0.5px;
 		font-family: 'Libre Baskerville', valkyrie-text, serif;
+		-webkit-font-smoothing: antialiased;
 		@media only screen and (max-width: $mq-ipad) {
 			text-align: center;
 			letter-spacing: 0.25px;

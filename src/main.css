@@ -553,11 +553,12 @@ footer {
     .info-grid {
       margin: 0 auto; } }
   .info-grid p {
-    font-size: 18px;
-    font-size: 1.125rem;
-    font-family: 'Libre Baskerville', valkyrie-text, serif;
-    line-height: 1.65;
-    font-feature-settings: 'onum' 1; }
+    font-size: 19px;
+    font-size: 1.1875rem;
+    font-family: Georgia, valkyrie-text, serif;
+    line-height: 1.632;
+    font-feature-settings: 'onum' 1;
+    -webkit-font-smoothing: antialiased; }
     @media only screen and (max-width: 48em) {
       .info-grid p {
         position: relative;
@@ -579,9 +580,11 @@ title-block {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 18px;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  letter-spacing: 0.4px; }
   @media only screen and (max-width: 48em) {
     title-block {
+      text-align: left;
       position: relative;
       width: 100%;
       padding: 1rem; } }
@@ -810,8 +813,9 @@ title-block {
   background-color: #FFFFFF; }
 
 .banner-service {
-  background: #F0F4EF;
-  background: repeating-linear-gradient(45deg, transparent, transparent 5px, #F0F4EF 5px, #F0F4EF 10px);
+  background: linear-gradient(135deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(225deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(315deg, #F0F4EF 25%, transparent 25%), linear-gradient(45deg, #F0F4EF 25%, transparent 25%);
+  background-size: 25px 25px;
+  background-color: #FFFFFF;
   margin-top: 100px;
   padding: 110px 0 100px; }
   .banner-service .topic {
@@ -845,7 +849,8 @@ title-block {
     line-height: 1.4;
     margin-bottom: 24px;
     letter-spacing: 0.5px;
-    font-family: 'Libre Baskerville', valkyrie-text, serif; }
+    font-family: 'Libre Baskerville', valkyrie-text, serif;
+    -webkit-font-smoothing: antialiased; }
     @media only screen and (max-width: 48em) {
       .banner-service h4 {
         text-align: center;

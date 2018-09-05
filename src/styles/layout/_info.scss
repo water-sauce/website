@@ -14,10 +14,12 @@
     }
 
     p {
-        @include font-size(18px);
-        font-family: 'Libre Baskerville', valkyrie-text, serif;
-        line-height: 1.65;
+        @include font-size(19px);
+        // font-family: 'Libre Baskerville', valkyrie-text, serif;
+        font-family: Georgia, valkyrie-text, serif;
+        line-height: 1.632;
         font-feature-settings: 'onum' 1;
+        -webkit-font-smoothing: antialiased;
         @media only screen and (max-width: $mq-ipad) {
             position: relative;
             width: 100%;
@@ -41,7 +43,9 @@ title-block {
     text-transform: uppercase;
     font-weight: 400;
     @include font-size(18px);
+    letter-spacing: 0.4px;
     @media only screen and (max-width: $mq-ipad) {
+        text-align: left;
         position: relative;
         width: 100%;
         padding: 1rem;
