@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Form, FormGroup, FormControl, ControlLabel, Button, Label } from "react-bootstrap";
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
-
+import axios from 'axios';
 
 class ContactPage extends Component {
     constructor(){
@@ -20,10 +20,16 @@ class ContactPage extends Component {
         this.setState({ [e.target.name]: [e.target.value] })
     }
 
-    handleSubmit(e) {
+    async handleSubmit(e) {
         e.preventDefault()
 
         const { name, email, message } = this.state
+
+        const form = await axios.post('/api/form', {
+            name: name,
+            email: email,
+            message: message
+        })
     }
 
     render() {
