@@ -44,6 +44,13 @@ const PageLinks = {
             name: "Team",
             link: "/our-team"
         },
+    ],
+    Contact: [
+        {
+            type: "link",
+            name: "Contact Us",
+            link: "/contact"
+        }
     ]
 };
 

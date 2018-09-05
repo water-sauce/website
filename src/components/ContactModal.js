@@ -1,7 +1,8 @@
 import React from "react";
-// import ReactDOM from "react-dom";
+import { Form, FormGroup, FormControl, ControlLabel, Button, Label } from "react-bootstrap";
 import Modal from "react-modal";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+
 
 Modal.setAppElement("#app");
 
@@ -25,6 +26,8 @@ class ContactModal extends React.Component {
             ContactModalIsOpen: false
         };
 
+
+
         this.openContactModal = this.openContactModal.bind(this);
         this.afterOpenContactModal = this.afterOpenContactModal.bind(this);
         this.closeContactModal = this.closeContactModal.bind(this);
@@ -37,10 +40,21 @@ class ContactModal extends React.Component {
     afterOpenContactModal() {
         // references are now sync'd and can be accessed.
         this.subtitle.style.color = "#f00";
+        this.state = {
+            name: '',
+            email: '',
+            message: ''
+        };
+
+        this.handleChange = this.handleChange.bind(this);
     }
 
     closeContactModal() {
         this.setState({ ContactModalIsOpen: false });
+    }
+
+    handleChange = e => {
+        this.setState({ [e.target.name]: [e.target.value] })
     }
 
     render(props) {
@@ -74,68 +88,40 @@ class ContactModal extends React.Component {
                         style={closeIconStyle}
                     />
 
-                    <form id="slide-in-contact-form">
-                        <div className="form-group">
-                            <input
-                                className="form-control input-lg required"
-                                placeholder="First Name*"
+                    <Form id="slide-in-contact-form">
+                        <FormGroup>
+                            <Label>Name:</Label>
+                            <FormControl 
+                                className="form-group"
                                 type="text"
-                                name="c_contact_firstname"
-                                value=""
-                                id="c_contact_firstname"
-                            />
-                        </div>
-                        <div className="form-group">
-                            <input
-                                className="form-control input-lg required"
-                                placeholder="Last Name*"
+                                value={this.state.value}
+                                onChange={this.handleChange}>
+                            </FormControl>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label>Email Address:</Label>
+                            <FormControl 
+                                className="form-group"
                                 type="text"
-                                name="c_contact_lastname"
-                                value=""
-                                id="c_contact_lastname"
-                            />
-                        </div>
-                        <div className="form-group">
-                            <input
-                                className="form-control input-lg required email"
-                                placeholder="Company Email*"
-                                type="text"
-                                name="c_email"
-                                value=""
-                                id="c_email"
-                            />
-                            <p className="hidden user-notification font-weight-500 font-size-13 m-l-half red-warning" />
-                        </div>
-                        <div className="form-group">
-                            <input
-                                className="form-control input-lg"
-                                placeholder="Phone"
-                                type="text"
-                                name="c_phone"
-                                value=""
-                                id="c_phone"
-                            />
-                        </div>
-                        <div className="form-group">
-                            <textarea
-                                name="c_message"
-                                placeholder="Which technology providers are you interested in?"
-                                id="c_message"
-                                className="form-control input-lg"
-                            />
-                        </div>
+                                value={this.state.value}
+                                onChange={this.handleChange}
+                            >
+                            </FormControl>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label>Message:</Label>
+                            <FormControl 
+                                className="form-group"
+                                type="textarea"
+                                value={this.state.value}
+                                onChange={this.handleChange}
+                            >
+                            </FormControl>
+                        </FormGroup>
                         <p className="text-white font-size-12">* Required</p>
-                        <div className="form-group">
-                            <div className="ac text-center">
-                                <input
-                                    type="submit"
-                                    value="Request Demo"
-                                    className="button button-large button-primary submit-demo-request"
-                                    id="request-demo-btn-desktop"
-                                />
-                            </div>
-                        </div>
-                    </form>
+                        <Button>Submit</Button>
+                        
+                    </Form>
                 </Modal>
             </span>
         );

@@ -12,6 +12,9 @@ import Resources from "../containers/Resources";
 //  ABOUT
 import About from "../containers/About";
 
+//  CONTACT
+import ContactPage from "../containers/Contact";
+
 //  OTHER PAGES
 import NotFoundPage from "../containers/NotFoundPage.js";
 
@@ -55,6 +58,10 @@ const routes = [
     {
         path: "/our-team",
         component: About,
+    },
+    {
+        path: "/contact",
+        component: ContactPage,
     }
 ];
 
