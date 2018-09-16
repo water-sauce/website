@@ -623,10 +623,10 @@ title-block {
     .button-orange:hover {
       background: #ff9949;
       color: #FFFFFF; }
-  .button-salmon {
+  .button-pink {
     background: #E57777;
     color: #FFFFFF; }
-    .button-salmon:hover {
+    .button-pink:hover {
       background: #e16262;
       color: #FFFFFF; }
   .button-true-blue {
@@ -817,7 +817,7 @@ title-block {
   background-size: 25px 25px;
   background-color: #FFFFFF;
   margin-top: 100px;
-  padding: 110px 0 100px; }
+  padding: 100px 0 90px; }
   .banner-service .topic {
     position: absolute;
     top: calc(50% - 15px);
@@ -844,10 +844,10 @@ title-block {
         width: 100%;
         display: block; } }
   .banner-service h4 {
-    font-size: 54px;
-    font-size: 3.375rem;
-    line-height: 1.4;
-    margin-bottom: 24px;
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1.25;
+    margin-bottom: 12px;
     letter-spacing: 0.5px;
     font-family: 'Libre Baskerville', valkyrie-text, serif;
     -webkit-font-smoothing: antialiased; }
@@ -858,12 +858,15 @@ title-block {
         font-size: 36px;
         font-size: 2.25rem; } }
   .banner-service .cta-wrapper {
-    padding: 4rem;
+    padding: 2.5rem 3rem;
     position: relative;
     z-index: 2; }
     @media only screen and (max-width: 48em) {
       .banner-service .cta-wrapper {
         padding: 2rem; } }
+    .banner-service .cta-wrapper p {
+      max-width: 450px;
+      margin-bottom: 24px; }
   .banner-service .container {
     position: relative;
     width: 1000px;
@@ -882,13 +885,12 @@ title-block {
       bottom: 0;
       right: 0; }
   .banner-service-web-design .container {
-    background: #696AFD; }
-  .banner-service-web-design #contact-rose {
+    background: #fbca5c; }
+  .banner-service-web-design #contact-butterfly {
     height: 425px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); }
+    right: 20px; }
     @media only screen and (max-width: 48em) {
-      .banner-service-web-design #contact-rose {
+      .banner-service-web-design #contact-butterfly {
         height: 350px; } }
   .banner-service-web-design .topic-left {
     left: -100px; }
@@ -897,9 +899,7 @@ title-block {
   .banner-service-seo .container {
     background: #E3B5E0; }
   .banner-service-seo #contact-parrot {
-    height: 425px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); }
+    height: 425px; }
     @media only screen and (max-width: 48em) {
       .banner-service-seo #contact-parrot {
         height: 350px; } }
@@ -921,13 +921,11 @@ title-block {
   .banner-service-branding .topic-right {
     right: -90px; }
   .banner-service-fundraising .container {
-    background: #B271AE; }
+    background: #93E2DD; }
   .banner-service-fundraising #contact-shark {
     height: 350px;
     right: -65px;
-    top: -35px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); }
+    top: -35px; }
     @media only screen and (max-width: 48em) {
       .banner-service-fundraising #contact-shark {
         height: 310px;
@@ -938,11 +936,13 @@ title-block {
   .banner-service-fundraising .topic-right {
     right: -155px; }
   .banner-service-email-campaigns .container {
-    background: #B53131; }
-  .banner-service-email-campaigns #contact-pigeon {
-    height: 430px; }
+    background: #B271AE; }
+  .banner-service-email-campaigns #contact-snail {
+    height: 420px;
+    right: -40px;
+    bottom: -20px; }
     @media only screen and (max-width: 48em) {
-      .banner-service-email-campaigns #contact-pigeon {
+      .banner-service-email-campaigns #contact-snail {
         height: 310px; } }
   .banner-service-email-campaigns .topic-left {
     left: -125px; }

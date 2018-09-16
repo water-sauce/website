@@ -12,7 +12,7 @@
 	background-color: $white;
 
 	margin-top: 100px;
-	padding: 110px 0 100px;
+	padding: 100px 0 90px;
 
 	
 	.topic {
@@ -49,9 +49,9 @@
 	}
 	
 	h4 {
-		@include font-size(54px);
-		line-height: 1.4;
-		margin-bottom: 24px;
+		@include font-size(48px);
+		line-height: 1.25;
+		margin-bottom: 12px;
 		letter-spacing: 0.5px;
 		font-family: 'Libre Baskerville', valkyrie-text, serif;
 		-webkit-font-smoothing: antialiased;
@@ -64,11 +64,15 @@
 	}
 
 	.cta-wrapper {
-		padding: 4rem;
+		padding: 2.5rem 3rem;
 		position: relative;
 		z-index: 2;
 		@media only screen and (max-width: $mq-ipad) {
 			padding: 2rem;
+		}
+		p {
+			max-width: 450px;
+			margin-bottom: 24px;
 		}
 	}
 
@@ -97,12 +101,13 @@
 
 	&-web-design {
 		.container {
-			background: $true-blue;
+			background: $deep-yellow;
 		}
-		#contact-rose {
+		#contact-butterfly {
 			height: 425px;
-			-webkit-transform: scaleX(-1);
-			transform: scaleX(-1);
+			right: 20px;
+			// -webkit-transform: scaleX(-1);
+			// transform: scaleX(-1);
 			@media only screen and (max-width: $mq-ipad) {
 				height: 350px;
 			}
@@ -117,12 +122,10 @@
 
 	&-seo {
 		.container {
-			background: $true-pink;
+			background: $light-purple;
 		}
 		#contact-parrot {
 			height: 425px;
-			-webkit-transform: scaleX(-1);
-			transform: scaleX(-1);
 			@media only screen and (max-width: $mq-ipad) {
 				height: 350px;
 			}
@@ -157,14 +160,14 @@
 
 	&-fundraising {
 		.container {
-			background: $pink-purple;
+			background: $teal;
 		}
 		#contact-shark {
 			height: 350px;
 			right: -65px;
 			top: -35px;
-			-webkit-transform: scaleX(-1);
-			transform: scaleX(-1);
+			// -webkit-transform: scaleX(-1);
+			// transform: scaleX(-1);
 			@media only screen and (max-width: $mq-ipad) {
 				height: 310px;
 				left: 0;
@@ -181,10 +184,15 @@
 
 	&-email-campaigns {
 		.container {
-			background: $red;
+			background: $purple;
 		}
-		#contact-pigeon {
-			height: 430px;
+		#contact-snail {
+			height: 420px;
+			// -webkit-transform: scaleX(-1);
+			// transform: scaleX(-1);
+			// transform: rotate(-5deg);
+			right: -40px;
+			bottom: -20px;
 			@media only screen and (max-width: $mq-ipad) {
 				height: 310px;
 			}
@@ -199,7 +207,7 @@
 
 	&-ux-design {
 		.container {
-			background: $salmon;
+			background: $pink;
 		}
 		#contact-face {
 			height: 425px;

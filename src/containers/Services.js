@@ -13,12 +13,12 @@ import BrandingPage from "./BrandingPage";
 import EmailCampaignsPage from "./EmailCampaignsPage";
 import UXDesignPage from "./UXDesignPage";
 
-import rose from "../images/banner/rose.png";
-import parrot from "../images/banner/parrot-4.png";
-import shark from "../images/banner/shark.png";
+import butterfly from "../images/banner/butterfly-2.png";
+import parrot from "../images/banner/parrot-6.png";
+import shark from "../images/banner/shark-2.png";
 import lion from "../images/banner/lion.png";
-import pigeon from "../images/banner/pigeon-2.png";
-import face from "../images/banner/face.png";
+import snail from "../images/banner/snail-4.png";
+import face from "../images/banner/face-2.png";
 
 class Services extends Component {
 	render() {
@@ -37,13 +37,17 @@ class Services extends Component {
 										Design to <br /> captivate &amp; inspire
 									</Fragment>
 								}
+								subtitle={
+									<Fragment>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									</Fragment>
+								}
 								topic="web design"
-								img_src_1={rose}
-								img_id_1="contact-rose"
+								img_src_1={butterfly}
+								img_id_1="contact-butterfly"
 								cta="Contact Us"
 								cta_type="contact_us"
-								cta_contact_us_class="button-salmon button-large"
-								showPhoneNumber={true}
+								cta_contact_us_class="button-true-blue button-large"
 							/>
 						)}
 					/>
@@ -59,13 +63,17 @@ class Services extends Component {
 										Birds of a feather <br /> do SEO together
 									</Fragment>
 								}
+								subtitle={
+									<Fragment>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									</Fragment>
+								}
 								topic="seo"
 								img_src_1={parrot}
 								img_id_1="contact-parrot"
 								cta="Contact Us"
 								cta_type="contact_us"
 								cta_contact_us_class="button-true-blue button-large"
-								showPhoneNumber={true}
 							/>
 						)}
 					/>
@@ -81,13 +89,17 @@ class Services extends Component {
 										Be prepared when <br /> entering the tank
 									</Fragment>
 								}
+								subtitle={
+									<Fragment>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									</Fragment>
+								}
 								topic="fundraising materials"
 								img_src_1={shark}
 								img_id_1="contact-shark"
 								cta="Contact Us"
 								cta_type="contact_us"
 								cta_contact_us_class="button-true-blue button-large"
-								showPhoneNumber={true}
 							/>
 						)}
 					/>
@@ -103,13 +115,17 @@ class Services extends Component {
 										Let your <br /> brand roar
 									</Fragment>
 								}
+								subtitle={
+									<Fragment>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									</Fragment>
+								}
 								topic="branding"
 								img_src_1={lion}
 								img_id_1="contact-lion"
 								cta="Contact Us"
 								cta_type="contact_us"
 								cta_contact_us_class="button-true-blue button-large"
-								showPhoneNumber={true}
 							/>
 						)}
 					/>
@@ -122,16 +138,20 @@ class Services extends Component {
 								cta_banner="banner-service-email-campaigns"
 								title={
 									<Fragment>
-										Pigeon mail is <br /> <i>so</i> last century
+										Snail mail is <br /> <i>so</i> last century
+									</Fragment>
+								}
+								subtitle={
+									<Fragment>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									</Fragment>
 								}
 								topic="email campaigns"
-								img_src_1={pigeon}
-								img_id_1="contact-pigeon"
+								img_src_1={snail}
+								img_id_1="contact-snail"
 								cta="Contact Us"
 								cta_type="contact_us"
 								cta_contact_us_class="button-true-blue button-large"
-								showPhoneNumber={true}
 							/>
 						)}
 					/>
@@ -147,13 +167,17 @@ class Services extends Component {
 										UX is the <br /> human experience
 									</Fragment>
 								}
+								subtitle={
+									<Fragment>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									</Fragment>
+								}
 								topic="ux design"
 								img_src_1={face}
 								img_id_1="contact-face"
 								cta="Contact Us"
 								cta_type="contact_us"
 								cta_contact_us_class="button-true-blue button-large"
-								showPhoneNumber={true}
 							/>
 						)}
 					/>

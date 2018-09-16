@@ -32,11 +32,11 @@
 			color: $white;
 		}
 	}
-	&-salmon {
-		background: $salmon;
+	&-pink {
+		background: $pink;
 		color: $white;
 		&:hover {
-			background: darken($salmon, 5%);
+			background: darken($pink, 5%);
 			color: $white;
 		}
 	}

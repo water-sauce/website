@@ -39,7 +39,7 @@ class Resources extends Component {
                                 description=""
                                 cta="Contact Us"
                                 cta_type="contact_us"
-                                cta_contact_us_class="button-large button-salmon"
+                                cta_contact_us_class="button-large button-pink"
                                 showPhoneNumber={true}
                             />
                         )}

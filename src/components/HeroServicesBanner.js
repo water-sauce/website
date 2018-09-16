@@ -13,6 +13,7 @@ class HeroServicesBanner extends Component {
                     <p className="topic topic-right">{this.props.topic}</p>
                     <Row className="cta-wrapper">
                         <h4>{this.props.title}</h4>
+                        <p>{this.props.subtitle}</p>
                         <div className="cta-information">
                             <ContactModal
                                 cta={this.props.cta}
