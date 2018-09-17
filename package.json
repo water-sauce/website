@@ -15,6 +15,7 @@
         "lint-staged": "^6.0.0",
         "node-sass-chokidar": "^1.2.2",
         "npm-run-all": "^4.1.2",
+        "parallax-js": "^3.1.0",
         "prettier": "^1.10.2",
         "react": "^16.3.1",
         "react-bootstrap": "^0.32.0",

@@ -1156,12 +1156,12 @@ a.about-name:hover {
   color: #41C3E5 !important;
   text-decoration: underline; }
 
-#home-wrapper {
+#ultimate-wrapper {
   position: relative;
   width: 100%;
-  height: 100vh; }
+  height: 120vh; }
 
-#home-banner {
+#home-wrapper {
   min-height: 100%;
   position: absolute;
   overflow: hidden;
@@ -1170,18 +1170,38 @@ a.about-name:hover {
   left: 0;
   top: 0; }
 
-#sky {
+.scene {
+  position: relative;
+  overflow: hidden;
+  height: 100vh !important;
+  pointer-events: all; }
+
+.scene, .layer {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+  .scene div, .layer div {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden; }
+
+#main-bg {
   position: absolute;
   background-image: url("images/backgrounds/sky-lake.png");
   background-repeat: no-repeat;
-  background-size: cover;
   top: -2%;
   left: -2%;
   right: -2%;
   bottom: -2%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center; }
+  height: 100%; }
 
 .mountain-range {
   display: block;
@@ -1191,28 +1211,35 @@ a.about-name:hover {
   height: 100%; }
 
 #m1, #m2, #m3 {
-  top: 150px;
-  position: absolute;
   max-width: 100%; }
 
-#m1 {
-  background-image: url("images/backgrounds/m1.png");
+#m2 {
+  background-image: url("images/backgrounds/m2.png");
   z-index: 3;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
   display: block;
   position: absolute;
   top: 0;
   left: -5%;
   right: -5%;
   bottom: 2%;
-  background-size: contain;
+  width: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center; }
 
-#m2 {
-  top: 7%;
-  z-index: 2; }
+#m3 {
+  background-image: url("images/backgrounds/m3.png");
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  right: -5%;
+  bottom: 2%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center; }
 
 #m3 {
   top: 30%;

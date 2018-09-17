@@ -1,24 +1,48 @@
-import React, { Component, Fragment } from "react";
-import m1 from "../images/backgrounds/m1.png";
-import m2 from "../images/backgrounds/m2.png";
-import m3 from "../images/backgrounds/m3.png";
+import React, { ReactDOM, Component, Fragment } from "react";
+import Parallax from 'parallax-js';
+
 
 class HomePage extends Component {
-    render(props) {
-        return (
-        	<div id="home-wrapper">
-	        	<div id="home-banner">
-	        		<ul>
-	            	<li><div id="sky"></div></li>
-	            	<li><div id="m1"></div></li>
-	            	</ul>
-	            	<img src={m2} alt="mountains" id="m2" className="mountain-range"/>
-	            	<img src={m3} alt="mountains" id="m3" className="mountain-range"/>
-	                <p>this is the home page</p>
-	            </div>
-	        </div>
-        );
-    }
+	componentDidMount() {
+		this.parallax = new Parallax(this.scene)
+	}
+
+	componentWillUnmount() {
+		this.parallax.disable()
+	}
+
+	render() {
+		return (
+			<div id="ultimate-wrapper" className="clearfix">
+				<div id="home-wrapper">
+					<ul 
+						ref={el => this.scene = el}
+						id="scene"
+						className="scene"
+						data-relative-input="true"
+						data-hover-only="true"
+						data-friction-x="0.1"
+						data-friction-y="0.1"
+						data-scalar-x="10"
+						data-scalar-y="15"
+					>
+						<li className="layer" data-depth="0.10">
+							<div id="main-bg"></div>
+						</li>
+						<li className="layer" datadepth="0.20">
+							<div id="m3"></div>
+						</li>
+						<li className="layer" data-depth="0.30">
+							<div id="m2"></div>
+						</li>
+						<li className="layer" data-depth="0.40">
+							<div id="m1"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		)
+	}
 }
 
 export default HomePage;
