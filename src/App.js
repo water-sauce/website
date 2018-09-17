@@ -4,6 +4,7 @@ import AppRouter from "./routers/AppRouter";
 
 import ScrollToTop from "./components/ScrollToTop";
 import PublicHeader from "./components/PublicHeader";
+import HeaderOffset from "./components/HeaderOffset";
 import PublicFooter from "./components/PublicFooter";
 // import ContactModal from "./components/ContactModal";
 
@@ -12,6 +13,7 @@ class App extends Component {
         return (
             <div>
                 <PublicHeader />
+                <HeaderOffset />
                 <ScrollToTop>
                     <AppRouter />
                 </ScrollToTop>

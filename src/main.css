@@ -382,6 +382,9 @@ html, body {
   /* IE6-9 fallback on horizontal gradient */
   width: 100%; }
 
+#header-offset {
+  height: 100px; }
+
 .navbar {
   width: 100%;
   max-width: 100%;
@@ -816,7 +819,6 @@ title-block {
   background: linear-gradient(135deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(225deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(315deg, #F0F4EF 25%, transparent 25%), linear-gradient(45deg, #F0F4EF 25%, transparent 25%);
   background-size: 25px 25px;
   background-color: #FFFFFF;
-  margin-top: 100px;
   padding: 100px 0 90px; }
   .banner-service .topic {
     position: absolute;
@@ -1153,3 +1155,66 @@ a.about-name:hover {
 .angellist_jobs-title-link:active {
   color: #41C3E5 !important;
   text-decoration: underline; }
+
+#home-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+
+#home-banner {
+  min-height: 100%;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+#sky {
+  position: absolute;
+  background-image: url("images/backgrounds/sky-lake.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -2%;
+  left: -2%;
+  right: -2%;
+  bottom: -2%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+.mountain-range {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+#m1, #m2, #m3 {
+  top: 150px;
+  position: absolute;
+  max-width: 100%; }
+
+#m1 {
+  background-image: url("images/backgrounds/m1.png");
+  z-index: 3;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  right: -5%;
+  bottom: 2%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+
+#m2 {
+  top: 7%;
+  z-index: 2; }
+
+#m3 {
+  top: 30%;
+  z-index: 1;
+  right: 0; }

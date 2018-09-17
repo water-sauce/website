@@ -1,20 +1,73 @@
-.home-triangle {
+#home-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+    
+}
+
+#home-banner {
+	min-height: 100%;
 	position: absolute;
-	bottom: 0;
-	&-left {
-		left: 0;
-	    width: 0;
-	    height: 0;
-	    border-style: solid;
-	    border-width: 18vh 0 0 80vw;
-	    border-color: transparent transparent transparent $white;
-	}
-	&-right {
-		right: 0;
-	    width: 0;
-	    height: 0;
-	    border-style: solid;
-	    border-width: 0 0 12vh 33vw;
-	    border-color: transparent transparent $white transparent;
-	}
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+#sky {
+	position: absolute;
+	background-image: url("images/backgrounds/sky-lake.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -2%;
+    left: -2%;
+    right: -2%;
+    bottom: -2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.mountain-range {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#m1, #m2, #m3 {
+	top: 150px;
+	position: absolute;
+	max-width: 100%;
+}
+
+#m1 {
+	// top: 10%;
+	background-image: url("images/backgrounds/m1.png");
+	z-index: 3;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    // position: relative;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    right: -5%;
+    bottom: 2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+#m2 {
+	top: 7%;
+	z-index: 2;
+}
+
+#m3 {
+	top: 30%;
+	z-index: 1;
+	right: 0;
 }
