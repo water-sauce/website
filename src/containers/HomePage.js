@@ -4,6 +4,8 @@ import Parallax from 'parallax-js';
 import m1 from "../images/backgrounds/m1b.png";
 import m2 from "../images/backgrounds/m2b.png";
 import m3 from "../images/backgrounds/m3b.png";
+import goat from "../images/backgrounds/mountain-goat.png";
+import elk from "../images/backgrounds/elk.png";
 
 
 class HomePage extends Component {
@@ -41,12 +43,18 @@ class HomePage extends Component {
 								<img src={m2} className="mountain-range" id="m2" />
 							</li>
 							<li className="layer" data-depth="0.40">
+								<img src={goat} alt="mountain goat" id="mountain-goat" />
+							</li>
+							<li className="layer" data-depth="0.50">
+								<img src={elk} alt="elk" id="elk" />
+							</li>
+							<li className="layer" data-depth="0.60">
 								<img src={m1} className="mountain-range" id="m1" />
 							</li>
 						</ul>
 					</div>
 					<div id="messaging">
-						<h1>Water Sauce: We do epic shit</h1>
+						<h1>We do <br /> epic shit.</h1>
 					</div>
 				</div>
 				<div>

@@ -65,28 +65,55 @@
 
 // background layer
 #m3 {
-	width: 60%;
-	right: -5%;
+	width: 62.5%;
+	right: -3.5%;
 	position: absolute;
+	// @include animation( sway 10s 0.1s infinite alternate cubic-bezier(.17,.67,.56,.2) );
 }
 
 #m3-layer {
 	top: 10% !important;
 }
 
+#mountain-goat {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	max-width: 100px;
+}
+
+#elk {
+	position: absolute;
+	bottom: 25%;
+	right: 12.5%;
+	max-width: 80px;
+}
 
 // title
 #messaging {
 	position: absolute;
-    top: 30%;
+    top: 32.5%;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 700px;
     max-width: 100%;
     color: #f3eeeb;
-    font-size: 18px;
     text-align: center;
-    text-transform: uppercase;
+    font-family: 'Libre Baskerville', valkyrie-text, serif;
+    h1 {
+    	@include font-size(48px);
+    }
 }
 
+
+// animations
+
+@include keyframes( sway ){
+	0% { 
+		@include transform( translate3d(2.5%, 0, 0) rotateZ(3deg) );
+	}
+	100% {
+		@include transform( translate3d(-2.5%, 0, 0) rotateZ(-3deg) );
+	}
+}
