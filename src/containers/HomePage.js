@@ -36,18 +36,19 @@ class HomePage extends Component {
 							<li className="layer" data-depth="0.10">
 								<div id="main-bg"></div>
 							</li>
-							<li className="layer" datadepth="0.20" id="m3-layer">
-								<img src={m3} className="mountain-range" id="m3" />
-							</li>
-							<li className="layer" data-depth="0.30">
-								<img src={m2} className="mountain-range" id="m2" />
-							</li>
-							<li className="layer" data-depth="0.40">
-								<img src={goat} alt="mountain goat" id="mountain-goat" />
-							</li>
-							<li className="layer" data-depth="0.50">
+							<li className="layer" data-depth="0.20">
 								<img src={elk} alt="elk" id="elk" />
 							</li>
+							<li className="layer" datadepth="0.30" id="m3-layer">
+								<img src={m3} className="mountain-range" id="m3" />
+							</li>
+							<li className="layer" data-depth="0.40">
+								<img src={m2} className="mountain-range" id="m2" />
+							</li>
+							<li className="layer" data-depth="0.50">
+								<img src={goat} alt="mountain goat" id="mountain-goat" />
+							</li>
+							
 							<li className="layer" data-depth="0.60">
 								<img src={m1} className="mountain-range" id="m1" />
 							</li>
@@ -60,6 +61,7 @@ class HomePage extends Component {
 				<div>
 					This the new shit.
 				</div>
+
 			</div>
 		)
 	}

@@ -1212,13 +1212,13 @@ a.about-name:hover {
 
 #mountain-goat {
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 5%;
   max-width: 100px; }
 
 #elk {
   position: absolute;
-  bottom: 25%;
+  top: 27.5%;
   right: 12.5%;
   max-width: 80px; }
 
