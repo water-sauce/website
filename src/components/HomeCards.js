@@ -14,7 +14,7 @@ function HomeCards(props) {
         </Col>
     ));
 
-    return <Grid className="cards-home"><h4>Our Services</h4>{services}</Grid>;
+    return <Grid className="cards-home"><h4>Our Design &amp; Marketing Services</h4>{services}</Grid>;
 }
 
 export default HomeCards;

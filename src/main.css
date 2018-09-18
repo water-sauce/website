@@ -669,7 +669,9 @@ title-block {
   margin: 6rem auto; }
   .cards-home h4 {
     text-align: center;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25px; }
 
 .cards-wrapper {
   margin: 2rem 0;
