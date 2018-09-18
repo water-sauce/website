@@ -1,11 +1,63 @@
 import React, { ReactDOM, Component, Fragment } from "react";
 import Parallax from 'parallax-js';
+import HomeCards from "../components/HomeCards.js";
 
-import m1 from "../images/backgrounds/m1b.png";
-import m2 from "../images/backgrounds/m2b.png";
-import m3 from "../images/backgrounds/m3b.png";
+import m1 from "../images/backgrounds/m1.png";
+import m2 from "../images/backgrounds/m2.png";
+import m3 from "../images/backgrounds/m3.png";
 import goat from "../images/backgrounds/mountain-goat.png";
 import elk from "../images/backgrounds/elk.png";
+
+const service_types = [
+    {
+        title: "Web Design",
+        description: (
+            <Fragment></Fragment>
+        ),
+        src: require("../images/banner/butterfly-2.png"),
+        link: "/web-design"
+    },
+    {
+        title: "SEO",
+        description: (
+            <Fragment></Fragment>
+        ),
+        src: require("../images/banner/parrot-6.png"),
+        link: "/seo"
+    },
+    {
+        title: "Branding",
+        description: (
+            <Fragment></Fragment>
+        ),
+        src: require("../images/banner/lion.png"),
+        link: "/branding"
+    },
+    {
+        title: "Fundraising Materials",
+        description: (
+            <Fragment></Fragment>
+        ),
+        src: require("../images/banner/shark-2.png"),
+        link: "/fundraising-materials"
+    },
+    {
+        title: "Email Campaigns",
+        description: (
+            <Fragment></Fragment>
+        ),
+        src: require("../images/banner/snail-4.png"),
+        link: "/email-campaigns"
+    },
+    {
+        title: "UX Design",
+        description: (
+            <Fragment></Fragment>
+        ),
+        src: require("../images/banner/face-2.png"),
+        link: "/ux-design"
+    },
+];
 
 
 class HomePage extends Component {
@@ -36,11 +88,11 @@ class HomePage extends Component {
 							<li className="layer" data-depth="0.10">
 								<div id="main-bg"></div>
 							</li>
-							<li className="layer" data-depth="0.20">
-								<img src={elk} alt="elk" id="elk" />
-							</li>
-							<li className="layer" datadepth="0.30" id="m3-layer">
+							<li className="layer" datadepth="0.20" id="m3-layer">
 								<img src={m3} className="mountain-range" id="m3" />
+							</li>
+							<li className="layer" data-depth="0.30">
+								<img src={elk} alt="elk" id="elk" />
 							</li>
 							<li className="layer" data-depth="0.40">
 								<img src={m2} className="mountain-range" id="m2" />
@@ -55,12 +107,10 @@ class HomePage extends Component {
 						</ul>
 					</div>
 					<div id="messaging">
-						<h1>We do <br /> epic shit.</h1>
+						<h1>We create<br /> epic shit.</h1>
 					</div>
 				</div>
-				<div>
-					This the new shit.
-				</div>
+				<HomeCards services={service_types} />
 
 			</div>
 		)

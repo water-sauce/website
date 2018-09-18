@@ -6,8 +6,7 @@ import InfoBanner from "../components/InfoBanner";
 
 
 const title = "Web Design";
-const description =
-    "Water Sauce helps companies with Web Design";
+const description = "Water Sauce helps companies with Web Design";
 
 const product_info = [
     {
