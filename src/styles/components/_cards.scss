@@ -1,9 +1,30 @@
 .cards-home {
 	margin: 6rem auto;
+	h4 {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
 }
 
 .cards-wrapper {
 	margin: 2rem 0;
+	@include transition(0.2s ease-in-out);
+	&:hover {
+		@include transform( scale(1.1) );
+		.home-card {
+			@include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.25));
+		}
+		/* img {
+			@include transform( scale(1.25) );
+		} */
+	}
+	a {
+		color: $white;
+		font-weight: 200;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .home-card-links {

@@ -75,6 +75,14 @@
 	}
 }
 
+.white {
+	color: $white;
+	&:hover {
+		color: $white;
+		
+	}
+}
+
 .bg-light-grey {
 	background: $main-bg;
 }

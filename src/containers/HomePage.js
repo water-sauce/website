@@ -1,4 +1,4 @@
-import React, { ReactDOM, Component, Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import Parallax from 'parallax-js';
 import HomeCards from "../components/HomeCards.js";
 
@@ -83,26 +83,26 @@ class HomePage extends Component {
 							data-friction-x="0.1"
 							data-friction-y="0.1"
 							data-scalar-x="10"
-							data-scalar-y="15"
+							data-scalar-y="10"
 						>
 							<li className="layer" data-depth="0.10">
 								<div id="main-bg"></div>
 							</li>
 							<li className="layer" datadepth="0.20" id="m3-layer">
-								<img src={m3} className="mountain-range" id="m3" />
+								<img src={m3} className="mountain-range" id="m3" alt="Water Sauce Mountain Range background" />
 							</li>
 							<li className="layer" data-depth="0.30">
-								<img src={elk} alt="elk" id="elk" />
+								<img src={elk} id="elk" alt="Water Sauce Mountain Elk" />
 							</li>
 							<li className="layer" data-depth="0.40">
-								<img src={m2} className="mountain-range" id="m2" />
+								<img src={m2} className="mountain-range" id="m2" alt="Water Sauce Mountain Range middle layer" />
 							</li>
 							<li className="layer" data-depth="0.50">
-								<img src={goat} alt="mountain goat" id="mountain-goat" />
+								<img src={goat} id="mountain-goat" alt="Water Sauce Mountain Goat" />
 							</li>
 							
 							<li className="layer" data-depth="0.60">
-								<img src={m1} className="mountain-range" id="m1" />
+								<img src={m1} className="mountain-range" id="m1" alt="Water Sauce Mountain Range foreground" />
 							</li>
 						</ul>
 					</div>
@@ -111,7 +111,6 @@ class HomePage extends Component {
 					</div>
 				</div>
 				<HomeCards services={service_types} />
-
 			</div>
 		)
 	}
