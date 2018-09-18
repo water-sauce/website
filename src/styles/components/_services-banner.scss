@@ -1,8 +1,4 @@
 .banner-service {
-	// background: $lightest-grey;
-	// background: 
-	// 	repeating-linear-gradient( 45deg, transparent, transparent 5px, $lightest-grey 5px, $lightest-grey 10px ),;
-
 	background: 
 	   linear-gradient(135deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
 	   linear-gradient(225deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
@@ -12,6 +8,19 @@
 	background-color: $white;
 	padding: 100px 0 90px;
 
+	&-branding {
+		background: url("images/banner-backgrounds/branding-bg.png");
+		background-repeat: repeat;
+		background-size: 254px;
+		background-attachment: fixed !important;
+	}
+
+	&-email-campaigns {
+		background: url("images/banner-backgrounds/email-campaign-bg.png");
+		background-repeat: repeat;
+		background-size: 254px;
+		background-attachment: fixed !important;
+	}
 	
 	.topic {
 		position: absolute;
@@ -34,15 +43,11 @@
 
 	.button {
 		@include box-shadow( 0px, 2px, 5px, rgba(0,0,0,0.5));
-		// &:hover {
-		// 	@include box-shadow( 0px, 2px, 5px, rgwba(0,0,0,0.5));
-		// }
 		@media only screen and (max-width: $mq-ipad) {
 			max-width: 350px;
 			margin: 0 auto;
 			width: 100%;
 			display: block;
-
 		}
 	}
 	
@@ -57,7 +62,6 @@
 			text-align: center;
 			letter-spacing: 0.25px;
 			@include font-size(36px);
-			// line-height: 1.4rem;
 		}
 	}
 
@@ -78,7 +82,7 @@
 		position: relative;
 		width: 1000px;
 		color: $white;
-		// @include box-shadow( 0px, 0px, 10px, rgba(71,71,71,0.5), true);
+		// @include box-shadow( 0px, 2px, 5px, rgba(0,0,0,0.25), true);
 
 		@media only screen and (max-width: $mq-large) {
 			width: 800px;
@@ -104,8 +108,6 @@
 		#contact-butterfly {
 			height: 425px;
 			right: 20px;
-			// -webkit-transform: scaleX(-1);
-			// transform: scaleX(-1);
 			@media only screen and (max-width: $mq-ipad) {
 				height: 350px;
 			}
@@ -164,8 +166,6 @@
 			height: 350px;
 			right: -65px;
 			top: -35px;
-			// -webkit-transform: scaleX(-1);
-			// transform: scaleX(-1);
 			@media only screen and (max-width: $mq-ipad) {
 				height: 310px;
 				left: 0;
@@ -186,9 +186,6 @@
 		}
 		#contact-snail {
 			height: 420px;
-			// -webkit-transform: scaleX(-1);
-			// transform: scaleX(-1);
-			// transform: rotate(-5deg);
 			right: -40px;
 			bottom: -20px;
 			@media only screen and (max-width: $mq-ipad) {
@@ -211,8 +208,6 @@
 			height: 425px;
 			@media only screen and (max-width: $mq-ipad) {
 				height: 325px;
-				// left: 0;
-				// top: 0;
 			}
 		}
 		.topic-left {
@@ -222,5 +217,4 @@
 			right: -90px;
 		}
 	}
-
 }

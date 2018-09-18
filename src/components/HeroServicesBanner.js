@@ -7,7 +7,7 @@ import ContactModal from "../components/ContactModal";
 class HeroServicesBanner extends Component {
     render(props) {
         return (
-            <div className={this.props.cta_banner + " banner-service"}>
+            <div className={this.props.cta_banner + " banner-service"} key="example">
                 <Grid className="position-relative">
                     <p className="topic topic-left">{this.props.topic}</p>
                     <p className="topic topic-right">{this.props.topic}</p>

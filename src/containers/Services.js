@@ -2,8 +2,8 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
-// import HeroBanner from "../components/HeroBanner";
 import HeroServicesBanner from "../components/HeroServicesBanner";
+// import { CSSTransitionGroup } from 'react-transition-group';
 
 // pages
 import SEOPage from "./SEOPage";
