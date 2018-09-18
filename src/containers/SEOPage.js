@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
-
+import parrot from "../images/icons/simple-parrot.png";
 
 const title = "SEO optimization & SEO auditing as a service";
 const description =
@@ -36,7 +35,11 @@ class SEOPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <SubHeroServicesBanner paragraph="Not every SEO strategy is the same. Each company needs a catered, detailed game plan to help them rank high for certain keywords. When Water Sauce audits a website, the audit is strategic to your inbound marketing strategy. Having a solid SEO game plan helps sync all your goals." />
+                <SubHeroServicesBanner 
+                    icon={parrot}
+                    alt="SEO icon as a parrot"
+                    paragraph="Not every SEO strategy is the same. Each company needs a catered, detailed game plan to help them rank high for certain keywords. When Water Sauce audits a website, the audit is strategic to your inbound marketing strategy. Having a solid SEO game plan helps sync all your goals." 
+                />
 
                 <InfoBanner product_banners={product_info} />
                 

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
+import head from "../images/icons/simple-head.png";
 
 const title = "UX Design";
-const description =
-    "Water Sauce helps companies with Web Design";
+const description = "Water Sauce helps companies with UX Design";
 
 const product_info = [
     {
@@ -32,7 +32,11 @@ class UXDesignPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <SubHeroServicesBanner paragraph="UX is just that - an experience. Never underestimate the feeling a good experience can impact branding. The most important thing to us when it comes to UX is the consistent reminder that “users” and “customers” are real human beings with real emotions and needs. Good UX comes from market research, learning about your customer base, and figuring out how their online experience on your website can not only match, but exceed their expectations." />
+                <SubHeroServicesBanner 
+                    icon={head}
+                    alt="UX design icon as a human head"
+                    paragraph="UX is just that - an experience. Never underestimate the feeling a good experience can impact branding. The most important thing to us when it comes to UX is the consistent reminder that “users” and “customers” are real human beings with real emotions and needs. Good UX comes from market research, learning about your customer base, and figuring out how their online experience on your website can not only match, but exceed their expectations."
+                />
 
                 <InfoBanner product_banners={product_info} />
             </div>

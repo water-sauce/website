@@ -1,13 +1,12 @@
 import React, { Component, Fragment } from "react";
-// import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
-
+import snail from "../images/icons/simple-snail.png";
 
 const title = "Email Campaign Management";
-const description =
-    "Water Sauce helps companies with email campaigns";
+const description = "Water Sauce helps companies with email campaigns";
 
 const product_info = [
     {
@@ -43,7 +42,11 @@ class EmailCampaignsPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <SubHeroServicesBanner paragraph="Suppose you have a new product and a list of existing clients, leads, etc. How do you communicate this to them? You could send a mass email, but in the United States, the average clickthrough rate for these types of strategies is a measly 3.1%. How do you beat these odds? Through strategic audience segmentation, content development, campaign execution, and thoughtful campaign evaluation." />
+                <SubHeroServicesBanner
+                    icon={snail}
+                    alt="email campaign icon as a snail"
+                    paragraph="Suppose you have a new product and a list of existing clients, leads, etc. How do you communicate this to them? You could send a mass email, but in the United States, the average clickthrough rate for these types of strategies is a measly 3.1%. How do you beat these odds? Through strategic audience segmentation, content development, campaign execution, and thoughtful campaign evaluation." 
+                />
 
                 <InfoBanner product_banners={product_info} />
             </div>

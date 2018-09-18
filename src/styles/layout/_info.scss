@@ -10,7 +10,7 @@
     margin-left: 18rem;
     margin-right: 2rem;
     @media only screen and (max-width: $mq-ipad) {
-        margin: 0 auto;
+        margin: 0 auto 2rem;
     }
 
     p {
@@ -48,6 +48,6 @@ title-block {
         text-align: left;
         position: relative;
         width: 100%;
-        padding: 1rem;
+        padding: 1rem 0.5rem;
     }
 }

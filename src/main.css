@@ -561,7 +561,7 @@ footer {
   margin-right: 2rem; }
   @media only screen and (max-width: 48em) {
     .info-grid {
-      margin: 0 auto; } }
+      margin: 0 auto 2rem; } }
   .info-grid p {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -597,7 +597,7 @@ title-block {
       text-align: left;
       position: relative;
       width: 100%;
-      padding: 1rem; } }
+      padding: 1rem 0.5rem; } }
 
 .button {
   padding: 11px 28px 9px;
@@ -866,7 +866,17 @@ title-block {
     background-size: 254px;
     background-attachment: fixed !important; }
   .banner-service-email-campaigns {
-    background: url("images/banner-backgrounds/email-campaign-bg.png");
+    background: url("images/banner-backgrounds/email-campaigns-bg.png");
+    background-repeat: repeat;
+    background-size: 254px;
+    background-attachment: fixed !important; }
+  .banner-service-fundraising {
+    background: url("images/banner-backgrounds/fundraising-materials-bg.png");
+    background-repeat: repeat;
+    background-size: 254px;
+    background-attachment: fixed !important; }
+  .banner-service-web-design {
+    background: url("images/banner-backgrounds/web-design-bg.png");
     background-repeat: repeat;
     background-size: 254px;
     background-attachment: fixed !important; }
@@ -892,7 +902,6 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service .button {
         max-width: 350px;
-        margin: 0 auto;
         width: 100%;
         display: block; } }
   .banner-service h4 {
@@ -905,7 +914,6 @@ title-block {
     -webkit-font-smoothing: antialiased; }
     @media only screen and (max-width: 48em) {
       .banner-service h4 {
-        text-align: center;
         letter-spacing: 0.25px;
         font-size: 36px;
         font-size: 2.25rem; } }
@@ -1014,8 +1022,11 @@ title-block {
 
 .sub-hero-services-banner {
   background: #262627;
-  padding: 6rem 0;
+  padding: 6rem 0.75rem;
   text-align: center; }
+  .sub-hero-services-banner img {
+    width: 40px;
+    margin-bottom: 1.25rem; }
   .sub-hero-services-banner p {
     color: #FFFFFF;
     max-width: 750px;

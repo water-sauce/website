@@ -1,7 +1,11 @@
 .sub-hero-services-banner {
 	background: $grey;
-	padding: 6rem 0;
+	padding: 6rem 0.75rem;
 	text-align: center;
+	img {
+		width: 40px;
+		margin-bottom: 1.25rem;
+	}
 	p {
 		color: $white;
 		max-width: 750px;

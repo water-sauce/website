@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
-
+import butterfly from "../images/icons/simple-butterfly.png";
 
 const title = "Web Design";
 const description = "Water Sauce helps companies with Web Design";
@@ -32,8 +31,11 @@ class WebDesignPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <SubHeroServicesBanner paragraph="What’s a website’s story that needs to be told? Is a website accurately portraying the voice of its product? We understand the pain points of updating a website and walk our clients through every step of the process. In our years in the tech industry, we’ve worked with e-commerce websites, service industries, startups, mom-and-pop shops, and many others. Boost your company profile with a gorgeous interface!" />
-                
+                <SubHeroServicesBanner
+                    icon={butterfly}
+                    alt="web design icon as a butterfly"
+                    paragraph="What’s a website’s story that needs to be told? Is a website accurately portraying the voice of its product? We understand the pain points of updating a website and walk our clients through every step of the process. In our years in the tech industry, we’ve worked with e-commerce websites, service industries, startups, mom-and-pop shops, and many others. Boost your company profile with a gorgeous interface!" 
+                />
 
                 <InfoBanner product_banners={product_info} />
             </div>

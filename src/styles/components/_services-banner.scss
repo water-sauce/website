@@ -14,9 +14,20 @@
 		background-size: 254px;
 		background-attachment: fixed !important;
 	}
-
 	&-email-campaigns {
-		background: url("images/banner-backgrounds/email-campaign-bg.png");
+		background: url("images/banner-backgrounds/email-campaigns-bg.png");
+		background-repeat: repeat;
+		background-size: 254px;
+		background-attachment: fixed !important;
+	}
+	&-fundraising {
+		background: url("images/banner-backgrounds/fundraising-materials-bg.png");
+		background-repeat: repeat;
+		background-size: 254px;
+		background-attachment: fixed !important;
+	}
+	&-web-design {
+		background: url("images/banner-backgrounds/web-design-bg.png");
 		background-repeat: repeat;
 		background-size: 254px;
 		background-attachment: fixed !important;
@@ -45,7 +56,7 @@
 		@include box-shadow( 0px, 2px, 5px, rgba(0,0,0,0.5));
 		@media only screen and (max-width: $mq-ipad) {
 			max-width: 350px;
-			margin: 0 auto;
+			// margin: 0 auto;
 			width: 100%;
 			display: block;
 		}
@@ -59,7 +70,7 @@
 		font-family: 'Libre Baskerville', valkyrie-text, serif;
 		-webkit-font-smoothing: antialiased;
 		@media only screen and (max-width: $mq-ipad) {
-			text-align: center;
+			// text-align: center;
 			letter-spacing: 0.25px;
 			@include font-size(36px);
 		}
@@ -75,6 +86,9 @@
 		p {
 			max-width: 450px;
 			margin-bottom: 24px;
+			@media only screen and (max-width: $mq-ipad) {
+				// text-align: center;
+			}
 		}
 	}
 
