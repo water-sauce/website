@@ -404,9 +404,10 @@ html, body {
   border: none; }
   .navbar .logo {
     display: inline-block;
-    height: 30px;
+    height: 40px;
+    margin-left: 15px;
     margin-right: 15px;
-    margin-top: -5px; }
+    margin-top: -7.5px; }
   .navbar a {
     color: #FFFFFF !important;
     display: block; }
@@ -585,6 +586,7 @@ title-block {
   text-align: right;
   list-style-type: none;
   clear: both;
+  margin-top: 0.2rem;
   margin-bottom: 1rem;
   font-feature-settings: 'onum' 0;
   text-transform: uppercase;
@@ -879,6 +881,16 @@ title-block {
     background-attachment: fixed !important; }
   .banner-service-web-design {
     background: url("images/banner-backgrounds/web-design-bg.png");
+    background-repeat: repeat;
+    background-size: 254px;
+    background-attachment: fixed !important; }
+  .banner-service-ux-design {
+    background: url("images/banner-backgrounds/ux-design-bg.png");
+    background-repeat: repeat;
+    background-size: 254px;
+    background-attachment: fixed !important; }
+  .banner-service-seo {
+    background: url("images/banner-backgrounds/seo-bg.png");
     background-repeat: repeat;
     background-size: 254px;
     background-attachment: fixed !important; }
@@ -1246,41 +1258,64 @@ a.about-name:hover {
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 130vh !important; }
+  @media only screen and (max-width: 48em) {
+    #main-bg {
+      height: 120vh !important; } }
 
 .mountain-range {
   top: 5%;
   position: absolute; }
+  @media only screen and (max-width: 48em) {
+    .mountain-range {
+      top: 30%; } }
 
 #m1 {
-  left: -4.5%;
+  left: -6.5%;
   right: -2.5%;
   top: 10%;
   width: 115%; }
+  @media only screen and (max-width: 48em) {
+    #m1 {
+      top: 32.5%;
+      width: 120%; } }
 
 #m2 {
   width: 110%;
   left: -3.5%;
-  right: -2.5%; }
+  right: -2.5%;
+  top: 2.5%; }
+  @media only screen and (max-width: 48em) {
+    #m2 {
+      width: 115%;
+      top: 26.5%;
+      left: -5%; } }
+  @media only screen and (max-width: 25em) {
+    #m2 {
+      top: 28.5%; } }
 
 #m3 {
   width: 62.5%;
   right: -3.5%;
   position: absolute; }
+  @media only screen and (max-width: 48em) {
+    #m3 {
+      top: 22.5%;
+      width: 65%; } }
 
 #m3-layer {
   top: 10% !important; }
+  @media only screen and (max-width: 48em) {
+    #m3-layer {
+      top: 25%; } }
 
-#mountain-goat {
+#eagle {
   position: absolute;
-  top: 18%;
-  left: 5%;
-  max-width: 100px; }
-
-#elk {
-  position: absolute;
-  top: 50.5%;
-  right: 12.5%;
-  max-width: 60px; }
+  top: 10.5%;
+  left: 37.5%;
+  max-width: 45px; }
+  @media only screen and (max-width: 48em) {
+    #eagle {
+      max-width: 30px; } }
 
 #messaging {
   position: absolute;
@@ -1294,8 +1329,8 @@ a.about-name:hover {
   text-align: center;
   font-family: 'Libre Baskerville', valkyrie-text, serif; }
   #messaging h1 {
-    font-size: 48px;
-    font-size: 3rem; }
+    font-size: 54px;
+    font-size: 3.375rem; }
 
 @-webkit-keyframes sway {
   0% {
@@ -1352,3 +1387,9 @@ a.about-name:hover {
     -ms-transform: translate3d(-2.5%, 0, 0) rotateZ(-3deg);
     -webkit-transform: translate3d(-2.5%, 0, 0) rotateZ(-3deg);
     transform: translate3d(-2.5%, 0, 0) rotateZ(-3deg); } }
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 10.5%; }
+  50% {
+    top: 13.5%; } }

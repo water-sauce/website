@@ -2,11 +2,11 @@ import React, { Component, Fragment } from "react";
 import Parallax from 'parallax-js';
 import HomeCards from "../components/HomeCards.js";
 
-import m1 from "../images/backgrounds/m1.png";
-import m2 from "../images/backgrounds/m2.png";
-import m3 from "../images/backgrounds/m3.png";
-import goat from "../images/backgrounds/mountain-goat.png";
-import elk from "../images/backgrounds/elk.png";
+import m1 from "../images/backgrounds/m1d.png";
+import m2 from "../images/backgrounds/m2d.png";
+import m3 from "../images/backgrounds/m3c.png";
+import eagle from "../images/backgrounds/eagle2.png";
+// import elk from "../images/backgrounds/elk.png";
 
 const service_types = [
     {
@@ -88,26 +88,22 @@ class HomePage extends Component {
 							<li className="layer" data-depth="0.10">
 								<div id="main-bg"></div>
 							</li>
-							<li className="layer" datadepth="0.20" id="m3-layer">
-								<img src={m3} className="mountain-range" id="m3" alt="Water Sauce Mountain Range background" />
+							<li className="layer" data-depth="0.20">
+								<img src={eagle} id="eagle" alt="Water Sauce Eagle" />
 							</li>
-							<li className="layer" data-depth="0.30">
-								<img src={elk} id="elk" alt="Water Sauce Mountain Elk" />
+							<li className="layer" datadepth="0.30" id="m3-layer">
+								<img src={m3} className="mountain-range" id="m3" alt="Water Sauce Mountain Range background" />
 							</li>
 							<li className="layer" data-depth="0.40">
 								<img src={m2} className="mountain-range" id="m2" alt="Water Sauce Mountain Range middle layer" />
 							</li>
-							<li className="layer" data-depth="0.50">
-								<img src={goat} id="mountain-goat" alt="Water Sauce Mountain Goat" />
-							</li>
-							
 							<li className="layer" data-depth="0.60">
 								<img src={m1} className="mountain-range" id="m1" alt="Water Sauce Mountain Range foreground" />
 							</li>
 						</ul>
 					</div>
 					<div id="messaging">
-						<h1>We create<br /> epic shit.</h1>
+						<h1>We create<br /><b>epicness</b></h1>
 					</div>
 				</div>
 				<HomeCards services={service_types} />
