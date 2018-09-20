@@ -18,6 +18,10 @@
 	color: $white;
 }
 
+.inline-block {
+	display: inline-block !important;
+}
+
 .dropdown:hover .dropdown-menu {
 	display: block;
 }

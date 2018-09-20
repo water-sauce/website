@@ -2,9 +2,9 @@ import React, { Component, Fragment } from "react";
 import Parallax from 'parallax-js';
 import HomeCards from "../components/HomeCards.js";
 
-import m1 from "../images/backgrounds/m1d.png";
+import m1 from "../images/backgrounds/m1e.png";
 import m2 from "../images/backgrounds/m2d.png";
-import m3 from "../images/backgrounds/m3c.png";
+import m3 from "../images/backgrounds/m3d.png";
 import eagle from "../images/backgrounds/eagle2.png";
 // import elk from "../images/backgrounds/elk.png";
 

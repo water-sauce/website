@@ -49,6 +49,7 @@ class Header extends Component {
                                 </NavDropdown>
                             );
                         })}
+                        <a className="inline-block contact-us-header" href="mailto:sales@watersauce.com">Contact Us</a>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

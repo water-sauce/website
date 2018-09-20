@@ -9,11 +9,13 @@ const description = "Water Sauce helps companies with Web Design";
 
 const product_info = [
     {
+        color: "yellow",
         title_block: "The Blueprints - Information Architecture",
         description:
             "Information Architecture is all about the structuring of the content on a page- what to show, what’s most important, what needs to be ‘above the fold’, etc. Good information architecture helps a user find what they’re looking for with ease. From a site map perspective, it all starts with a home page. What will a new user see when they land on the page?... Where are they intended to navigate to?...  And so forth. Like a house’s blueprints, it is very important to decide where to put the front door, kitchen, and living room before proceeding to the next phase."
     },
     {
+        color: "yellow",
         title_block: "The Construction - Web Development",
         description:
             "Web Development is a process that requires front-end web development, back-end web development, and even an SEO strategy. At a minimum, any website will need HTML and CSS (HTML5 and CSS3 are the latest versions of both). HTML is the house’s framing, while CSS is the roofing, windows, and doors. After this is complete, you’ll have a functioning house… but with no style or furnishings. That leads us to the final step."

@@ -81,6 +81,9 @@ footer ul li a, .a-hover {
 .color-white {
   color: #FFFFFF; }
 
+.inline-block {
+  display: inline-block !important; }
+
 .dropdown:hover .dropdown-menu {
   display: block; }
 
@@ -431,6 +434,14 @@ html, body {
         font-weight: 400;
         letter-spacing: 0.5px;
         text-decoration: none; }
+  .navbar .contact-us-header {
+    padding: 11px 8px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-decoration: none; }
   .navbar .dropdown-menu {
     padding: 12px 0;
     background: #262627; }
@@ -575,6 +586,13 @@ footer {
         position: relative;
         width: 100%;
         padding: 1rem; } }
+
+.accent {
+  display: block;
+  width: 50px;
+  height: 2px; }
+  .accent-yellow {
+    background: #FFE8A0; }
 
 title-block {
   display: block;
@@ -1257,7 +1275,8 @@ a.about-name:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
-  height: 130vh !important; }
+  height: 130vh !important;
+  max-height: 1000px; }
   @media only screen and (max-width: 48em) {
     #main-bg {
       height: 120vh !important; } }

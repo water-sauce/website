@@ -7,6 +7,7 @@ function InfoBanner(props) {
             className="info-grid"
              key={index}
              >
+            <div className={"accent accent-" + info.color}></div>
             <title-block id={index + 1}>
                 {info.title_block}
             </title-block>

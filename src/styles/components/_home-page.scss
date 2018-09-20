@@ -28,6 +28,7 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     height: 130vh !important;
+    max-height: 1000px;
     @media only screen and (max-width: $mq-ipad) {
     	height: 120vh !important;
     }

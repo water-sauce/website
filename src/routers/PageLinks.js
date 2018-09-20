@@ -45,13 +45,6 @@ const PageLinks = {
             link: "/our-team"
         },
     ],
-    Contact: [
-        {
-            type: "link",
-            name: "Contact Us",
-            link: "/contact"
-        }
-    ]
 };
 
 export default PageLinks;

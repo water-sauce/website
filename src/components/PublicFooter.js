@@ -13,7 +13,7 @@ const Footer = props => (
             <Row>
                 {Object.keys(PageLinks).map(section_name => {
                     return (
-                        <Col xs={6} sm={2} key={section_name}>
+                        <Col xs={6} sm={3} key={section_name}>
                             <ul>
                                 <li>{section_name}</li>
                                 {PageLinks[section_name].map(ref => (
@@ -37,13 +37,13 @@ const Footer = props => (
                         </Col>
                     );
                 })}
-                <Col xs={6} sm={2}>
+                <Col xs={6} sm={3}>
                     <ul>
                         <li>Contact Us</li>
                         <li>
                             Sales:{" "}
-                            <a href="mailto:calvin@watersauce.com?Subject=Hello%20Water%20Sauce">
-                                calvin@watersauce.com
+                            <a href="mailto:sales@watersauce.com?Subject=Hello%20Water%20Sauce">
+                                sales@watersauce.com
                             </a>
                         </li>
                     </ul>
