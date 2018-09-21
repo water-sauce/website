@@ -17,7 +17,7 @@ const product_info = [
     {
         title_block: "Financial Models",
         description:
-            "Not everyone is an accounting or financial expert, and when bootstrapping a startup you may not have someone on your team with this set of skills. When raising a round, questions like “What is your profit margin?”,  “What is your runway forecast for this round?”, and “What are your valuations expectations?” may seem like straightforward questions, but without adequate support you may be left out to dry. We’ve all seen these types of disasters on Shark Tank. Fortunately, our team of experts can aid in the development and presentation of these various metrics & models."
+            "When raising a round, questions like “What is your profit margin?”, “What is your runway forecast for this round?”, and “What are your valuations expectations?” may seem like straightforward questions, but without adequate support you may be left out to dry. We’ve all seen these types of disasters on Shark Tank. Fortunately, our team of experts can aid in the development and presentation of these various metrics & models."
     }
 ];
 
@@ -37,7 +37,7 @@ class FundraisingMaterialsPage extends Component {
                     alt="Fundraising Materials icon as a shark"
                     paragraph="The journey of fundraising can be many things; the three most noteworthy being difficult, stressful, and confusing. Things can get hectic in the juggling of networking events and meetings, but one thing that should not be neglected is your marketing materials. This is often the make-or-break factor in the fundraising process. Luckily, we’re here to help!" />
 
-                <InfoBanner product_banners={product_info} />
+                <InfoBanner product_banners={product_info} color="teal" />
             </div>
         );
     }

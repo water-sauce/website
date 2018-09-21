@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 
-class TeamPage extends Component {
+class WhoWeArePage extends Component {
     render() {
         return (
             <div className="under-banner-padding">
@@ -11,4 +11,4 @@ class TeamPage extends Component {
     }
 }
 
-export default TeamPage;
+export default WhoWeArePage;

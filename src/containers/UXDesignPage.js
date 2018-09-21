@@ -12,12 +12,12 @@ const product_info = [
     {
         title_block: "Leave a lasting impression",
         description:
-            "Your user interface, information architecture, and branding are all bigger parts of a whole. It’s important to note that changing UX involves a team effort to understanding your customers’ pain points and how best to guide them on your website or product."
+            "UX is any touchpoint or interaction a person has with a brand. How does a company make sure that interaction is positive? Great UX comes from market research, learning about the customer base, and figuring out how their product experience can not only match, but exceed their expectations."
     },
     {
         title_block: "UX is more than user stories",
         description:
-            "What is a user experience (UX)? It’s any touchpoint or interaction a person has with a brand. Take Apple, for example - everything from their website, to their ads, to their messaging, and most importantly their packaging and product is consistent in look and feel. Because of this, Apple products have the ability to make users feel empowered."
+            "The user interface (UI), information architecture, and branding are all bigger parts of a whole. It’s important to note that changing UX involves a team effort to understand your customers’ pain points and how to best guide them through your product or website. Formulating design to influence UX is solution we strive at."
     }
 ];
 
@@ -35,10 +35,10 @@ class UXDesignPage extends Component {
                 <SubHeroServicesBanner 
                     icon={head}
                     alt="UX design icon as a human head"
-                    paragraph="UX is just that - an experience. Never underestimate the feeling a good experience can impact branding. The most important thing to us when it comes to UX is the consistent reminder that “users” and “customers” are real human beings with real emotions and needs. Good UX comes from market research, learning about your customer base, and figuring out how their online experience on your website can not only match, but exceed their expectations."
+                    paragraph="UX, or user experience, is just that - an experience. Never underestimate the impact a good experience can have on your branding. Here at Water Sauce, we feel the most important thing when it comes to UX is the consistent reminder that “users” and “customers” are real human beings with real emotions and needs. Great UX comes from market research, learning about the customer base, and figuring out how their online experience can not only match, but exceed their expectations."
                 />
 
-                <InfoBanner product_banners={product_info} />
+                <InfoBanner product_banners={product_info} color="pink" />
             </div>
         );
     }

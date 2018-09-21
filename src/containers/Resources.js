@@ -5,6 +5,8 @@ import { Route, Switch } from "react-router-dom";
 import HeroBanner from "../components/HeroBanner";
 import ContactBanner from "../components/ContactBanner";
 
+import WhatIsSEOAuditingPage from "../containers/resources/WhatIsSEOAuditingPage"
+
 class Resources extends Component {
     render() {
         return (
@@ -13,36 +15,7 @@ class Resources extends Component {
                     <Route
                         exact
                         path="/what-is-seo-auditing"
-                        render={() => (
-                            <HeroBanner
-                                title="SEO Auditing"
-                                description=""
-                            />
-                        )}
-                    />
-                    <Route
-                        exact
-                        path="/what-is-web-design"
-                        render={() => (
-                            <HeroBanner
-                                title="Web Design"
-                                description=""
-                            />
-                        )}
-                    />
-                </Switch>
-                <Switch>
-                    <Route
-                        render={() => (
-                            <ContactBanner
-                                title="Ready for a free SEO Audit?"
-                                description=""
-                                cta="Contact Us"
-                                cta_type="contact_us"
-                                cta_contact_us_class="button-large button-pink"
-                                showPhoneNumber={true}
-                            />
-                        )}
+                        component={WhatIsSEOAuditingPage}
                     />
                 </Switch>
             </div>
@@ -58,3 +31,18 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Resources);
+
+
+// <Switch>
+//     <Route
+//         exact
+//         path="/what-is-seo-auditing"
+//         render={() => (
+//             <HeroBanner
+//                 title="SEO Auditing"
+//                 description=""
+//                 src=""
+//             />
+//         )}
+//     />
+// </Switch>

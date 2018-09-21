@@ -14,12 +14,12 @@ const product_info = [
     {
         title_block: "Strategic SEO Optimization",
         description:
-            "SEO Optimization is a whole examination of how the various parts of a website contribute to the overall SEO and discoverability strategy. This means (1) optimizing HTML for search engines with the proper markup language, (2) having images compressed, (3) writing meta titles correctly, and (4) a million other things."
+            "SEO Optimization requires an examination of how the various parts of a website contribute to the overall SEO and discoverability strategy. This means optimizing HTML for search engines with the proper markup language, having images compressed, writing meta titles correctly, and a million other things. No worries, there’s a science to it, and we’ve got the formula."
     },
     {
         title_block: "SEO Auditing",
         description:
-            "Your website’s overall SEO HTML structure needs help! Google is the ever-revolving algorithm that constantly changes. Water Sauce can help you figure out the best way to format your HTML and drive inbound leads. It’s more important than ever to have a web presence and a strong one at that."
+            "Your website’s overall SEO HTML structure needs help! Google is the ever-evolving algorithm that constantly changes, and it’s now more important than ever to have a web presence... and a strong one at that. With decades of combined experience in the startup world and an expansive network of marketeers and engineers, we have the resources and connections to make sure that your website’s SEO is ahead of the curve."
     }
 ];
 
@@ -38,10 +38,10 @@ class SEOPage extends Component {
                 <SubHeroServicesBanner 
                     icon={parrot}
                     alt="SEO icon as a parrot"
-                    paragraph="Not every SEO strategy is the same. Each company needs a catered, detailed game plan to help them rank high for certain keywords. When Water Sauce audits a website, the audit is strategic to your inbound marketing strategy. Having a solid SEO game plan helps sync all your goals." 
+                    paragraph="Not every SEO strategy is the same. Each company needs a catered, detailed game plan to help them rank high for certain keywords. Water Sauce can help you figure out the best way to format your HTML, plan content, and drive inbound leads. Having a solid SEO game plan helps sync all your goals." 
                 />
 
-                <InfoBanner product_banners={product_info} />
+                <InfoBanner product_banners={product_info} color="light-purple" />
                 
             </div>
         );

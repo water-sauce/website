@@ -48,9 +48,12 @@
 		position: absolute;
 		bottom: 0;
 		right: 15px;
-		max-width: 100%;
+		max-width: calc(100% - 30px);
 		width: 225px;
 		z-index: 0;
+		@media (max-width: $mq-med-bootstrap) {
+			bottom: 10px;
+		}
 	}
 
 	h2 {

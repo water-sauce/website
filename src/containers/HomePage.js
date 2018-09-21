@@ -1,12 +1,15 @@
 import React, { Component, Fragment } from "react";
 import Parallax from 'parallax-js';
+import { Helmet } from "react-helmet";
 import HomeCards from "../components/HomeCards.js";
 
 import m1 from "../images/backgrounds/m1e.png";
 import m2 from "../images/backgrounds/m2d.png";
 import m3 from "../images/backgrounds/m3d.png";
 import eagle from "../images/backgrounds/eagle2.png";
-// import elk from "../images/backgrounds/elk.png";
+
+const title = "Water Sauce is an average digital agency";
+const description = "Water Sauce helps companies do web stuff";
 
 const service_types = [
     {
@@ -72,6 +75,13 @@ class HomePage extends Component {
 	render() {
 		return (
 			<div>
+                <Helmet>
+                    <title>{title}</title>
+                    <link rel="canonical" href="http://mysite.com/example" />
+                    <meta name="twitter:title" content={title} />
+                    <meta name="twitter:description" content={description} />
+                </Helmet>
+
 				<div id="ultimate-wrapper" className="clearfix" >
 					<div id="home-wrapper">
 						<ul 

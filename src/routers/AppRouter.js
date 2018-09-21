@@ -56,7 +56,7 @@ const routes = [
         component: Resources,
     },
     {
-        path: "/our-team",
+        path: "/who-we-are",
         component: About,
     },
     {

@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
-import HeroBanner from "../components/HeroBanner";
+import LongHeroBanner from "../components/LongHeroBanner";
 import ContactBanner from "../components/ContactBanner";
 
-import TeamPage from "./TeamPage";
+import WhoWeArePage from "./WhoWeArePage";
 
 class About extends Component {
     render() {
@@ -14,36 +14,28 @@ class About extends Component {
                 <Switch>
                     <Route
                         exact
-                        path="/our-team"
+                        path="/who-we-are"
                         render={() => (
-                            <HeroBanner
+                            <LongHeroBanner
+                                banner_class="banner-service-who-we-are"
                                 class="hero-about"
                                 title="We are Water Sauce"
-                                description="At Water Sauce, we believe in bucking cliches."
+                                description={
+                                    <Fragment>
+                                        Headquartered in San Francisco, we are a team of bold, passionate, and idealistic thinkers who understand the ever changing environment of… have you fallen asleep yet? We don’t want to waste your time with meaningless fluff. And lets be real, we know what you’re thinking, “OK, it’s a full service design agency… but what does Water Sauce even mean?”<br/><br/>
+
+                                        At Water Sauce, we recognize the core economic philosophy that all products fall into two categories: needs & wants. Needs are things one has to do in order to survive while wants are what one desires to live more comfortably. If your product is bottled water, you are in the “need” business. If you make gourmet sauce, you are in the “want” business.<br/><br/>
+
+                                        We build brands that transcend these categories. Whether your product is a need or want, we want your end users to feel both. You need to stay hydrated to survive but also want that awesome brand of bottled water. You want to taste that delicious sauce but also need it- food has become too bland without it! Once your brand becomes a Water Sauce, you’re delivering something truly unforgettable to your customers.
+
+                                    </Fragment>
+                                }
                             />
                         )}
                     />
                 </Switch>
                 <Switch>
-                    <Route exact path="/our-team" component={TeamPage} />
-                </Switch>
-                <Switch>
-                    {["/our-team"].map(path => (
-                        <Route
-                            key={`cb_${path}`}
-                            exact
-                            path={path}
-                            render={() => (
-                                <ContactBanner
-                                    title="We want you here!"
-                                    description="You’ll find we’re a bunch of misfits who do awesome things together. Don’t miss out on all the fun."
-                                    cta="View All Open Positions"
-                                    ctaLink="https://angel.co/datanyze/jobs/"
-                                    showPhoneNumber={false}
-                                />
-                            )}
-                        />
-                    ))}
+                    <Route exact path="/who-we-are" component={WhoWeArePage} />
                 </Switch>
             </div>
         );

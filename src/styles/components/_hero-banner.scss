@@ -1,47 +1,26 @@
 .hero {
-	height: calc(55vh);
-	min-height: 400px;
-	text-align: center;
-	background: $grey;
-	margin-top: 76px;
-	h1, h4 {
-		color: $white;
-	}
-}
-
-
-.hero-left {
-	height: calc(55vh);
-	min-height: 400px;
+	padding: 3rem 0;
 	text-align: left;
-	margin-top: 100px;
-	background: $grey;
-}
-
-.hero-flex-left{
-	align-self: center;
-	justify-content: right;
-}
-
-.hero-text {
-	max-width: 550px;
-	color: $white;
-	margin: 0 1rem 0 auto;
-	h1 {
-		@include font-size(28px);
-		font-weight: 500;
+	h1, h4 {
+		margin-bottom: 0.5rem;
+		@include font-size(24px);
+		text-transform: uppercase;
+		font-weight: bold;
 		letter-spacing: 0.5px;
-		margin-bottom: 1.25rem;
 	}
-	h4 {
-		@include font-size(18px);
-		font-weight: 200;
+	p {
+		font-family: 'Libre Baskerville', valkyrie-text, serif;
+		padding-top: 0.75rem;
+		@include font-size(19px);
+		font-family: Georgia, valkyrie-text, serif;
+		line-height: 1.632;
+		font-feature-settings: 'onum' 1;
+		-webkit-font-smoothing: antialiased;
 	}
-}
-
-#seo-hero {
-	background-image: url("images/backgrounds/library.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: $white;
+	img {
+		width: 100%;
+		max-width: 300px;
+		margin: 2rem auto;
+		display: block;
+	}
 }

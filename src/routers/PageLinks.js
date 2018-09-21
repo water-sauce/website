@@ -41,8 +41,8 @@ const PageLinks = {
     About: [
         {
             type: "link",
-            name: "Team",
-            link: "/our-team"
+            name: "Who We Are",
+            link: "/who-we-are"
         },
     ],
 };

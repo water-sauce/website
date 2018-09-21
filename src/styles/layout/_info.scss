@@ -6,7 +6,7 @@
 }
 
 .info-grid {
-    margin: 5rem 0;
+    margin: 0 0 5rem;
     margin-left: 18rem;
     margin-right: 2rem;
     @media only screen and (max-width: $mq-ipad) {
@@ -14,8 +14,8 @@
     }
 
     p {
+        padding-top: 0.75rem;
         @include font-size(19px);
-        // font-family: 'Libre Baskerville', valkyrie-text, serif;
         font-family: Georgia, valkyrie-text, serif;
         line-height: 1.632;
         font-feature-settings: 'onum' 1;
@@ -28,12 +28,45 @@
     }
 }
 
+.info-grid-title {
+    margin-left: 18rem;
+    margin-right: 2rem;
+}
+
 .accent {
     display: block;
-    width: 50px;
-    height: 2px;
+    float: left;
+    position: absolute;
+    margin-left: 0;
+    left: 0.5rem;
+    width: calc(4.25rem * 3);
+    height: 3px;
+    &-true-blue {
+        background: $true-blue;
+    }
+    &-light-blue {
+        background: $light-blue;
+    }
+    &-teal {
+        background: $teal;
+    }    
+    &-purple {
+        background: $purple;
+    }
+    &-light-purple {
+        background: $light-purple;
+    }
+    &-red {
+        background: $red;
+    }
+    &-orange {
+        background: $orange;
+    }
+    &-pink {
+        background: $pink;
+    }
     &-yellow {
-        background: $yellow;
+        background: $deep-yellow;
     }
 }
 
@@ -47,13 +80,14 @@ title-block {
     text-align: right;
     list-style-type: none;
     clear: both;
-    margin-top: 0.2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-feature-settings: 'onum' 0;
     text-transform: uppercase;
     font-weight: 400;
     @include font-size(18px);
     letter-spacing: 0.4px;
+    // color: $dark-blue;
     @media only screen and (max-width: $mq-ipad) {
         text-align: left;
         position: relative;

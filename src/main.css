@@ -93,6 +93,9 @@ footer ul li a, .a-hover {
 .toggle:hover {
   cursor: pointer; }
 
+.light-grey-bg {
+  background-color: #F0F4EF; }
+
 .cursor-pointer {
   cursor: pointer; }
 
@@ -568,13 +571,14 @@ footer {
   position: relative; }
 
 .info-grid {
-  margin: 5rem 0;
+  margin: 0 0 5rem;
   margin-left: 18rem;
   margin-right: 2rem; }
   @media only screen and (max-width: 48em) {
     .info-grid {
       margin: 0 auto 2rem; } }
   .info-grid p {
+    padding-top: 0.75rem;
     font-size: 19px;
     font-size: 1.1875rem;
     font-family: Georgia, valkyrie-text, serif;
@@ -587,12 +591,36 @@ footer {
         width: 100%;
         padding: 1rem; } }
 
+.info-grid-title {
+  margin-left: 18rem;
+  margin-right: 2rem; }
+
 .accent {
   display: block;
-  width: 50px;
-  height: 2px; }
+  float: left;
+  position: absolute;
+  margin-left: 0;
+  left: 0.5rem;
+  width: calc(4.25rem * 3);
+  height: 3px; }
+  .accent-true-blue {
+    background: #696AFD; }
+  .accent-light-blue {
+    background: #D4EDF8; }
+  .accent-teal {
+    background: #93E2DD; }
+  .accent-purple {
+    background: #B271AE; }
+  .accent-light-purple {
+    background: #E3B5E0; }
+  .accent-red {
+    background: #B53131; }
+  .accent-orange {
+    background: #FFA762; }
+  .accent-pink {
+    background: #E57777; }
   .accent-yellow {
-    background: #FFE8A0; }
+    background: #fbca5c; }
 
 title-block {
   display: block;
@@ -604,7 +632,7 @@ title-block {
   text-align: right;
   list-style-type: none;
   clear: both;
-  margin-top: 0.2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-feature-settings: 'onum' 0;
   text-transform: uppercase;
@@ -737,9 +765,12 @@ title-block {
     position: absolute;
     bottom: 0;
     right: 15px;
-    max-width: 100%;
+    max-width: calc(100% - 30px);
     width: 225px;
     z-index: 0; }
+    @media (max-width: 62em) {
+      .home-card img {
+        bottom: 10px; } }
   .home-card h2 {
     position: relative;
     z-index: 2;
@@ -837,88 +868,59 @@ title-block {
       border-bottom: 3px solid #41C3E5; }
 
 .hero {
-  height: calc(55vh);
-  min-height: 400px;
-  text-align: center;
-  background: #262627;
-  margin-top: 76px; }
+  padding: 3rem 0;
+  text-align: left; }
   .hero h1, .hero h4 {
-    color: #FFFFFF; }
-
-.hero-left {
-  height: calc(55vh);
-  min-height: 400px;
-  text-align: left;
-  margin-top: 100px;
-  background: #262627; }
-
-.hero-flex-left {
-  align-self: center;
-  justify-content: right; }
-
-.hero-text {
-  max-width: 550px;
-  color: #FFFFFF;
-  margin: 0 1rem 0 auto; }
-  .hero-text h1 {
-    font-size: 28px;
-    font-size: 1.75rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    margin-bottom: 1.25rem; }
-  .hero-text h4 {
-    font-size: 18px;
-    font-size: 1.125rem;
-    font-weight: 200; }
-
-#seo-hero {
-  background-image: url("images/backgrounds/library.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: #FFFFFF; }
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px; }
+  .hero p {
+    font-family: 'Libre Baskerville', valkyrie-text, serif;
+    padding-top: 0.75rem;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    font-family: Georgia, valkyrie-text, serif;
+    line-height: 1.632;
+    font-feature-settings: 'onum' 1;
+    -webkit-font-smoothing: antialiased; }
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto;
+    display: block; }
 
 .banner-service {
   background: linear-gradient(135deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(225deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(315deg, #F0F4EF 25%, transparent 25%), linear-gradient(45deg, #F0F4EF 25%, transparent 25%);
   background-size: 25px 25px;
   background-color: #FFFFFF;
-  padding: 100px 0 90px; }
+  padding: 110px 0 100px;
+  background-repeat: repeat;
+  background-size: 254px;
+  background-attachment: fixed !important; }
   .banner-service-branding {
-    background: url("images/banner-backgrounds/branding-bg.png");
-    background-repeat: repeat;
-    background-size: 254px;
-    background-attachment: fixed !important; }
+    background: url("images/banner-backgrounds/branding-bg.png"); }
   .banner-service-email-campaigns {
-    background: url("images/banner-backgrounds/email-campaigns-bg.png");
-    background-repeat: repeat;
-    background-size: 254px;
-    background-attachment: fixed !important; }
+    background: url("images/banner-backgrounds/email-campaigns-bg.png"); }
   .banner-service-fundraising {
-    background: url("images/banner-backgrounds/fundraising-materials-bg.png");
-    background-repeat: repeat;
-    background-size: 254px;
-    background-attachment: fixed !important; }
+    background: url("images/banner-backgrounds/fundraising-materials-bg.png"); }
   .banner-service-web-design {
-    background: url("images/banner-backgrounds/web-design-bg.png");
-    background-repeat: repeat;
-    background-size: 254px;
-    background-attachment: fixed !important; }
+    background: url("images/banner-backgrounds/web-design-bg.png"); }
   .banner-service-ux-design {
-    background: url("images/banner-backgrounds/ux-design-bg.png");
-    background-repeat: repeat;
-    background-size: 254px;
-    background-attachment: fixed !important; }
+    background: url("images/banner-backgrounds/ux-design-bg.png"); }
   .banner-service-seo {
-    background: url("images/banner-backgrounds/seo-bg.png");
-    background-repeat: repeat;
-    background-size: 254px;
-    background-attachment: fixed !important; }
+    background: url("images/banner-backgrounds/seo-bg.png"); }
+  .banner-service-who-we-are {
+    background: url("images/banner-backgrounds/who-we-are-bg.png"); }
   .banner-service .topic {
     position: absolute;
     top: calc(50% - 15px);
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1.75px;
-    color: #333333;
+    color: #1B1C6A;
     font-weight: 400; }
     .banner-service .topic-left {
       transform: rotate(-90deg); }
@@ -1051,6 +1053,15 @@ title-block {
     left: -90px; }
   .banner-service-ux-design .topic-right {
     right: -90px; }
+  .banner-service .width-50 {
+    width: 50%;
+    background: #F0F4EF;
+    margin-left: 10%;
+    padding: 2rem; }
+    @media only screen and (max-width: 48em) {
+      .banner-service .width-50 {
+        margin: 0 20px;
+        width: calc( 100% - 40px); } }
 
 .sub-hero-services-banner {
   background: #262627;
@@ -1069,6 +1080,13 @@ title-block {
     letter-spacing: 1px;
     margin: 0 auto;
     display: block; }
+  .sub-hero-services-banner h2 {
+    color: #FFFFFF;
+    margin: 0 0 1rem;
+    font-weight: bold; }
+  .sub-hero-services-banner .button {
+    display: inline-flex;
+    margin-top: 30px; }
 
 .ReactModal__Overlay {
   z-index: 9999;

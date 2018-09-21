@@ -7,7 +7,7 @@ function InfoBanner(props) {
             className="info-grid"
              key={index}
              >
-            <div className={"accent accent-" + info.color}></div>
+            <div className={`accent accent-${info.color || props.color}`}></div>
             <title-block id={index + 1}>
                 {info.title_block}
             </title-block>
@@ -15,7 +15,10 @@ function InfoBanner(props) {
         </div>
     ));
 
-    return <div className="info-wrapper">{ProdLayout}</div>;
+    return <div className="info-wrapper">
+        {props.title ? <h3 className="info-grid-title">{props.title}</h3> : ""}
+        {ProdLayout}
+    </div>;
 }
 
 export default InfoBanner;
