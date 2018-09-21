@@ -6,6 +6,7 @@ import AboutHeroBanner from "../components/AboutHeroBanner";
 import ContactBanner from "../components/ContactBanner";
 
 import WhoWeArePage from "./WhoWeArePage";
+import ws_bottle from "../images/icons/ws-bottle.png";
 
 class About extends Component {
     render() {
@@ -17,9 +18,11 @@ class About extends Component {
                         path="/who-we-are"
                         render={() => (
                             <AboutHeroBanner
-                                banner_class="banner-who-we-are"
+                                banner_class="about-banner-who-we-are"
                                 class="hero-about"
                                 title="We are Water Sauce"
+                                src={ws_bottle}
+                                alt="Water Sauce Bottle"
                                 description={
                                     <Fragment>
                                         Headquartered in San Francisco, we are a team of bold, passionate, and idealistic thinkers who understand the ever changing environment of… have you fallen asleep yet? We don’t want to waste your time with meaningless fluff. And lets be real, we know what you’re thinking, “OK, it’s a full service design agency… but what does Water Sauce even mean?”<br/><br/>

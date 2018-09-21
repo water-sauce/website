@@ -601,9 +601,9 @@ footer {
       margin: 0 auto 4rem; } }
   .info-grid p {
     padding-top: 0.75rem;
-    font-size: 19px;
-    font-size: 1.1875rem;
-    font-family: Georgia, valkyrie-text, serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
     line-height: 1.632;
     font-feature-settings: 'onum' 1;
     -webkit-font-smoothing: antialiased; }
@@ -851,11 +851,10 @@ title-block {
     font-weight: bold;
     letter-spacing: 0.5px; }
   .hero p {
-    font-family: 'Libre Baskerville', valkyrie-text, serif;
+    font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
     padding-top: 0.75rem;
-    font-size: 19px;
-    font-size: 1.1875rem;
-    font-family: Georgia, valkyrie-text, serif;
+    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.632;
     font-feature-settings: 'onum' 1;
     -webkit-font-smoothing: antialiased; }
@@ -1160,7 +1159,7 @@ title-block {
     position: relative;
     z-index: 20; }
 
-.banner {
+.about-banner {
   background: linear-gradient(135deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(225deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(315deg, #F0F4EF 25%, transparent 25%), linear-gradient(45deg, #F0F4EF 25%, transparent 25%);
   background-size: 25px 25px;
   background-color: #FFFFFF;
@@ -1168,55 +1167,67 @@ title-block {
   background-size: 254px !important;
   background-attachment: fixed !important; }
   @media only screen and (max-width: 48em) {
-    .banner {
+    .about-banner {
       background-size: 127px !important; } }
-  .banner-who-we-are {
+  .about-banner-who-we-are {
     background: url("images/banner-backgrounds/who-we-are-bg.png"); }
-  .banner h4 {
-    font-size: 48px;
-    font-size: 3rem;
-    line-height: 1.25;
-    margin-bottom: 12px;
+  .about-banner .grid-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; }
+    @media only screen and (max-width: 48em) {
+      .about-banner .grid-container {
+        display: block; } }
+  .about-banner .content-wrapper {
+    width: 50%; }
+    @media only screen and (max-width: 48em) {
+      .about-banner .content-wrapper {
+        width: 100%; }
+        .about-banner .content-wrapper img {
+          max-height: 200px; } }
+  @media only screen and (min-width: 48em) {
+    .about-banner .content {
+      max-width: 585px;
+      float: right;
+      padding: 2rem 1rem; } }
+  .about-banner h1 {
+    font-feature-settings: 'onum' 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
-    font-family: 'Libre Baskerville', valkyrie-text, serif;
+    font-weight: bold; }
+  .about-banner p {
+    font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
+    padding-top: 0.75rem;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.632;
+    font-feature-settings: 'onum' 1;
     -webkit-font-smoothing: antialiased; }
+  .about-banner .content-wrapper-1 {
+    background: #6769ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    color: #FFFFFF;
+    padding: 1rem; }
     @media only screen and (max-width: 48em) {
-      .banner h4 {
-        letter-spacing: 0.25px;
-        font-size: 36px;
-        font-size: 2.25rem; } }
-  .banner .cta-wrapper {
-    padding: 2.5rem 3rem;
-    position: relative;
-    z-index: 2; }
+      .about-banner .content-wrapper-1 {
+        width: calc(100% - 30px);
+        margin: 1rem auto 2rem; } }
+  .about-banner .content-wrapper-2 {
+    text-align: center; }
     @media only screen and (max-width: 48em) {
-      .banner .cta-wrapper {
-        padding: 2rem; } }
-    .banner .cta-wrapper p {
-      max-width: 450px;
-      margin-bottom: 28px;
-      line-height: 23px; }
-  .banner .container {
-    position: relative;
-    width: 1000px;
-    color: #FFFFFF; }
-    @media only screen and (max-width: 75em) {
-      .banner .container {
-        width: 800px; } }
-    @media only screen and (max-width: 62em) {
-      .banner .container {
-        width: 650px; } }
-    @media only screen and (max-width: 48em) {
-      .banner .container {
-        width: calc(100% - 60px); } }
-    .banner .container img {
-      position: absolute;
-      bottom: 0;
-      right: 0; }
-  .banner .width-50 {
-    width: 50%;
-    background: #F0F4EF;
-    padding: 2rem; }
+      .about-banner .content-wrapper-2 {
+        padding-top: 1.5rem; } }
 
 .about-name {
   margin: 15px 0 0;

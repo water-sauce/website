@@ -9,10 +9,9 @@
 		letter-spacing: 0.5px;
 	}
 	p {
-		font-family: 'Libre Baskerville', valkyrie-text, serif;
+		font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
 		padding-top: 0.75rem;
-		@include font-size(19px);
-		font-family: Georgia, valkyrie-text, serif;
+		@include font-size(16px);
 		line-height: 1.632;
 		font-feature-settings: 'onum' 1;
 		-webkit-font-smoothing: antialiased;

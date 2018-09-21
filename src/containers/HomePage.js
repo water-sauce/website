@@ -114,7 +114,7 @@ class HomePage extends Component {
 						</ul>
 					</div>
 					<div id="messaging">
-						<h1>We create<br /><b>epicness</b></h1>
+						<h1>We. Move.<br /><b>Mountains.</b></h1>
 					</div>
 				</div>
                 

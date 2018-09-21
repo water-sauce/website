@@ -1,4 +1,4 @@
-.banner {
+.about-banner {
 	background: 
 	   linear-gradient(135deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
 	   linear-gradient(225deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
@@ -17,64 +17,72 @@
 	&-who-we-are {
 		background: url("images/banner-backgrounds/who-we-are-bg.png");
 	}
-	
-	h4 {
-		@include font-size(48px);
-		line-height: 1.25;
-		margin-bottom: 12px;
-		letter-spacing: 0.5px;
-		font-family: 'Libre Baskerville', valkyrie-text, serif;
-		-webkit-font-smoothing: antialiased;
+
+	.grid-container {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
 		@media only screen and (max-width: $mq-ipad) {
-			// text-align: center;
-			letter-spacing: 0.25px;
-			@include font-size(36px);
+			display: block;
 		}
 	}
 
-	.cta-wrapper {
-		padding: 2.5rem 3rem;
-		position: relative;
-		z-index: 2;
+	.content-wrapper {
+		width: 50%;
 		@media only screen and (max-width: $mq-ipad) {
-			padding: 2rem;
-		}
-		p {
-			max-width: 450px;
-			margin-bottom: 28px;
-		    line-height: 23px;
-			@media only screen and (max-width: $mq-ipad) {
-				// text-align: center;
+			width: 100%;
+			img {
+				max-height: 200px;
 			}
 		}
 	}
 
-	.container {
-		position: relative;
-		width: 1000px;
+	.content {
+		@media only screen and (min-width: $mq-ipad) {
+			max-width: 585px;
+			float: right;
+			padding: 2rem 1rem;
+		}
+	}
+	
+	h1 {
+		font-feature-settings: 'onum' 0;
+		text-transform: uppercase;
+		font-weight: 400;
+		@include font-size(24px);
+		letter-spacing: 0.5px;
+		font-weight: bold;
+	}
+
+
+	p {
+	 	font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
+	 	padding-top: 0.75rem;
+	 	@include font-size(16px);
+	 	line-height: 1.632;
+	 	font-feature-settings: 'onum' 1;
+	 	-webkit-font-smoothing: antialiased;
+	}
+
+
+	.content-wrapper-1 {
+		background: #6769ff; /* Old browsers */
+		background: -moz-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg, #6769ff 0%,#e57777 88%,#ffa762 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg, #6769ff 0%,#e57777 88%,#ffa762 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 		color: $white;
-		// @include box-shadow( 0px, 2px, 5px, rgba(0,0,0,0.25), true);
-
-		@media only screen and (max-width: $mq-large) {
-			width: 800px;
-		}
-		@media only screen and (max-width: $mq-med) {
-			width: 650px;
-		}
+		padding: 1rem;
 		@media only screen and (max-width: $mq-ipad) {
-			width: calc(100% - 60px);
-		}
-
-		img {
-			position: absolute;
-			bottom: 0;
-			right: 0;
+			width: calc(100% - 30px);
+			margin: 1rem auto 2rem;
 		}
 	}
 
-	.width-50 {
-		width: 50%;
-		background: $lightest-grey;
-		padding: 2rem;
+	.content-wrapper-2 {
+		text-align: center;
+		@media only screen and (max-width: $mq-ipad) {
+			padding-top: 1.5rem;
+		}
 	}
 }
