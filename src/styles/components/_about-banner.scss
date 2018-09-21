@@ -1,0 +1,80 @@
+.banner {
+	background: 
+	   linear-gradient(135deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
+	   linear-gradient(225deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
+	   linear-gradient(315deg, $lightest-grey 25%, transparent 25%),
+	   linear-gradient(45deg, $lightest-grey 25%, transparent 25%);	
+	background-size: 25px 25px;
+	background-color: $white;
+	background-repeat: repeat;
+	background-size: 254px !important;
+	background-attachment: fixed !important;
+
+	@media only screen and (max-width: $mq-ipad) {
+		background-size: 127px !important;
+	}
+
+	&-who-we-are {
+		background: url("images/banner-backgrounds/who-we-are-bg.png");
+	}
+	
+	h4 {
+		@include font-size(48px);
+		line-height: 1.25;
+		margin-bottom: 12px;
+		letter-spacing: 0.5px;
+		font-family: 'Libre Baskerville', valkyrie-text, serif;
+		-webkit-font-smoothing: antialiased;
+		@media only screen and (max-width: $mq-ipad) {
+			// text-align: center;
+			letter-spacing: 0.25px;
+			@include font-size(36px);
+		}
+	}
+
+	.cta-wrapper {
+		padding: 2.5rem 3rem;
+		position: relative;
+		z-index: 2;
+		@media only screen and (max-width: $mq-ipad) {
+			padding: 2rem;
+		}
+		p {
+			max-width: 450px;
+			margin-bottom: 28px;
+		    line-height: 23px;
+			@media only screen and (max-width: $mq-ipad) {
+				// text-align: center;
+			}
+		}
+	}
+
+	.container {
+		position: relative;
+		width: 1000px;
+		color: $white;
+		// @include box-shadow( 0px, 2px, 5px, rgba(0,0,0,0.25), true);
+
+		@media only screen and (max-width: $mq-large) {
+			width: 800px;
+		}
+		@media only screen and (max-width: $mq-med) {
+			width: 650px;
+		}
+		@media only screen and (max-width: $mq-ipad) {
+			width: calc(100% - 60px);
+		}
+
+		img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+
+	.width-50 {
+		width: 50%;
+		background: $lightest-grey;
+		padding: 2rem;
+	}
+}

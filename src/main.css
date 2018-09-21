@@ -60,9 +60,9 @@ footer ul li a, .a-hover {
   .a-underline-important:hover {
     text-decoration: none !important; }
 
-.product-nav-icons, .about-nav-links a, .a-none {
+.a-none {
   text-decoration: none; }
-  .product-nav-icons:hover, .about-nav-links a:hover, .a-none:hover {
+  .a-none:hover {
     text-decoration: none; }
 
 .clearfix::after {
@@ -738,11 +738,17 @@ title-block {
 
 .cards-home {
   margin: 6rem auto; }
-  .cards-home h4 {
+  .cards-home h3 {
     text-align: center;
-    margin-bottom: 4rem;
     text-transform: uppercase;
-    letter-spacing: 0.25px; }
+    letter-spacing: 0.25px;
+    margin-bottom: 1rem; }
+  .cards-home p {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    font-weight: 200; }
 
 .cards-wrapper {
   margin: 2rem 0;
@@ -834,65 +840,6 @@ title-block {
     .home-card-5 img {
       width: 250px; }
 
-.product-nav-links {
-  margin-bottom: 50px;
-  list-style: none;
-  padding: 0; }
-
-.product-nav-icons {
-  color: #FFFFFF;
-  font-weight: 300;
-  opacity: 0.3; }
-  .product-nav-icons:hover {
-    color: #FFFFFF;
-    opacity: 1; }
-    .product-nav-icons:hover .product-icons {
-      opacity: 1; }
-  .product-nav-icons.active span,
-  .product-nav-icons.active .product-icons {
-    opacity: 1; }
-  .product-nav-icons .product-icons {
-    margin: 0 auto 15px;
-    opacity: 0.3; }
-
-.product-icons {
-  display: block;
-  width: 78px;
-  height: 62px;
-  clear: both;
-  opacity: 1; }
-
-.about-nav-container {
-  background: #f5f8fb;
-  text-align: center; }
-
-.about-nav-links {
-  list-style: none;
-  margin-bottom: 0;
-  padding: 0; }
-  .about-nav-links li {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 23px 0 22px; }
-    @media only screen and (max-width: 48em) {
-      .about-nav-links li {
-        margin: 0 8px; } }
-  .about-nav-links a {
-    padding: 0 5px 20px;
-    color: #a2abb5;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 1px;
-    -webkit-transition: color 0.2s;
-    -moz-transition: color 0.2s;
-    -o-transition: color 0.2s;
-    transition: color 0.2s; }
-    .about-nav-links a:hover {
-      color: #576677;
-      border-bottom: 3px solid #41C3E5; }
-
 .hero {
   padding: 3rem 0;
   text-align: left; }
@@ -941,8 +888,6 @@ title-block {
     background: url("images/banner-backgrounds/ux-design-bg.png"); }
   .banner-service-seo {
     background: url("images/banner-backgrounds/seo-bg.png"); }
-  .banner-service-who-we-are {
-    background: url("images/banner-backgrounds/who-we-are-bg.png"); }
   .banner-service .topic {
     position: absolute;
     top: calc(50% - 15px);
@@ -1085,15 +1030,6 @@ title-block {
     left: -90px; }
   .banner-service-ux-design .topic-right {
     right: -90px; }
-  .banner-service .width-50 {
-    width: 50%;
-    background: #F0F4EF;
-    margin-left: 10%;
-    padding: 2rem; }
-    @media only screen and (max-width: 48em) {
-      .banner-service .width-50 {
-        margin: 0 20px;
-        width: calc( 100% - 40px); } }
 
 .sub-hero-services-banner {
   background: #262627;
@@ -1223,6 +1159,64 @@ title-block {
     margin-top: 1rem;
     position: relative;
     z-index: 20; }
+
+.banner {
+  background: linear-gradient(135deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(225deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(315deg, #F0F4EF 25%, transparent 25%), linear-gradient(45deg, #F0F4EF 25%, transparent 25%);
+  background-size: 25px 25px;
+  background-color: #FFFFFF;
+  background-repeat: repeat;
+  background-size: 254px !important;
+  background-attachment: fixed !important; }
+  @media only screen and (max-width: 48em) {
+    .banner {
+      background-size: 127px !important; } }
+  .banner-who-we-are {
+    background: url("images/banner-backgrounds/who-we-are-bg.png"); }
+  .banner h4 {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    font-family: 'Libre Baskerville', valkyrie-text, serif;
+    -webkit-font-smoothing: antialiased; }
+    @media only screen and (max-width: 48em) {
+      .banner h4 {
+        letter-spacing: 0.25px;
+        font-size: 36px;
+        font-size: 2.25rem; } }
+  .banner .cta-wrapper {
+    padding: 2.5rem 3rem;
+    position: relative;
+    z-index: 2; }
+    @media only screen and (max-width: 48em) {
+      .banner .cta-wrapper {
+        padding: 2rem; } }
+    .banner .cta-wrapper p {
+      max-width: 450px;
+      margin-bottom: 28px;
+      line-height: 23px; }
+  .banner .container {
+    position: relative;
+    width: 1000px;
+    color: #FFFFFF; }
+    @media only screen and (max-width: 75em) {
+      .banner .container {
+        width: 800px; } }
+    @media only screen and (max-width: 62em) {
+      .banner .container {
+        width: 650px; } }
+    @media only screen and (max-width: 48em) {
+      .banner .container {
+        width: calc(100% - 60px); } }
+    .banner .container img {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+  .banner .width-50 {
+    width: 50%;
+    background: #F0F4EF;
+    padding: 2rem; }
 
 .about-name {
   margin: 15px 0 0;

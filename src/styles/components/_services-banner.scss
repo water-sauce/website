@@ -33,10 +33,6 @@
 	&-seo {
 		background: url("images/banner-backgrounds/seo-bg.png");
 	}
-
-	&-who-we-are {
-		background: url("images/banner-backgrounds/who-we-are-bg.png");
-	}
 	
 	.topic {
 		position: absolute;
@@ -237,18 +233,6 @@
 		}
 		.topic-right {
 			right: -90px;
-		}
-	}
-
-
-	.width-50 {
-		width: 50%;
-		background: $lightest-grey;
-		margin-left: 10%;
-		padding: 2rem;
-		@media only screen and (max-width: $mq-ipad) {
-			margin: 0 20px;
-			width: calc( 100% - 40px);
 		}
 	}
 }

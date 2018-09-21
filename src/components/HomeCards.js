@@ -14,7 +14,11 @@ function HomeCards(props) {
         </Col>
     ));
 
-    return <Grid className="cards-home"><h4>Our Design &amp; Marketing Services</h4>{services}</Grid>;
+    return <Grid className="cards-home">
+        <h3>Our Design &amp; Marketing Services</h3>
+        <p>Water Sauce is a full service digital design agency. Our clients are our partners — we are invested in their success and look to form lasting relationships. <br/> Find out more about the services our team offers.</p>
+        {services}
+    </Grid>;
 }
 
 export default HomeCards;

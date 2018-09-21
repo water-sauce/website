@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
-import LongHeroBanner from "../components/LongHeroBanner";
+import AboutHeroBanner from "../components/AboutHeroBanner";
 import ContactBanner from "../components/ContactBanner";
 
 import WhoWeArePage from "./WhoWeArePage";
@@ -16,8 +16,8 @@ class About extends Component {
                         exact
                         path="/who-we-are"
                         render={() => (
-                            <LongHeroBanner
-                                banner_class="banner-service-who-we-are"
+                            <AboutHeroBanner
+                                banner_class="banner-who-we-are"
                                 class="hero-about"
                                 title="We are Water Sauce"
                                 description={

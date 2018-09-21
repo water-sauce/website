@@ -1,11 +1,18 @@
 .cards-home {
 	margin: 6rem auto;
-	h4 {
+	h3 {
 		text-align: center;
-		margin-bottom: 4rem;
 		text-transform: uppercase;
-		// font-weight: 300;
+		// font-weight: bold;
 		letter-spacing: 0.25px;
+		margin-bottom: 1rem;
+	}
+	p {
+		max-width: 650px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 4rem;
+		font-weight: 200;
 	}
 }
 
