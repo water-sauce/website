@@ -34,12 +34,12 @@ class Services extends Component {
 								cta_banner="banner-service-web-design"
 								title={
 									<Fragment>
-										Design to <br /> captivate &amp; inspire
+										Transform into a <br /> thing of beauty
 									</Fragment>
 								}
 								subtitle={
 									<Fragment>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										A Website's Design should captivate and inspire its audience. Making it memorable and easy to use are integral to growing a web presence.
 									</Fragment>
 								}
 								topic="web design"
@@ -65,7 +65,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										SEO is a strategy to help grow a customer base through organic traffic. Implementing an effective SEO strategy is where the magic happens.
 									</Fragment>
 								}
 								topic="seo"
@@ -91,7 +91,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Fundraising Materials to unleash your pitch deck's full potential. Attaining an ideal term sheet for your round of funding is within your grasp.
 									</Fragment>
 								}
 								topic="fundraising materials"
@@ -117,7 +117,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Apple, Nike, Water Sauce — what do these have in common? Humble beginnings and lots of ambition. Branding to become a household name.
 									</Fragment>
 								}
 								topic="branding"
@@ -143,7 +143,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Email Campaigns are now a science with lots of moving parts and data. The days of "spray-and-pray" are long gone — efficiency is the word.
 									</Fragment>
 								}
 								topic="email campaigns"
@@ -169,7 +169,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										UX Design is much more than visual design. It is a process with the overall aim of helping your users navigate your products in a delightful way.
 									</Fragment>
 								}
 								topic="ux design"

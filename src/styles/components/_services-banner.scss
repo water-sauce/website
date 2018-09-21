@@ -8,8 +8,12 @@
 	background-color: $white;
 	padding: 110px 0 100px;
 	background-repeat: repeat;
-	background-size: 254px;
+	background-size: 254px !important;
 	background-attachment: fixed !important;
+
+	@media only screen and (max-width: $mq-ipad) {
+		background-size: 127px !important;
+	}
 
 	&-branding {
 		background: url("images/banner-backgrounds/branding-bg.png");
@@ -55,9 +59,11 @@
 
 	.button {
 		@include box-shadow( 0px, 2px, 5px, rgba(0,0,0,0.5));
+		padding: 11px 56px 9px;
+
 		@media only screen and (max-width: $mq-ipad) {
 			max-width: 350px;
-			// margin: 0 auto;
+			padding: 11px 28px 9px;
 			width: 100%;
 			display: block;
 		}
@@ -86,7 +92,8 @@
 		}
 		p {
 			max-width: 450px;
-			margin-bottom: 24px;
+			margin-bottom: 28px;
+		    line-height: 23px;
 			@media only screen and (max-width: $mq-ipad) {
 				// text-align: center;
 			}

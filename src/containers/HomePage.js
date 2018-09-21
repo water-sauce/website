@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import Parallax from 'parallax-js';
 import { Helmet } from "react-helmet";
 import HomeCards from "../components/HomeCards.js";
+import HeroServicesBanner from "../components/HeroServicesBanner";
 
 import m1 from "../images/backgrounds/m1e.png";
 import m2 from "../images/backgrounds/m2d.png";
@@ -116,6 +117,7 @@ class HomePage extends Component {
 						<h1>We create<br /><b>epicness</b></h1>
 					</div>
 				</div>
+                
 				<HomeCards services={service_types} />
 			</div>
 		)

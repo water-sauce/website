@@ -63,7 +63,6 @@
                 padding: 0 15px;
                 display: block;
                 margin: 0.5rem 0;
-                pointer-events:none;
             }
             a {
                 padding: 11px 8px;
@@ -98,6 +97,9 @@
                 text-decoration: underline;
             }
         }
+        @media (max-width: $mq-ipad) {
+            display: none !important;
+        }
     }
     .dropdown-toggle {
         text-transform: capitalize;
@@ -115,7 +117,11 @@
     .navbar-default .navbar-nav > .open > a:focus {
         background: $grey;
     }
-    .dropdown-toggle {
-        pointer-events:none;
+
+    .navbar-default .navbar-nav > .open .dropdown-menu {
+        display: block !important;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: $white;
     }
 }
