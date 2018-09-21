@@ -56,15 +56,6 @@ const Footer = props => (
                         <li className=" preserve-text margin-zero">
                             ©{CurrentYear} Water Sauce, LLC. All rights reserved.
                         </li>
-                        <li>
-                            | <a href="/privacy">Privacy</a>
-                        </li>
-                        <li>
-                            | <a href="/tos">Terms</a>
-                        </li>
-                        <li>
-                            | <a href="/site-map">Site Map</a>
-                        </li>
                     </ul>
                 </Col>
             </Row>
@@ -73,3 +64,7 @@ const Footer = props => (
 );
 
 export default Footer;
+
+// <li>
+   //  | <a href="/site-map">Site Map</a>
+// </li>
