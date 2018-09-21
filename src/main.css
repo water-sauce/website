@@ -429,6 +429,12 @@ html, body {
       margin-right: 12px;
       margin-bottom: 0;
       list-style: none; }
+      @media (max-width: 48em) {
+        .navbar ul li {
+          padding: 0 15px;
+          display: block;
+          margin: 0.5rem 0;
+          pointer-events: none; } }
       .navbar ul li a {
         padding: 11px 8px;
         color: #FFFFFF;
@@ -437,7 +443,7 @@ html, body {
         font-weight: 400;
         letter-spacing: 0.5px;
         text-decoration: none; }
-  .navbar .contact-us-header {
+  .navbar .contact-us-header a {
     padding: 11px 8px;
     color: #FFFFFF;
     font-size: 16px;
@@ -459,6 +465,18 @@ html, body {
         text-decoration: underline; }
   .navbar .dropdown-toggle {
     text-transform: capitalize; }
+
+@media (max-width: 48em) {
+  .navbar-collapse {
+    background: #262627;
+    margin-top: 22px;
+    padding: 0; }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    background: #262627; }
+  .dropdown-toggle {
+    pointer-events: none; } }
 
 footer {
   bottom: 0;
@@ -727,6 +745,9 @@ title-block {
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
+  @media (max-width: 48em) {
+    .cards-wrapper {
+      margin: 1.25rem 0; } }
   .cards-wrapper:hover {
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
@@ -1293,11 +1314,14 @@ a.about-name:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
-  height: 130vh !important;
+  height: 130vh;
   max-height: 1000px; }
+  @media only screen and (max-width: 62em) {
+    #main-bg {
+      height: 115vh; } }
   @media only screen and (max-width: 48em) {
     #main-bg {
-      height: 120vh !important; } }
+      height: 102.5vh; } }
 
 .mountain-range {
   top: 5%;

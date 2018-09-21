@@ -6,7 +6,7 @@ function HomeCards(props) {
     let services = props.services.map((service, index) => (
         <Col xs={12} sm={6} md={4} className="cards-wrapper" key={index}>
             <Link to={service.link} className={"home-card home-card-" + index}>
-                <h2 className="banner-title text-align-center-ipad white">
+                <h2 className="banner-title white">
                     {service.title}
                 </h2>
                 <img src={service.src} alt="Water Sauce services"/>

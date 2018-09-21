@@ -59,6 +59,12 @@
             margin-right: 12px;
             margin-bottom: 0;
             list-style: none;
+            @media (max-width: $mq-ipad) {
+                padding: 0 15px;
+                display: block;
+                margin: 0.5rem 0;
+                pointer-events:none;
+            }
             a {
                 padding: 11px 8px;
                 color: $white;
@@ -69,7 +75,7 @@
             }
         }
     }
-    .contact-us-header {
+    .contact-us-header a {
         padding: 11px 8px;
         color: #FFFFFF;
         font-size: 16px;
@@ -98,5 +104,18 @@
     }
 }
 
-
-
+@media (max-width: $mq-ipad) {
+    .navbar-collapse {
+        background: $grey;
+        margin-top: 22px;
+        padding: 0;
+    }
+    .navbar-default .navbar-nav > .open > a, 
+    .navbar-default .navbar-nav > .open > a:hover, 
+    .navbar-default .navbar-nav > .open > a:focus {
+        background: $grey;
+    }
+    .dropdown-toggle {
+        pointer-events:none;
+    }
+}

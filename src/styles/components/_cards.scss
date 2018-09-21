@@ -12,6 +12,9 @@
 .cards-wrapper {
 	margin: 2rem 0;
 	@include transition(0.2s ease-in-out);
+	@media (max-width: $mq-ipad) {
+		margin: 1.25rem 0;
+	}
 	&:hover {
 		@include transform( scale(1.05) );
 		.home-card {

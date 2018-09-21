@@ -27,10 +27,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    height: 130vh !important;
+    height: 130vh;
     max-height: 1000px;
+    @media only screen and (max-width: $mq-med) {
+    	height: 115vh;
+    }
     @media only screen and (max-width: $mq-ipad) {
-    	height: 120vh !important;
+    	height: 102.5vh;
     }
 }
 

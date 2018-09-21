@@ -93,7 +93,7 @@ class HomePage extends Component {
 							data-friction-x="0.1"
 							data-friction-y="0.1"
 							data-scalar-x="10"
-							data-scalar-y="10"
+							data-scalar-y="7"
 						>
 							<li className="layer" data-depth="0.10">
 								<div id="main-bg"></div>
