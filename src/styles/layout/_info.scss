@@ -26,6 +26,14 @@
             padding: 1rem;
         }
     }
+
+    .accent {
+        float: left;
+        position: absolute;
+        margin-left: 0;
+        left: 0.5rem;
+        width: calc(4.25rem * 3);
+    }
 }
 
 .info-grid-title {
@@ -35,11 +43,6 @@
 
 .accent {
     display: block;
-    float: left;
-    position: absolute;
-    margin-left: 0;
-    left: 0.5rem;
-    width: calc(4.25rem * 3);
     height: 3px;
     &-true-blue {
         background: $true-blue;
@@ -67,6 +70,9 @@
     }
     &-yellow {
         background: $deep-yellow;
+    }
+    &-white {
+        background: $white;
     }
 }
 

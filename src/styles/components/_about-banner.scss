@@ -57,7 +57,7 @@
 
 	p {
 	 	font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
-	 	padding-top: 0.75rem;
+	 	padding-top: 1.75rem;
 	 	@include font-size(16px);
 	 	line-height: 1.632;
 	 	font-feature-settings: 'onum' 1;
@@ -66,10 +66,10 @@
 
 
 	.content-wrapper-1 {
-		background: #6769ff; /* Old browsers */
-		background: -moz-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(45deg, #6769ff 0%,#e57777 88%,#ffa762 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(45deg, #6769ff 0%,#e57777 88%,#ffa762 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-color: $dark-blue; /* Old browsers */
+		background: -moz-linear-gradient(90deg, $dark-blue 0%,   $true-blue 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(90deg, $dark-blue 0%, $true-blue 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(90deg, $dark-blue 0%, $true-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 		color: $white;
 		padding: 1rem;
@@ -84,5 +84,9 @@
 		@media only screen and (max-width: $mq-ipad) {
 			padding-top: 1.5rem;
 		}
+	}
+
+	.accent {
+		width: 100px;
 	}
 }

@@ -93,6 +93,10 @@ footer ul li a, .a-hover {
 .toggle:hover {
   cursor: pointer; }
 
+.fancy-text {
+  font-family: 'Libre Baskerville', valkyrie-text, serif;
+  font-weight: 300; }
+
 .light-grey-bg {
   background-color: #F0F4EF; }
 
@@ -612,6 +616,12 @@ footer {
         position: relative;
         width: 100%;
         padding: 1rem; } }
+  .info-grid .accent {
+    float: left;
+    position: absolute;
+    margin-left: 0;
+    left: 0.5rem;
+    width: calc(4.25rem * 3); }
 
 .info-grid-title {
   margin-left: 18rem;
@@ -619,11 +629,6 @@ footer {
 
 .accent {
   display: block;
-  float: left;
-  position: absolute;
-  margin-left: 0;
-  left: 0.5rem;
-  width: calc(4.25rem * 3);
   height: 3px; }
   .accent-true-blue {
     background: #696AFD; }
@@ -643,6 +648,8 @@ footer {
     background: #E57777; }
   .accent-yellow {
     background: #fbca5c; }
+  .accent-white {
+    background: #FFFFFF; }
 
 title-block {
   display: block;
@@ -748,7 +755,7 @@ title-block {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 4rem;
-    font-weight: 200; }
+    font-weight: 300; }
 
 .cards-wrapper {
   margin: 2rem 0;
@@ -864,6 +871,23 @@ title-block {
     margin: 2rem auto;
     display: block; }
 
+.bannerTransition-appear {
+  opacity: 0;
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95); }
+
+.bannerTransition-appear.bannerTransition-appear-active {
+  opacity: 1;
+  transition: all .25s ease-in-out;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
 .banner-service {
   background: linear-gradient(135deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(225deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(315deg, #F0F4EF 25%, transparent 25%), linear-gradient(45deg, #F0F4EF 25%, transparent 25%);
   background-size: 25px 25px;
@@ -936,7 +960,8 @@ title-block {
     .banner-service .cta-wrapper p {
       max-width: 450px;
       margin-bottom: 28px;
-      line-height: 23px; }
+      line-height: 23px;
+      font-weight: 300; }
   .banner-service .container {
     position: relative;
     width: 1000px;
@@ -1043,7 +1068,7 @@ title-block {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 26px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 1px;
     margin: 0 auto;
     display: block; }
@@ -1200,20 +1225,20 @@ title-block {
     font-weight: bold; }
   .about-banner p {
     font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
-    padding-top: 0.75rem;
+    padding-top: 1.75rem;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.632;
     font-feature-settings: 'onum' 1;
     -webkit-font-smoothing: antialiased; }
   .about-banner .content-wrapper-1 {
-    background: #6769ff;
+    background-color: #1B1C6A;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%);
+    background: -moz-linear-gradient(90deg, #1B1C6A 0%, #696AFD 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%);
+    background: -webkit-linear-gradient(90deg, #1B1C6A 0%, #696AFD 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%);
+    background: linear-gradient(90deg, #1B1C6A 0%, #696AFD 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */
@@ -1228,6 +1253,8 @@ title-block {
     @media only screen and (max-width: 48em) {
       .about-banner .content-wrapper-2 {
         padding-top: 1.5rem; } }
+  .about-banner .accent {
+    width: 100px; }
 
 .about-name {
   margin: 15px 0 0;

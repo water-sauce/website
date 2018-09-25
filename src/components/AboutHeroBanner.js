@@ -11,6 +11,7 @@ class AboutHeroBanner extends Component {
                     </div>
                     <div className="content-wrapper content-wrapper-1">
                         <div className="content">
+                            <div className={"accent " + this.props.accent_class} />
                             <h1>{this.props.title}</h1>
                             <p>{this.props.description}</p>
                         </div>

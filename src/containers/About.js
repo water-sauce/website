@@ -23,6 +23,7 @@ class About extends Component {
                                 title="We are Water Sauce"
                                 src={ws_bottle}
                                 alt="Water Sauce Bottle"
+                                accent_class="accent-white"
                                 description={
                                     <Fragment>
                                         Headquartered in San Francisco, we are a team of bold, passionate, and idealistic thinkers who understand the ever changing environment of… have you fallen asleep yet? We don’t want to waste your time with meaningless fluff. And lets be real, we know what you’re thinking, “OK, it’s a full service design agency… but what does Water Sauce even mean?”<br/><br/>

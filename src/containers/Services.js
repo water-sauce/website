@@ -39,7 +39,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										A Website's Design should captivate and inspire its audience. Making it memorable and easy to use are integral to growing a web presence.
+										A website's design should captivate and inspire its audience. Making it memorable and easy to use are integral to growing a web presence.
 									</Fragment>
 								}
 								topic="web design"
@@ -91,7 +91,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										Fundraising Materials to unleash your pitch deck's full potential. Attaining an ideal term sheet for your round of funding is within your grasp.
+										Is your pitch deck going to impress potential investors? Design and presentation mean everything when trying to close a round of funding.
 									</Fragment>
 								}
 								topic="fundraising materials"
@@ -143,7 +143,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										Email Campaigns are now a science with lots of moving parts and data. The days of "spray-and-pray" are long gone — efficiency is the word.
+										Email campaigns are now a science with lots of moving parts and data. The days of "spray-and-pray" are long gone — efficiency is the word.
 									</Fragment>
 								}
 								topic="email campaigns"
@@ -169,7 +169,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										UX Design is much more than visual design. It is a process with the overall aim of helping your users navigate your products in a delightful way.
+										UX design is much more than visual design. It is a process with the overall aim of helping your users navigate your products in a delightful way.
 									</Fragment>
 								}
 								topic="ux design"

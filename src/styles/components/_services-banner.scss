@@ -1,3 +1,14 @@
+.bannerTransition-appear{
+  opacity: 0;
+  @include transform( scale(.95) );
+}
+ 
+.bannerTransition-appear.bannerTransition-appear-active{
+  opacity: 1;
+  transition: all .25s ease-in-out;
+  @include transform( scale(1) );
+}
+
 .banner-service {
 	background: 
 	   linear-gradient(135deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
@@ -90,6 +101,7 @@
 			max-width: 450px;
 			margin-bottom: 28px;
 		    line-height: 23px;
+		    font-weight: 300;
 			@media only screen and (max-width: $mq-ipad) {
 				// text-align: center;
 			}

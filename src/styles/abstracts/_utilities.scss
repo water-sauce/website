@@ -35,7 +35,10 @@
 		cursor: pointer;
 	}
 }
-
+.fancy-text {
+	font-family: 'Libre Baskerville', valkyrie-text, serif;
+	font-weight: 300;
+}
 
 .light-grey-bg {
 	background-color: $lightest-grey;
