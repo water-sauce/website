@@ -8,7 +8,7 @@ import ContactModal from "../components/ContactModal";
 class HeroServicesBanner extends Component {
 	render(props) {
 		return (
-			<div className={this.props.cta_banner + " banner-service"} key="example">
+			<section className={this.props.cta_banner + " banner-service"} key="example">
 				<CSSTransitionGroup
 			      transitionName="bannerTransition"
 			      transitionAppear={true}
@@ -28,7 +28,7 @@ class HeroServicesBanner extends Component {
 						<img src={this.props.img_src_1} alt={this.props.img_alt_1} id={this.props.img_id_1}/>
 					</Grid>
 				</CSSTransitionGroup>
-			</div>
+			</section>
 		);
 	}
 }

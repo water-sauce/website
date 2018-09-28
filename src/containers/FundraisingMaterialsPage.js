@@ -17,7 +17,7 @@ const product_info = [
     {
         title_block: "Financial Models",
         description:
-            "When raising a round, questions like “What is your profit margin?”, “What is your runway forecast for this round?”, and “What are your valuations expectations?” may seem like straightforward questions, but without adequate support you may be left out to dry. We’ve all seen these types of disasters on Shark Tank. Fortunately, our team of experts can aid in the development and presentation of these various metrics & models."
+            "When raising a round, you will be asked “What is your profit margin?”, “What is your runway forecast for this round?”, and “What are your valuations expectations?” Without adequate support you'll be left out to dry. Our in-house finance team has helped raise millions in seed capital to hundreds of millions in Series C+. We can help develop, refine, or review your financial support."
     }
 ];
 
@@ -27,7 +27,7 @@ class FundraisingMaterialsPage extends Component {
             <div>
                 <Helmet>
                     <title>{title}</title>
-                    <link rel="canonical" href="http://mysite.com/example" />
+                    <link rel="canonical" href="https://www.watersauce.com/fundraising-materials" />
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>

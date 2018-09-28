@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
 import HeroServicesBanner from "../components/HeroServicesBanner";
-// import { CSSTransitionGroup } from 'react-transition-group';
 
 // pages
 import SEOPage from "./SEOPage";
@@ -13,6 +12,7 @@ import BrandingPage from "./BrandingPage";
 import EmailCampaignsPage from "./EmailCampaignsPage";
 import UXDesignPage from "./UXDesignPage";
 
+// page-icons
 import butterfly from "../images/banner/butterfly-2.png";
 import parrot from "../images/banner/parrot-6.png";
 import shark from "../images/banner/shark-2.png";
@@ -91,7 +91,7 @@ class Services extends Component {
 								}
 								subtitle={
 									<Fragment>
-										Is your pitch deck going to impress potential investors? Design and presentation mean everything when trying to close a round of funding.
+										Is your pitch deck going to impress potential investors? Design and presentation means everything when trying to close a round of funding.
 									</Fragment>
 								}
 								topic="fundraising materials"

@@ -6,13 +6,13 @@ import InfoBanner from "../components/InfoBanner";
 import lion from "../images/icons/simple-lion.png";
 
 const title = "Branding is storytelling through content";
-const description = "Water Sauce will help with branding";
+const description = "Water Sauce helps our clients define its brand. ";
 
 const product_info = [
     {
         title_block: "Branding to find your voice",
         description:
-            "Through a combination of market, user, and design research, we help companies define their brand. A brand is unique through its messaging, content, and of course its product. We help our clients figure out the story they want to tell their customers across all user experiences and touchpoints."
+            "Through a combination of market, user, and design research, we help companies define their brand. A brand is unique through its messaging, content, and of course its product(s). We help our clients figure out the story they want to tell their customers across all user experiences and touchpoints."
     },
     {
         title_block: "Content Creation for your brand",
@@ -28,7 +28,7 @@ class BrandingPage extends Component {
             <div>
                 <Helmet>
                     <title>{title}</title>
-                    <link rel="canonical" href="http://mysite.com/example" />
+                    <link rel="canonical" href="https://www.watersauce.com/branding" />
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>
@@ -36,7 +36,7 @@ class BrandingPage extends Component {
                 <SubHeroServicesBanner 
                     icon={lion}
                     alt="branding as a lion"
-                    paragraph="The word brand means “kind, grade, or make, as indicated by a stamp, trademark, or the like: the best brand of coffee.” Branding is all about authenticity — more than ever the internet is an increasingly loud critic. Being a voice true to company values speaks volumes." 
+                    paragraph="Branding is all about authenticity — more than ever the internet is an increasingly loud critic. Being a voice true to company values speaks volumes. It can be hard to separate yourself from your competitors, but through branding or a rebranding, you can define your company values and see if your product exudes this." 
                 />
                 <InfoBanner product_banners={product_info} color="orange" />
             </div>

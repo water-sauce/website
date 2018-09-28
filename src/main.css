@@ -369,7 +369,11 @@ html, body {
   flex: 1 50%; }
 
 html, body {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
+
+a {
+  color: #696AFD; }
 
 .Datanyze-logo {
   width: 150px; }
@@ -947,6 +951,7 @@ title-block {
     -webkit-font-smoothing: antialiased; }
     @media only screen and (max-width: 48em) {
       .banner-service h4 {
+        font-weight: bold;
         letter-spacing: 0.25px;
         font-size: 36px;
         font-size: 2.25rem; } }
@@ -962,6 +967,9 @@ title-block {
       margin-bottom: 28px;
       line-height: 23px;
       font-weight: 300; }
+      @media only screen and (max-width: 48em) {
+        .banner-service .cta-wrapper p {
+          display: none; } }
   .banner-service .container {
     position: relative;
     width: 1000px;
@@ -1358,7 +1366,7 @@ a.about-name:hover {
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 130vh;
-  max-height: 1000px; }
+  max-height: 1200px; }
   @media only screen and (max-width: 62em) {
     #main-bg {
       height: 115vh; } }

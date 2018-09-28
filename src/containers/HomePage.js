@@ -9,8 +9,8 @@ import m2 from "../images/backgrounds/m2d.png";
 import m3 from "../images/backgrounds/m3d.png";
 import eagle from "../images/backgrounds/eagle2.png";
 
-const title = "Water Sauce is an average digital agency";
-const description = "Water Sauce helps companies do web stuff";
+const title = "Water Sauce is an digital design agency helping regular people do extraordinary web stuff";
+const description = "Water Sauce helps companies of all sizes and industries improve their web presence through strategic web design & development, SEO, branding, email campaigns, fundraising campaigns, and UX design.";
 
 const service_types = [
     {
@@ -78,7 +78,7 @@ class HomePage extends Component {
 			<div>
                 <Helmet>
                     <title>{title}</title>
-                    <link rel="canonical" href="http://mysite.com/example" />
+                    <link rel="canonical" href="https://www.watersauce.com/" />
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>

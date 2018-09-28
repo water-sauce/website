@@ -84,7 +84,7 @@
 		font-family: 'Libre Baskerville', valkyrie-text, serif;
 		-webkit-font-smoothing: antialiased;
 		@media only screen and (max-width: $mq-ipad) {
-			// text-align: center;
+			font-weight: bold;
 			letter-spacing: 0.25px;
 			@include font-size(36px);
 		}
@@ -103,7 +103,7 @@
 		    line-height: 23px;
 		    font-weight: 300;
 			@media only screen and (max-width: $mq-ipad) {
-				// text-align: center;
+				display: none;
 			}
 		}
 	}

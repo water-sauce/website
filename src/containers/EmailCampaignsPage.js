@@ -12,11 +12,11 @@ const product_info = [
     {
         title_block: "Email Template and Content Design",
         description:
-            "There are many things to consider when designing email templates. Sure, there are the basics like mobile optimization (55% of emails are opened on mobile devices) but the most important concept to keep in mind is crafting content for each segment of your audience. That is, segmenting your subscribers and sending more targeted messages. This content can be made based on age, gender, location, and more."
+            "There are many things to consider when designing email templates. Sure, there are the basics like mobile optimization but the most important concept to keep in mind is crafting content for each persona within audience. That is, segmenting your subscribers and sending more targeted messages. This content can be made based on age, gender, location, and more."
     },
     {
         title_block: "Campaign Execution and Evaluation",
-        description: "Once the audience is segmented & the content is created accordingly, it is time to launch the campaign! But before doing this, one must ask “what are the metrics for success?” and collect data accordingly. This may be sales for promotional emails (offers/discounts), subscriptions for relational emails (newsletters), or delivery for transactional emails (welcome messages/ receipts). Compiling this data of past successes and failures and then applying them to the future is critical in having ongoing successful campaigns."
+        description: "Once the audience is segmented & the content is created, it is time to launch the campaign! However before proceeding, one must define the metrics for success and collect data accordingly. This may be sales for promotional emails (offers/discounts), subscriptions for relational emails (newsletters), or delivery for transactional emails (welcome messages or receipts). Compiling this data of past successes + failures and then applying them to the future is critical in having ongoing successful campaigns."
     }
 ];
 
@@ -26,7 +26,7 @@ class EmailCampaignsPage extends Component {
             <div>
                 <Helmet>
                     <title>{title}</title>
-                    <link rel="canonical" href="http://mysite.com/example" />
+                    <link rel="canonical" href="https://www.watersauce.com/email-campaigns" />
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>
@@ -34,7 +34,7 @@ class EmailCampaignsPage extends Component {
                 <SubHeroServicesBanner
                     icon={snail}
                     alt="email campaign icon as a snail"
-                    paragraph="Suppose you have a new product and a list of existing clients, leads, etc. How do you communicate this to them? You could send a mass email, but in the United States, the average clickthrough rate for these types of strategies is a measly 3.1%. How do you beat these odds? Through strategic audience segmentation, content development, campaign execution, and thoughtful campaign evaluation." 
+                    paragraph="Say you have a new product and a list of existing clients, leads, etc. How do you spread awareness? You could send a mass email, but the average clickthrough rate for these types of strategies is a measly 3.1%. We can help you beat these odds through strategic audience segmentation, content development, campaign execution, and thoughtful campaign evaluation." 
                 />
 
                 <InfoBanner product_banners={product_info} color="purple" />
