@@ -1,9 +1,11 @@
 import React, { Component, Text } from "react";
 import { Grid, Row } from "react-bootstrap";
+import FontAwesome from "react-fontawesome";
 import { Transition, CSSTransitionGroup } from "react-transition-group";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import ContactModal from "../components/ContactModal";
+
 
 class HeroServicesBanner extends Component {
 	render(props) {
@@ -16,7 +18,15 @@ class HeroServicesBanner extends Component {
 			      transitionEnter={false}
 			      transitionLeave={false}>
 					<Grid className="position-relative">
-						<Link className="topic topic-left" to={this.props.prev_link}><span className="direction">{ '\u003c' }</span>{this.props.prev_topic}</Link>
+						<Link className="topic topic-left" to={this.props.prev_link}>
+							<FontAwesome
+						        className='super-crazy-colors'
+						        name='rocket'
+						        size='2x'
+						        spin
+						        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>
+						        {this.props.prev_topic}
+						</Link>
 						<Link className="topic topic-right" to={this.props.next_link}>{this.props.next_topic}<span className="direction">{ '\u003e' }</span></Link>
 						<div className="cta-wrapper">
 							<h4>{this.props.title}</h4>

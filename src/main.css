@@ -1002,9 +1002,9 @@ title-block {
       .banner-service-web-design #contact-butterfly {
         height: 350px; } }
   .banner-service-web-design .topic-left {
-    left: -100px; }
+    left: -90px; }
   .banner-service-web-design .topic-right {
-    right: -100px; }
+    right: -65px; }
   .banner-service-seo .container {
     background: #E3B5E0; }
   .banner-service-seo #contact-parrot {
@@ -1067,7 +1067,7 @@ title-block {
   .banner-service-ux-design .topic-left {
     left: -125px; }
   .banner-service-ux-design .topic-right {
-    right: -90px; }
+    right: -100px; }
 
 .sub-hero-services-banner {
   background: #262627;
