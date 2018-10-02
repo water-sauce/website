@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, Text } from "react";
 import { Grid, Row } from "react-bootstrap";
 import { Transition, CSSTransitionGroup } from "react-transition-group";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import ContactModal from "../components/ContactModal";
 
@@ -16,15 +16,15 @@ class HeroServicesBanner extends Component {
 			      transitionEnter={false}
 			      transitionLeave={false}>
 					<Grid className="position-relative">
-						<p className="topic topic-left">{this.props.topic}</p>
-						<p className="topic topic-right">{this.props.topic}</p>
-						<Row className="cta-wrapper">
+						<Link className="topic topic-left" to={this.props.prev_link}><span className="direction">{ '\u003c' }</span>{this.props.prev_topic}</Link>
+						<Link className="topic topic-right" to={this.props.next_link}>{this.props.next_topic}<span className="direction">{ '\u003e' }</span></Link>
+						<div className="cta-wrapper">
 							<h4>{this.props.title}</h4>
 							<p>{this.props.subtitle}</p>
 							<div className="cta-information">
-								<a class="button button-blue" href="mailto:sales@watersauce.com?Subject=Hello%20Water%20Sauce">{this.props.cta}</a>
+								<a class="button button-blue" href="mailto:info@watersauce.com?Subject=Hello%20Water%20Sauce">{this.props.cta}</a>
 							</div>
-						</Row>
+						</div>
 						<img src={this.props.img_src_1} alt={this.props.img_alt_1} id={this.props.img_id_1}/>
 					</Grid>
 				</CSSTransitionGroup>

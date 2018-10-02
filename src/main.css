@@ -402,9 +402,10 @@ a {
   height: 100px; }
 
 .navbar {
+  position: fixed;
   width: 100%;
   max-width: 100%;
-  padding-top: 27.5px;
+  padding-top: 15px;
   height: 100px;
   z-index: 999999999;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
@@ -417,11 +418,7 @@ a {
   transition: all ease-in-out 0.2s;
   border: none; }
   .navbar .logo {
-    display: inline-block;
-    height: 40px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: -7.5px; }
+    height: 40px; }
   .navbar a {
     color: #FFFFFF !important;
     display: block; }
@@ -461,6 +458,8 @@ a {
   .navbar .dropdown-menu {
     padding: 12px 0;
     background: #262627; }
+    .navbar .dropdown-menu li {
+      display: block; }
     .navbar .dropdown-menu a {
       color: #FFFFFF;
       padding: 5px 22px;
@@ -475,6 +474,11 @@ a {
         display: none !important; } }
   .navbar .dropdown-toggle {
     text-transform: capitalize; }
+
+.navbar-nav {
+  flex-direction: row; }
+  .navbar-nav .dropdown-menu {
+    position: absolute; }
 
 @media (max-width: 48em) {
   .navbar-collapse {
@@ -931,9 +935,9 @@ title-block {
       .banner-service .topic {
         display: none; } }
   .banner-service .button {
-    -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.5);
+    -moz-box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.5);
+    box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.5);
     padding: 11px 56px 9px; }
     @media only screen and (max-width: 48em) {
       .banner-service .button {
@@ -987,6 +991,8 @@ title-block {
       position: absolute;
       bottom: 0;
       right: 0; }
+  .banner-service .direction {
+    position: absolute; }
   .banner-service-web-design .container {
     background: #fbca5c; }
   .banner-service-web-design #contact-butterfly {
@@ -1007,7 +1013,7 @@ title-block {
       .banner-service-seo #contact-parrot {
         height: 350px; } }
   .banner-service-seo .topic-left {
-    left: -65px; }
+    left: -100px; }
   .banner-service-seo .topic-right {
     right: -65px; }
   .banner-service-branding .container {
@@ -1020,7 +1026,7 @@ title-block {
       .banner-service-branding #contact-lion {
         height: 345px; } }
   .banner-service-branding .topic-left {
-    left: -90px; }
+    left: -65px; }
   .banner-service-branding .topic-right {
     right: -90px; }
   .banner-service-fundraising .container {
@@ -1035,7 +1041,7 @@ title-block {
         left: 0;
         top: 0; } }
   .banner-service-fundraising .topic-left {
-    left: -155px; }
+    left: -90px; }
   .banner-service-fundraising .topic-right {
     right: -155px; }
   .banner-service-email-campaigns .container {
@@ -1048,7 +1054,7 @@ title-block {
       .banner-service-email-campaigns #contact-snail {
         height: 310px; } }
   .banner-service-email-campaigns .topic-left {
-    left: -125px; }
+    left: -155px; }
   .banner-service-email-campaigns .topic-right {
     right: -125px; }
   .banner-service-ux-design .container {
@@ -1059,7 +1065,7 @@ title-block {
       .banner-service-ux-design #contact-face {
         height: 325px; } }
   .banner-service-ux-design .topic-left {
-    left: -90px; }
+    left: -125px; }
   .banner-service-ux-design .topic-right {
     right: -90px; }
 

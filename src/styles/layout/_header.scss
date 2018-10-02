@@ -23,9 +23,10 @@
 }
 
 .navbar {
+    position: fixed;
     width: 100%;
     max-width: 100%;
-    padding-top: 27.5px;
+    padding-top: 15px;
     height: 100px; 
     z-index: 999999999;
     @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.25));
@@ -34,11 +35,7 @@
     border: none;
 
     .logo {
-        display: inline-block;
         height: 40px;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: -7.5px;
     }
 
     a {
@@ -86,6 +83,9 @@
     .dropdown-menu {
         padding: 12px 0;
         background: $grey;
+        li {
+            display: block;
+        }
         a {
             color: $white;
             padding: 5px 22px;
@@ -103,6 +103,13 @@
     }
     .dropdown-toggle {
         text-transform: capitalize;
+    }
+}
+
+.navbar-nav {
+    flex-direction: row;
+    .dropdown-menu {
+        position: absolute;
     }
 }
 

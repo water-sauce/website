@@ -43,6 +43,11 @@ class Services extends Component {
 									</Fragment>
 								}
 								topic="web design"
+								prev_topic="UX Design"
+								next_topic="SEO"
+								prev_link="/ux-design"
+								next_link="/seo"
+
 								img_src_1={butterfly}
 								img_id_1="contact-butterfly"
 								cta="Contact Us"
@@ -69,6 +74,11 @@ class Services extends Component {
 									</Fragment>
 								}
 								topic="seo"
+								prev_topic="Web Design"
+								next_topic="Fundraising Materials"
+								prev_link="/web-design"
+								next_link="/fundraising-materials"
+
 								img_src_1={parrot}
 								img_id_1="contact-parrot"
 								cta="Contact Us"
@@ -95,6 +105,11 @@ class Services extends Component {
 									</Fragment>
 								}
 								topic="fundraising materials"
+								prev_topic="SEO"
+								next_topic="Branding"
+								prev_link="/seo"
+								next_link="/branding"
+
 								img_src_1={shark}
 								img_id_1="contact-shark"
 								cta="Contact Us"
@@ -121,6 +136,11 @@ class Services extends Component {
 									</Fragment>
 								}
 								topic="branding"
+								prev_topic="Fundraising Materials"
+								next_topic="Email Campaigns"
+								prev_link="/fundraising-materials"
+								next_link="/email-campaigns"
+
 								img_src_1={lion}
 								img_id_1="contact-lion"
 								cta="Contact Us"
@@ -147,6 +167,11 @@ class Services extends Component {
 									</Fragment>
 								}
 								topic="email campaigns"
+								prev_topic="Branding"
+								next_topic="UX Design"
+								prev_link="/branding"
+								next_link="/ux-design"
+
 								img_src_1={snail}
 								img_id_1="contact-snail"
 								cta="Contact Us"
@@ -173,6 +198,11 @@ class Services extends Component {
 									</Fragment>
 								}
 								topic="ux design"
+								prev_topic="Email Campaigns"
+								next_topic="Web Design"
+								prev_link="/email-campaigns"
+								next_link="/web-design"
+
 								img_src_1={face}
 								img_id_1="contact-face"
 								cta="Contact Us"

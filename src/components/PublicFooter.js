@@ -42,8 +42,8 @@ const Footer = props => (
                         <li>Contact Us</li>
                         <li>
                             Sales:{" "}
-                            <a href="mailto:sales@watersauce.com?Subject=Hello%20Water%20Sauce">
-                                sales@watersauce.com
+                            <a href="mailto:info@watersauce.com?Subject=Hello%20Water%20Sauce">
+                                info@watersauce.com
                             </a>
                         </li>
                     </ul>
