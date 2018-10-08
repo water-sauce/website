@@ -35,14 +35,14 @@ class SEOPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <SubHeroServicesBanner 
-                    icon={parrot}
-                    alt="SEO icon as a parrot"
-                    paragraph="Not every SEO strategy is or should be the same. Each company needs a catered, detailed game plan to help them rank high for certain keywords. Water Sauce can help you figure out the best way to build content, format your HTML, and drive inbound leads. Having a solid SEO game is essential to reaching your overall goals." 
-                />
-
-                <InfoBanner product_banners={product_info} color="light-purple" />
-                
+                <main>
+                    <SubHeroServicesBanner 
+                        icon={parrot}
+                        alt="SEO icon as a parrot"
+                        paragraph="Not every SEO strategy is or should be the same. Each company needs a catered, detailed game plan to help them rank high for certain keywords. Water Sauce can help you figure out the best way to build content, format your HTML, and drive inbound leads. Having a solid SEO game is essential to reaching your overall goals." 
+                    />
+                    <InfoBanner product_banners={product_info} color="light-purple" />
+                </main>
             </div>
         );
     }

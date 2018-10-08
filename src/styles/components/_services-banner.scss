@@ -10,6 +10,7 @@
 }
 
 .banner-service {
+	position: relative;
 	background: 
 	   linear-gradient(135deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
 	   linear-gradient(225deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
@@ -22,7 +23,12 @@
 	background-size: 254px !important;
 	background-attachment: fixed !important;
 
+	@media only screen and (max-width: $mq-med) {
+		padding: 160px 0 100px;
+	}
+
 	@media only screen and (max-width: $mq-ipad) {
+		padding: 180px 0 80px;
 		background-size: 127px !important;
 	}
 
@@ -46,45 +52,116 @@
 	}
 
 	.current-topic {
-		@include font-size(16px);
+		@include font-size(18px);
 		color: $white;
+		font-feature-settings: 'onum' 0;
 		text-transform: uppercase;
-		font-weight: 200;
-		letter-spacing: 1.25px;
+		font-weight: 400;
+		@include font-size(16px);
+		letter-spacing: 1px;
+		margin-bottom: 1rem;
 	}
 	
-	.topic {
+	.topic-wrapper {
 		position: absolute;
-		top: calc(50% - 12.5px);
+		top: 0;
+		height: 100%;
 		text-transform: uppercase;
 		font-size: 14px;
 		letter-spacing: 1.75px;
 		color: $medium-grey;
 		font-weight: 400;
-		width: 235px;
+		width: 80px;
 		text-align: center;
 		padding: 10px;
-		background: $lightest-grey;
+		background: rgba(230,230,230,0.65);
 		@include transition(0.2s ease-in-out);
 
 		&:hover {
 			color: $grey;
-			background: darken( #f1f1f1, 10% );
+			background: rgba(230,230,230, 0.95);
 			text-decoration: none;
+		}
+		
+		@media only screen and (max-width: $mq-med) {
+			top: 0;
+			height: 50px;
+		}
 
-		}
-		&-left { 
-			left: -160px;
-			transform: rotate(-90deg);
-		}
-		&-right {
-			right: -160px;
-			transform: rotate(90deg);
-		}
-		@media only screen and (max-width: $mq-ipad) {
-			display: none;
+		@media only screen and (max-width: 492px) {
+			height: 70px;
 		}
 	}
+
+	.topic {
+		position: relative;
+    	width: auto;
+    	text-align: center;
+    	display: inline-block;
+    	top: 0;
+    	margin: 6px 8px;
+		
+	    @media only screen and (min-width: $mq-med) {
+    		position: absolute;
+    	    top: calc(50% - 7px);
+    	    width: 300px;
+	    }
+		&-left { 
+			left: 0;
+			&:hover {
+				.direction-left {
+					@include animation( leftbounce 2.25s infinite );
+				}
+			}
+			@media only screen and (max-width: $mq-med) {
+				width: 50%;
+			    border-right: 1px solid $medium-grey;
+			}
+			.topic {
+				@media only screen and (min-width: $mq-med) {
+					right: -125px;
+					transform: rotate(-90deg);
+				}
+			}
+		}
+		&-right {
+			right: 0;
+			&:hover {
+				.direction-right {
+					@include animation( rightbounce 2.25s infinite );
+				}
+			}
+			@media only screen and (max-width: $mq-med) {
+				width: 50%;
+			}
+			.topic {
+				@media only screen and (min-width: $mq-med) {
+					left: -125px;
+					transform: rotate(90deg);
+				}
+			}
+			
+		}
+	}
+
+	.topic-left {
+		@media only screen and (max-width: $mq-ipad) {
+			text-align: left;
+			.topic {
+				text-align: left;
+			}
+		}
+	}
+
+	.topic-right {
+		@media only screen and (max-width: $mq-ipad) {
+			text-align: right;
+			.topic {
+				text-align: right;
+			}
+		}
+	}
+
 
 	.button {
 		@include box-shadow( 0px, 2px, 4px, rgba(82,82,82,0.5));
@@ -109,6 +186,7 @@
 			font-weight: bold;
 			letter-spacing: 0.25px;
 			@include font-size(36px);
+			text-shadow: 1px 1px $medium-grey;
 		}
 	}
 
@@ -154,12 +232,26 @@
 		
 	}
 
+	
 	.direction {
-		position: absolute;
-		right: calc(50% - 5px);
-		bottom: 50px;
-		transform: rotate(-90deg);
-		
+		display: inline-block;
+		// position: relative;
+
+		@media only screen and (min-width: $mq-med) {
+			position: absolute;
+			top: 50%;
+		}
+
+		@media only screen and (max-width: 520px) {
+			display: none;
+		}
+		&-left {
+			transform: rotate(180deg);
+			left: 20px;
+		}
+		&-right {
+			right: 20px;
+		}
 	}
 
 	&-web-design {
@@ -242,5 +334,26 @@
 				height: 325px;
 			}
 		}
+	}
+}
+
+
+
+@include keyframes( leftbounce ){
+	0%, 100% { 
+		left: 20px;
+	}
+	62.5% {
+		left: 12px;
+	}
+}
+
+
+@include keyframes( rightbounce ){
+	0%, 100% { 
+		right: 20px;
+	}
+	62.5% {
+		right: 12px;
 	}
 }

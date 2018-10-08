@@ -8,7 +8,6 @@ const CurrentYear = new Date().getFullYear();
 
 const Footer = props => (
     <footer className="public-footer">
-        <div className="footer-map" />
         <Grid>
             <Row>
                 {Object.keys(PageLinks).map(section_name => {
@@ -41,7 +40,6 @@ const Footer = props => (
                     <ul>
                         <li>Contact Us</li>
                         <li>
-                            Sales:{" "}
                             <a href="mailto:info@watersauce.com?Subject=Hello%20Water%20Sauce">
                                 info@watersauce.com
                             </a>

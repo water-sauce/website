@@ -38,13 +38,14 @@ class WebDesignPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <SubHeroServicesBanner
-                    icon={butterfly}
-                    alt="web design icon as a butterfly"
-                    paragraph="In our many years in the tech industry, we’ve worked with e-commerce websites, service industries, startups, and mom-and-pop shops. We understand the many pain points of updating a website. We make sure to walk our clients through every step of the process to make the update as smooth as possible. Boost your company profile with a gorgeous interface!" 
-                />
-
-                <InfoBanner product_banners={product_info} color="yellow" />
+                <main>
+                    <SubHeroServicesBanner
+                        icon={butterfly}
+                        alt="web design icon as a butterfly"
+                        paragraph="In our many years in the tech industry, we’ve worked with e-commerce websites, service industries, startups, and mom-and-pop shops. We understand the many pain points of updating a website. We make sure to walk our clients through every step of the process to make the update as smooth as possible. Boost your company profile with a gorgeous interface!" 
+                    />
+                    <InfoBanner product_banners={product_info} color="yellow" />
+                </main>
             </div>
         );
     }

@@ -32,13 +32,14 @@ class UXDesignPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <SubHeroServicesBanner 
-                    icon={head}
-                    alt="UX design icon as a human head"
-                    paragraph="UX, or user experience, is just that - an experience. Never underestimate the impact a good experience can have on your branding. The most important thing when it comes to UX is the consistent reminder that “users” and “customers” are real human beings with real emotions and needs. Great UX comes from market research, learning about the customer base, and figuring out how their online experience produces a positive outcome."
-                />
-
-                <InfoBanner product_banners={product_info} color="pink" />
+                <main>
+                    <SubHeroServicesBanner 
+                        icon={head}
+                        alt="UX design icon as a human head"
+                        paragraph="UX, or user experience, is just that - an experience. Never underestimate the impact a good experience can have on your branding. The most important thing when it comes to UX is the consistent reminder that “users” and “customers” are real human beings with real emotions and needs. Great UX comes from market research, learning about the customer base, and figuring out how their online experience produces a positive outcome."
+                    />
+                    <InfoBanner product_banners={product_info} color="pink" />
+                </main>
             </div>
         );
     }

@@ -72,25 +72,26 @@ class WhatIsSEOAuditingPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <HeroBanner 
-                    title="What is SEO Auditing?"
-                    description={
-                        <Fragment>
-                            <b>SEO auditing</b> means having a service or agency go through your website, page-by-page, to make sure the content and HTML formatting is optimized for SEO. <Link to="/seo">SEO audits</Link> are done to help your company gain better insight into your site’s organic traffic. If you once had a good stream of traffic that is now slowing down, the best time to do an SEO audit is now.
+                <main>
+                    <HeroBanner 
+                        title="What is SEO Auditing?"
+                        description={
+                            <Fragment>
+                                <b>SEO auditing</b> means having a service or agency go through your website, page-by-page, to make sure the content and HTML formatting is optimized for SEO. <Link to="/seo">SEO audits</Link> are done to help your company gain better insight into your site’s organic traffic. If you once had a good stream of traffic that is now slowing down, the best time to do an SEO audit is now.
 
-                            Building an SEO plan can and should be done with the helps of tools such as <a href="https://searchengineland.com/google-adds-new-seo-audit-category-chromes-lighthouse-extension-291303" target="_blank">Google Chrome</a> or <a href="https://moz.com/free-seo-tools" target="_blank">Moz</a>. What an agency like Water Sauce can provide that Google Chrome and Moz cannot is the human touch needed to understand the context of your service, product, and industry.
-                        </Fragment>
-                    }
-                    src={binoculars}
-                    alt="binoculars representing search engine optimization">
-                </HeroBanner>
-
-                <SubHeroServicesBanner
-                    title="Water Sauce SEO Auditing"
-                    paragraph="We provide a personalized road map that addresses the competition, rates factors based on our internal algorithm, and optimal suggestions for keywords in industry-related search results. We also have a team of writers who can help with SEO-optimized content."
-                    cta_button={true}
-                />
-                <InfoBanner product_banners={product_info} title="Your Personalized SEO Roadmap" />
+                                Building an SEO plan can and should be done with the helps of tools such as <a href="https://searchengineland.com/google-adds-new-seo-audit-category-chromes-lighthouse-extension-291303" target="_blank">Google Chrome</a> or <a href="https://moz.com/free-seo-tools" target="_blank">Moz</a>. What an agency like Water Sauce can provide that Google Chrome and Moz cannot is the human touch needed to understand the context of your service, product, and industry.
+                            </Fragment>
+                        }
+                        src={binoculars}
+                        alt="binoculars representing search engine optimization">
+                    </HeroBanner>
+                    <SubHeroServicesBanner
+                        title="Water Sauce SEO Auditing"
+                        paragraph="We provide a personalized road map that addresses the competition, rates factors based on our internal algorithm, and optimal suggestions for keywords in industry-related search results. We also have a team of writers who can help with SEO-optimized content."
+                        cta_button={true}
+                    />
+                    <InfoBanner product_banners={product_info} title="Your Personalized SEO Roadmap" />
+                </main>
             </div>
         );
     }

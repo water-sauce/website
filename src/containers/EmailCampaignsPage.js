@@ -31,13 +31,15 @@ class EmailCampaignsPage extends Component {
                     <meta name="twitter:description" content={description} />
                 </Helmet>
 
-                <SubHeroServicesBanner
-                    icon={snail}
-                    alt="email campaign icon as a snail"
-                    paragraph="Say you have a new product and a list of existing clients, leads, etc. How do you spread awareness? You could send a mass email, but the average clickthrough rate for these types of strategies is a measly 3.1%. We can help you beat these odds through strategic audience segmentation, content development, campaign execution, and thoughtful campaign evaluation." 
-                />
+                <main>
+                    <SubHeroServicesBanner
+                        icon={snail}
+                        alt="email campaign icon as a snail"
+                        paragraph="Say you have a new product and a list of existing clients, leads, etc. How do you spread awareness? You could send a mass email, but the average clickthrough rate for these types of strategies is a measly 3.1%. We can help you beat these odds through strategic audience segmentation, content development, campaign execution, and thoughtful campaign evaluation." 
+                    />
 
-                <InfoBanner product_banners={product_info} color="purple" />
+                    <InfoBanner product_banners={product_info} color="purple" />
+                </main>
             </div>
         );
     }

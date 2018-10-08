@@ -1,0 +1,10 @@
+.definition-section {
+	padding: 3rem 1rem;
+	background-color: $lightest-grey;
+	font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
+    font-feature-settings: 'onum' 1;
+    -webkit-font-smoothing: antialiased;
+    h2 {
+    	font-style: normal;
+    }
+}

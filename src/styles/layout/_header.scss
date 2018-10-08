@@ -53,7 +53,7 @@
         }
         li {
             display: inline-block;
-            margin-right: 12px;
+            margin-left: 12px;
             margin-bottom: 0;
             list-style: none;
             @media (max-width: $mq-ipad) {
@@ -103,6 +103,12 @@
     }
     .dropdown-toggle {
         text-transform: capitalize;
+    }
+
+    &-right {
+        @media (max-width: $mq-ipad) {
+            display: none;
+        }
     }
 }
 

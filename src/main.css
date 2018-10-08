@@ -431,7 +431,7 @@ a {
       margin-top: 5px; }
     .navbar ul li {
       display: inline-block;
-      margin-right: 12px;
+      margin-left: 12px;
       margin-bottom: 0;
       list-style: none; }
       @media (max-width: 48em) {
@@ -474,6 +474,9 @@ a {
         display: none !important; } }
   .navbar .dropdown-toggle {
     text-transform: capitalize; }
+  @media (max-width: 48em) {
+    .navbar-right {
+      display: none; } }
 
 .navbar-nav {
   flex-direction: row; }
@@ -505,6 +508,8 @@ footer {
   footer .row {
     position: relative;
     z-index: 10; }
+  footer a:hover {
+    color: #F0F4EF; }
   footer ul {
     margin: 0;
     padding: 0; }
@@ -897,6 +902,7 @@ title-block {
   transform: scale(1); }
 
 .banner-service {
+  position: relative;
   background: linear-gradient(135deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(225deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(315deg, #F0F4EF 25%, transparent 25%), linear-gradient(45deg, #F0F4EF 25%, transparent 25%);
   background-size: 25px 25px;
   background-color: #FFFFFF;
@@ -904,8 +910,12 @@ title-block {
   background-repeat: repeat;
   background-size: 254px !important;
   background-attachment: fixed !important; }
+  @media only screen and (max-width: 62em) {
+    .banner-service {
+      padding: 160px 0 100px; } }
   @media only screen and (max-width: 48em) {
     .banner-service {
+      padding: 180px 0 80px;
       background-size: 127px !important; } }
   .banner-service-branding {
     background: url("images/banner-backgrounds/branding-bg.png"); }
@@ -920,41 +930,97 @@ title-block {
   .banner-service-seo {
     background: url("images/banner-backgrounds/seo-bg.png"); }
   .banner-service .current-topic {
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    font-feature-settings: 'onum' 0;
+    text-transform: uppercase;
+    font-weight: 400;
     font-size: 16px;
     font-size: 1rem;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 200;
-    letter-spacing: 1.25px; }
-  .banner-service .topic {
+    letter-spacing: 1px;
+    margin-bottom: 1rem; }
+  .banner-service .topic-wrapper {
     position: absolute;
-    top: calc(50% - 12.5px);
+    top: 0;
+    height: 100%;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1.75px;
     color: #757575;
     font-weight: 400;
-    width: 235px;
+    width: 80px;
     text-align: center;
     padding: 10px;
-    background: #F0F4EF;
+    background: rgba(230, 230, 230, 0.65);
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out; }
-    .banner-service .topic:hover {
+    .banner-service .topic-wrapper:hover {
       color: #262627;
-      background: #d8d8d8;
+      background: rgba(230, 230, 230, 0.95);
       text-decoration: none; }
-    .banner-service .topic-left {
-      left: -160px;
-      transform: rotate(-90deg); }
-    .banner-service .topic-right {
-      right: -160px;
-      transform: rotate(90deg); }
-    @media only screen and (max-width: 48em) {
+    @media only screen and (max-width: 62em) {
+      .banner-service .topic-wrapper {
+        top: 0;
+        height: 50px; } }
+    @media only screen and (max-width: 492px) {
+      .banner-service .topic-wrapper {
+        height: 70px; } }
+  .banner-service .topic {
+    position: relative;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    top: 0;
+    margin: 6px 8px; }
+    @media only screen and (min-width: 62em) {
       .banner-service .topic {
-        display: none; } }
+        position: absolute;
+        top: calc(50% - 7px);
+        width: 300px; } }
+    .banner-service .topic-left {
+      left: 0; }
+      .banner-service .topic-left:hover .direction-left {
+        -webkit-animation: leftbounce 2.25s infinite;
+        -moz-animation: leftbounce 2.25s infinite;
+        -ms-animation: leftbounce 2.25s infinite;
+        -o-animation: leftbounce 2.25s infinite;
+        animation: leftbounce 2.25s infinite; }
+      @media only screen and (max-width: 62em) {
+        .banner-service .topic-left {
+          width: 50%;
+          border-right: 1px solid #757575; } }
+      @media only screen and (min-width: 62em) {
+        .banner-service .topic-left .topic {
+          right: -125px;
+          transform: rotate(-90deg); } }
+    .banner-service .topic-right {
+      right: 0; }
+      .banner-service .topic-right:hover .direction-right {
+        -webkit-animation: rightbounce 2.25s infinite;
+        -moz-animation: rightbounce 2.25s infinite;
+        -ms-animation: rightbounce 2.25s infinite;
+        -o-animation: rightbounce 2.25s infinite;
+        animation: rightbounce 2.25s infinite; }
+      @media only screen and (max-width: 62em) {
+        .banner-service .topic-right {
+          width: 50%; } }
+      @media only screen and (min-width: 62em) {
+        .banner-service .topic-right .topic {
+          left: -125px;
+          transform: rotate(90deg); } }
+  @media only screen and (max-width: 48em) {
+    .banner-service .topic-left {
+      text-align: left; }
+      .banner-service .topic-left .topic {
+        text-align: left; } }
+  @media only screen and (max-width: 48em) {
+    .banner-service .topic-right {
+      text-align: right; }
+      .banner-service .topic-right .topic {
+        text-align: right; } }
   .banner-service .button {
     -webkit-box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.5);
     -moz-box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.5);
@@ -979,7 +1045,8 @@ title-block {
         font-weight: bold;
         letter-spacing: 0.25px;
         font-size: 36px;
-        font-size: 2.25rem; } }
+        font-size: 2.25rem;
+        text-shadow: 1px 1px #757575; } }
   .banner-service .cta-wrapper {
     padding: 2.5rem 3rem;
     position: relative;
@@ -1013,10 +1080,19 @@ title-block {
       bottom: 0;
       right: 0; }
   .banner-service .direction {
-    position: absolute;
-    right: calc(50% - 5px);
-    bottom: 50px;
-    transform: rotate(-90deg); }
+    display: inline-block; }
+    @media only screen and (min-width: 62em) {
+      .banner-service .direction {
+        position: absolute;
+        top: 50%; } }
+    @media only screen and (max-width: 520px) {
+      .banner-service .direction {
+        display: none; } }
+    .banner-service .direction-left {
+      transform: rotate(180deg);
+      left: 20px; }
+    .banner-service .direction-right {
+      right: 20px; }
   .banner-service-web-design .container {
     background: #fbc54b; }
   .banner-service-web-design #contact-butterfly {
@@ -1068,6 +1144,54 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service-ux-design #contact-face {
         height: 325px; } }
+
+@-webkit-keyframes leftbounce {
+  0%, 100% {
+    left: 20px; }
+  62.5% {
+    left: 12px; } }
+
+@-moz-keyframes leftbounce {
+  0%, 100% {
+    left: 20px; }
+  62.5% {
+    left: 12px; } }
+
+@-o-keyframes leftbounce {
+  0%, 100% {
+    left: 20px; }
+  62.5% {
+    left: 12px; } }
+
+@keyframes leftbounce {
+  0%, 100% {
+    left: 20px; }
+  62.5% {
+    left: 12px; } }
+
+@-webkit-keyframes rightbounce {
+  0%, 100% {
+    right: 20px; }
+  62.5% {
+    right: 12px; } }
+
+@-moz-keyframes rightbounce {
+  0%, 100% {
+    right: 20px; }
+  62.5% {
+    right: 12px; } }
+
+@-o-keyframes rightbounce {
+  0%, 100% {
+    right: 20px; }
+  62.5% {
+    right: 12px; } }
+
+@keyframes rightbounce {
+  0%, 100% {
+    right: 20px; }
+  62.5% {
+    right: 12px; } }
 
 .sub-hero-services-banner {
   background: #262627;
@@ -1515,3 +1639,12 @@ a.about-name:hover {
     top: 10.5%; }
   50% {
     top: 13.5%; } }
+
+.definition-section {
+  padding: 3rem 1rem;
+  background-color: #F0F4EF;
+  font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
+  font-feature-settings: 'onum' 1;
+  -webkit-font-smoothing: antialiased; }
+  .definition-section h2 {
+    font-style: normal; }
