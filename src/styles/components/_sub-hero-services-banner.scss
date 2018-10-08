@@ -15,6 +15,10 @@
 		letter-spacing: 1px;
 		margin: 0 auto;
 		display: block;
+		font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
+		line-height: 1.632;
+		font-feature-settings: 'onum' 1;
+		-webkit-font-smoothing: antialiased;
 	}
 	h2 {
 		color: $white;

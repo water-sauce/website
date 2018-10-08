@@ -655,7 +655,7 @@ footer {
   .accent-pink {
     background: #E57777; }
   .accent-yellow {
-    background: #fbca5c; }
+    background: #fbc54b; }
   .accent-white {
     background: #FFFFFF; }
 
@@ -709,7 +709,7 @@ title-block {
     font-size: 0.875rem; }
   .button-blue {
     background: #696AFD;
-    color: #FFFFFF; }
+    color: #FFFFFF !important; }
     .button-blue:hover {
       background: #5051fd;
       color: #FFFFFF; }
@@ -756,7 +756,7 @@ title-block {
   .cards-home h3 {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.25px;
+    letter-spacing: 1px;
     margin-bottom: 1rem; }
   .cards-home p {
     max-width: 650px;
@@ -823,8 +823,8 @@ title-block {
     z-index: 2;
     font-family: 'Libre Baskerville', valkyrie-text, serif; }
   .home-card-0 {
-    background: #fbca5c;
-    border: 4px solid #fbca5c; }
+    background: #fbc54b;
+    border: 4px solid #fbc54b; }
   .home-card-1 {
     background: #E3B5E0;
     border: 4px solid #E3B5E0; }
@@ -856,7 +856,7 @@ title-block {
       width: 250px; }
 
 .hero {
-  padding: 3rem 0;
+  padding: 4rem 0 3rem;
   text-align: left; }
   .hero h1, .hero h4 {
     margin-bottom: 0.5rem;
@@ -876,7 +876,7 @@ title-block {
   .hero img {
     width: 100%;
     max-width: 300px;
-    margin: 2rem auto;
+    margin: 0 auto;
     display: block; }
 
 .bannerTransition-appear {
@@ -919,17 +919,38 @@ title-block {
     background: url("images/banner-backgrounds/ux-design-bg.png"); }
   .banner-service-seo {
     background: url("images/banner-backgrounds/seo-bg.png"); }
+  .banner-service .current-topic {
+    font-size: 16px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1.25px; }
   .banner-service .topic {
     position: absolute;
-    top: calc(50% - 15px);
+    top: calc(50% - 12.5px);
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1.75px;
-    color: #1B1C6A;
-    font-weight: 400; }
+    color: #757575;
+    font-weight: 400;
+    width: 235px;
+    text-align: center;
+    padding: 10px;
+    background: #F0F4EF;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .banner-service .topic:hover {
+      color: #262627;
+      background: #d8d8d8;
+      text-decoration: none; }
     .banner-service .topic-left {
+      left: -160px;
       transform: rotate(-90deg); }
     .banner-service .topic-right {
+      right: -160px;
       transform: rotate(90deg); }
     @media only screen and (max-width: 48em) {
       .banner-service .topic {
@@ -970,7 +991,7 @@ title-block {
       max-width: 450px;
       margin-bottom: 28px;
       line-height: 23px;
-      font-weight: 300; }
+      letter-spacing: 0.35px; }
       @media only screen and (max-width: 48em) {
         .banner-service .cta-wrapper p {
           display: none; } }
@@ -992,19 +1013,18 @@ title-block {
       bottom: 0;
       right: 0; }
   .banner-service .direction {
-    position: absolute; }
+    position: absolute;
+    right: calc(50% - 5px);
+    bottom: 50px;
+    transform: rotate(-90deg); }
   .banner-service-web-design .container {
-    background: #fbca5c; }
+    background: #fbc54b; }
   .banner-service-web-design #contact-butterfly {
     height: 425px;
     right: 20px; }
     @media only screen and (max-width: 48em) {
       .banner-service-web-design #contact-butterfly {
         height: 350px; } }
-  .banner-service-web-design .topic-left {
-    left: -90px; }
-  .banner-service-web-design .topic-right {
-    right: -65px; }
   .banner-service-seo .container {
     background: #E3B5E0; }
   .banner-service-seo #contact-parrot {
@@ -1012,10 +1032,6 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service-seo #contact-parrot {
         height: 350px; } }
-  .banner-service-seo .topic-left {
-    left: -100px; }
-  .banner-service-seo .topic-right {
-    right: -65px; }
   .banner-service-branding .container {
     background: #FFA762; }
   .banner-service-branding #contact-lion {
@@ -1025,25 +1041,17 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service-branding #contact-lion {
         height: 345px; } }
-  .banner-service-branding .topic-left {
-    left: -65px; }
-  .banner-service-branding .topic-right {
-    right: -90px; }
   .banner-service-fundraising .container {
     background: #93E2DD; }
   .banner-service-fundraising #contact-shark {
     height: 350px;
-    right: -65px;
+    right: -25px;
     top: -35px; }
     @media only screen and (max-width: 48em) {
       .banner-service-fundraising #contact-shark {
         height: 310px;
         left: 0;
         top: 0; } }
-  .banner-service-fundraising .topic-left {
-    left: -90px; }
-  .banner-service-fundraising .topic-right {
-    right: -155px; }
   .banner-service-email-campaigns .container {
     background: #B271AE; }
   .banner-service-email-campaigns #contact-snail {
@@ -1053,10 +1061,6 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service-email-campaigns #contact-snail {
         height: 310px; } }
-  .banner-service-email-campaigns .topic-left {
-    left: -155px; }
-  .banner-service-email-campaigns .topic-right {
-    right: -125px; }
   .banner-service-ux-design .container {
     background: #E57777; }
   .banner-service-ux-design #contact-face {
@@ -1064,10 +1068,6 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service-ux-design #contact-face {
         height: 325px; } }
-  .banner-service-ux-design .topic-left {
-    left: -125px; }
-  .banner-service-ux-design .topic-right {
-    right: -100px; }
 
 .sub-hero-services-banner {
   background: #262627;
@@ -1085,7 +1085,11 @@ title-block {
     font-weight: 300;
     letter-spacing: 1px;
     margin: 0 auto;
-    display: block; }
+    display: block;
+    font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
+    line-height: 1.632;
+    font-feature-settings: 'onum' 1;
+    -webkit-font-smoothing: antialiased; }
   .sub-hero-services-banner h2 {
     color: #FFFFFF;
     margin: 0 0 1rem;

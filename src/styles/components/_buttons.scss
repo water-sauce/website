@@ -19,7 +19,7 @@
 	}
 	&-blue {
 		background: $true-blue;
-		color: $white;
+		color: $white !important;
 		&:hover {
 			background: darken($true-blue, 5%);
 			color: $white;

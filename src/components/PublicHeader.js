@@ -14,8 +14,6 @@ class Header extends Component {
                         <img src={logo} className="logo" alt="Water Sauce logo" />
                     </NavItem>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-toggle" />
-                <Navbar.Collapse>
                 <Nav pullRight>
                     {Object.keys(PageLinks).map((section_name, index) => {
                         return (
@@ -41,7 +39,6 @@ class Header extends Component {
                         Contact Us
                     </NavItem>
                 </Nav>
-                </Navbar.Collapse>
         </Navbar>
         );
     }

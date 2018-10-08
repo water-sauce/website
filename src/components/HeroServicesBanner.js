@@ -19,16 +19,14 @@ class HeroServicesBanner extends Component {
 			      transitionLeave={false}>
 					<Grid className="position-relative">
 						<Link className="topic topic-left" to={this.props.prev_link}>
-							<FontAwesome
-						        className='super-crazy-colors'
-						        name='rocket'
-						        size='2x'
-						        spin
-						        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>
-						        {this.props.prev_topic}
+							<span className="direction direction-left">{ '\u003e' }</span>
+					        {this.props.prev_topic}
 						</Link>
-						<Link className="topic topic-right" to={this.props.next_link}>{this.props.next_topic}<span className="direction">{ '\u003e' }</span></Link>
+						<Link className="topic topic-right" to={this.props.next_link}>{this.props.next_topic}
+							<span className="direction direction-right">{ '\u003e' }</span>
+						</Link>
 						<div className="cta-wrapper">
+							<h2 className="current-topic">{this.props.topic}</h2>
 							<h4>{this.props.title}</h4>
 							<p>{this.props.subtitle}</p>
 							<div className="cta-information">

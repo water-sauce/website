@@ -44,19 +44,41 @@
 	&-seo {
 		background: url("images/banner-backgrounds/seo-bg.png");
 	}
+
+	.current-topic {
+		@include font-size(16px);
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 200;
+		letter-spacing: 1.25px;
+	}
 	
 	.topic {
 		position: absolute;
-		top: calc(50% - 15px);
+		top: calc(50% - 12.5px);
 		text-transform: uppercase;
 		font-size: 14px;
 		letter-spacing: 1.75px;
-		color: $dark-blue;
+		color: $medium-grey;
 		font-weight: 400;
+		width: 235px;
+		text-align: center;
+		padding: 10px;
+		background: $lightest-grey;
+		@include transition(0.2s ease-in-out);
+
+		&:hover {
+			color: $grey;
+			background: darken( #f1f1f1, 10% );
+			text-decoration: none;
+
+		}
 		&-left { 
+			left: -160px;
 			transform: rotate(-90deg);
 		}
 		&-right {
+			right: -160px;
 			transform: rotate(90deg);
 		}
 		@media only screen and (max-width: $mq-ipad) {
@@ -101,7 +123,7 @@
 			max-width: 450px;
 			margin-bottom: 28px;
 		    line-height: 23px;
-		    font-weight: 300;
+		    letter-spacing: 0.35px;
 			@media only screen and (max-width: $mq-ipad) {
 				display: none;
 			}
@@ -129,18 +151,16 @@
 			bottom: 0;
 			right: 0;
 		}
+		
 	}
 
 	.direction {
 		position: absolute;
-		// top: 200px;
+		right: calc(50% - 5px);
+		bottom: 50px;
+		transform: rotate(-90deg);
+		
 	}
-		// path="/web-design"
-		// path="/seo"
-		// path="/fundraising-materials"
-		// path="/branding"
-		// path="/email-campaigns"
-		// path="/ux-design"
 
 	&-web-design {
 		.container {
@@ -153,12 +173,7 @@
 				height: 350px;
 			}
 		}
-		.topic-left {
-			left: -90px;
-		}
-		.topic-right {
-			right: -65px;
-		}
+		
 	}
 
 	&-seo {
@@ -170,12 +185,6 @@
 			@media only screen and (max-width: $mq-ipad) {
 				height: 350px;
 			}
-		}
-		.topic-left {
-			left: -100px;
-		}
-		.topic-right {
-			right: -65px;
 		}
 	}
 
@@ -191,12 +200,6 @@
 				height: 345px;
 			}
 		}
-		.topic-left {
-			left: -65px;
-		}
-		.topic-right {
-			right: -90px;
-		}
 	}
 
 	&-fundraising {
@@ -205,19 +208,13 @@
 		}
 		#contact-shark {
 			height: 350px;
-			right: -65px;
+		    right: -25px;
 			top: -35px;
 			@media only screen and (max-width: $mq-ipad) {
 				height: 310px;
 				left: 0;
 				top: 0;
 			}
-		}
-		.topic-left {
-			left: -90px;
-		}
-		.topic-right {
-			right: -155px;
 		}
 	}
 
@@ -233,12 +230,6 @@
 				height: 310px;
 			}
 		}
-		.topic-left {
-			left: -155px;
-		}
-		.topic-right {
-			right: -125px;
-		}
 	}
 
 	&-ux-design {
@@ -250,12 +241,6 @@
 			@media only screen and (max-width: $mq-ipad) {
 				height: 325px;
 			}
-		}
-		.topic-left {
-			left: -125px;
-		}
-		.topic-right {
-			right: -100px;
 		}
 	}
 }

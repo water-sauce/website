@@ -197,7 +197,7 @@ class Services extends Component {
 										UX design is much more than visual design. It is a process with the overall aim of helping your users navigate your products in a delightful way.
 									</Fragment>
 								}
-								topic="ux design"
+								topic="UX design"
 								prev_topic="Email Campaigns"
 								next_topic="Web Design"
 								prev_link="/email-campaigns"
