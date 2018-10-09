@@ -1033,7 +1033,10 @@ title-block {
     .banner-service .topic-wrapper:hover {
       color: #262627;
       background: rgba(240, 244, 239, 0.95);
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-box-shadow: 0px 2px 5px rgba(82, 82, 82, 0.5);
+      -moz-box-shadow: 0px 2px 5px rgba(82, 82, 82, 0.5);
+      box-shadow: 0px 2px 5px rgba(82, 82, 82, 0.5); }
     @media only screen and (max-width: 62em) {
       .banner-service .topic-wrapper {
         top: 0;
@@ -1047,10 +1050,10 @@ title-block {
     text-align: center;
     display: inline-block;
     margin: 0; }
-    @media only screen and (min-width: 74em) {
+    @media only screen and (min-width: 993px) {
       .banner-service .topic {
         position: absolute;
-        top: calc(50% - 7px);
+        top: calc(50% - 2px);
         width: 300px;
         left: auto; } }
     .banner-service .topic-left {
@@ -1065,9 +1068,9 @@ title-block {
         .banner-service .topic-left {
           width: 50%;
           border-right: 1px solid #757575; } }
-      @media only screen and (min-width: 74em) {
+      @media only screen and (min-width: 993px) {
         .banner-service .topic-left .topic {
-          right: -125px;
+          right: -120px;
           transform: rotate(-90deg); } }
     .banner-service .topic-right {
       right: 0; }
@@ -1080,9 +1083,9 @@ title-block {
       @media only screen and (max-width: 62em) {
         .banner-service .topic-right {
           width: 50%; } }
-      @media only screen and (min-width: 74em) {
+      @media only screen and (min-width: 993px) {
         .banner-service .topic-right .topic {
-          left: -125px;
+          left: -120px;
           transform: rotate(90deg); } }
   @media only screen and (max-width: 48em) {
     .banner-service .topic-left {
@@ -1154,11 +1157,11 @@ title-block {
       right: 0; }
   .banner-service .direction {
     display: inline-block; }
-    @media only screen and (min-width: 74em) {
+    @media only screen and (min-width: 993px) {
       .banner-service .direction {
         position: absolute;
         top: 50%; } }
-    @media only screen and (max-width: 74em) {
+    @media only screen and (max-width: 62em) {
       .banner-service .direction {
         margin: 2px 8px;
         vertical-align: text-top; } }

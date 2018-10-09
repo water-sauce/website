@@ -84,6 +84,7 @@
 			color: $grey;
 			background: rgba(240, 244, 239, 0.95);
 			text-decoration: none;
+			@include box-shadow( 0px, 2px, 5px, rgba(82,82,82,0.5));
 		}
 		
 		@media only screen and (max-width: $mq-med) {
@@ -104,9 +105,9 @@
     	margin: 0;
     	@extend .vertical-align-middle-pure;
 		
-	    @media only screen and (min-width: $mq-med-max) {
+	    @media only screen and (min-width: $mq-med-limit) {
     		position: absolute;
-    	    top: calc(50% - 7px);
+    	    top: calc(50% - 2px);
     	    width: 300px;
     	    left: auto;
     	}
@@ -123,8 +124,8 @@
 			    border-right: 1px solid $medium-grey;
 			}
 			.topic {
-				@media only screen and (min-width: $mq-med-max) {
-					right: -125px;
+				@media only screen and (min-width: $mq-med-limit) {
+					right: -120px;
 					transform: rotate(-90deg);
 				}
 			}
@@ -140,8 +141,8 @@
 				width: 50%;
 			}
 			.topic {
-				@media only screen and (min-width: $mq-med-max) {
-					left: -125px;
+				@media only screen and (min-width: $mq-med-limit) {
+					left: -120px;
 					transform: rotate(90deg);
 				}
 			}
@@ -242,12 +243,12 @@
 		display: inline-block;
 		// position: relative;
 
-		@media only screen and (min-width: $mq-med-max) {
+		@media only screen and (min-width: $mq-med-limit) {
 			position: absolute;
 			top: 50%;
 		}
-		
-		@media only screen and (max-width: $mq-med-max) {
+
+		@media only screen and (max-width: $mq-med) {
 			margin: 2px 8px;
 			vertical-align: text-top;
 		}

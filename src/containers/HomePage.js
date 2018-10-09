@@ -118,6 +118,8 @@ class HomePage extends Component {
     					</div>
     					<div id="messaging">
     						<h2>We. Move.<br /><b>Mountains.</b></h2>
+                            <p>Scroll Down</p>
+                            <p className="direction direction-down">{ '\u003e' }</p>
     					</div>
     				</div>
                     <PopSection 
