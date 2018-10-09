@@ -15,8 +15,8 @@ function HomeCards(props) {
     ));
 
     return <Grid className="cards-home">
+        {props.src ? <img src={props.src} alt={props.alt} id={props.img_id} /> : ""}
         <h3>Our Design &amp; Marketing Services</h3>
-        <p>Water Sauce is a full service digital design agency. Our clients are our partners — we are invested in their success and look to form lasting relationships. <br/> Find out more about the services our team offers.</p>
         <Row>
         {services}
         </Row>

@@ -36,7 +36,7 @@ class BrandingPage extends Component {
                 <SubHeroServicesBanner 
                     icon={lion}
                     alt="branding as a lion"
-                    paragraph="Branding is all about authenticity — more than ever the internet is an increasingly loud critic. Being a voice true to company values speaks volumes. It can be hard to separate yourself from your competitors, but through branding or a rebranding, you can define your company values and see if your product exudes this." 
+                    paragraph="Branding is all about authenticity — more than ever the internet is an increasingly loud critic. Being a voice true to company values speaks volumes. It can be hard to separate yourself from your competitors, but through branding or a rebranding, you can define your company values and make your product exude this." 
                 />
                 <InfoBanner product_banners={product_info} color="orange" />
             </div>

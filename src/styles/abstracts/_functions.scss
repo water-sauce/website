@@ -9,6 +9,15 @@ h4 {
 	// background-color: rgba(8,59,114,1);
 }
 
+.vertical-align-middle-pure {
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	@include transform(translate(0, -50%));
+}
+
 .vertical-align-middle {
 	z-index: 2;
 	position: absolute;

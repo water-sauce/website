@@ -15,7 +15,7 @@ const product_info = [
         title_block: "",
         description: (
             <Fragment>
-                Identifying your competitors, keyword research, a well-defined roadmap, and thereafter focused content will all help improve your SEO rankings. Having key landing pages seen on the first page is crucial since <a href="https://www.protofuse.com/blog/details/first-page-of-google-by-the-numbers/" target="_blank">less than 10% or people advance to Page 2</a>.
+                Identifying your competitors, keyword research, a well-defined roadmap, and thereafter focused content will all help improve your SEO rankings. Having key landing pages seen on the first page is crucial since <a href="https://www.protofuse.com/blog/details/first-page-of-google-by-the-numbers/" target="_blank" rel="noopener noreferrer">less than 10% or people advance to Page 2</a>.
                 <br/><br/>
                 Here are the steps to competitive analysis that we take:
             </Fragment> 
@@ -26,7 +26,7 @@ const product_info = [
         title_block: "Competitive Analysis",
         description: (
             <Fragment>
-                Competition is only natural and beating them at the game of SEO should be your goal. One must determine who your biggest competitors are, how they rank with certain keywords, and <a href="https://searchengineland.com/build-seo-strategy-dominate-market-274681" target="_blank">what tactics are working within your industry</a>. Once you analyze why and how their site is getting traffic, you can then move onto the next step, keyword research.
+                Competition is only natural and beating them at the game of SEO should be your goal. One must determine who your biggest competitors are, how they rank with certain keywords, and <a href="https://searchengineland.com/build-seo-strategy-dominate-market-274681" target="_blank" rel="noopener noreferrer">what tactics are working within your industry</a>. Once you analyze why and how their site is getting traffic, you can then move onto the next step, keyword research.
             </Fragment>
         )
     },
@@ -53,7 +53,7 @@ const product_info = [
         title_block: "Re-focused Content",
         description: (
             <Fragment>
-                Good keyword-focused content should be the primary goal of every SEO strategy. As Google’s algorithm has evolved, this has been an increasing focus within on how they rank pages. <a href="https://audseo.com/blog/why-content-matters-in-a-local-seo-strategy/" target="_blank">Pages with great content</a> that provide relevant results from search queries will be rewarded with more points, thus ranking higher. 
+                Good keyword-focused content should be the primary goal of every SEO strategy. As Google’s algorithm has evolved, this has been an increasing focus within on how they rank pages. <a href="https://audseo.com/blog/why-content-matters-in-a-local-seo-strategy/" target="_blank" rel="noopener noreferrer">Pages with great content</a> that provide relevant results from search queries will be rewarded with more points, thus ranking higher. 
                 <br/><br/>
                 Like going to the gym consistently, results will eventually show overtime as long as the content stays consistent and fresh. <a href="mailto:info@watersauce.com">Contact Us</a> if you’re interested in seeing how we can help.
             </Fragment> 
@@ -79,7 +79,7 @@ class WhatIsSEOAuditingPage extends Component {
                             <Fragment>
                                 <b>SEO auditing</b> means having a service or agency go through your website, page-by-page, to make sure the content and HTML formatting is optimized for SEO. <Link to="/seo">SEO audits</Link> are done to help your company gain better insight into your site’s organic traffic. If you once had a good stream of traffic that is now slowing down, the best time to do an SEO audit is now.
 
-                                Building an SEO plan can and should be done with the helps of tools such as <a href="https://searchengineland.com/google-adds-new-seo-audit-category-chromes-lighthouse-extension-291303" target="_blank">Google Chrome</a> or <a href="https://moz.com/free-seo-tools" target="_blank">Moz</a>. What an agency like Water Sauce can provide that Google Chrome and Moz cannot is the human touch needed to understand the context of your service, product, and industry.
+                                Building an SEO plan can and should be done with the helps of tools such as <a href="https://searchengineland.com/google-adds-new-seo-audit-category-chromes-lighthouse-extension-291303" target="_blank" rel="noopener noreferrer">Google Chrome</a> or <a href="https://moz.com/free-seo-tools" target="_blank" rel="noopener noreferrer">Moz</a>. What an agency like Water Sauce can provide that Google Chrome and Moz cannot is the human touch needed to understand the context of your service, product, and industry.
                             </Fragment>
                         }
                         src={binoculars}

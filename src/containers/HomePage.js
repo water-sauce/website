@@ -3,12 +3,13 @@ import Parallax from 'parallax-js';
 import { Helmet } from "react-helmet";
 import HomeCards from "../components/HomeCards.js";
 import HeroServicesBanner from "../components/HeroServicesBanner";
-import Dictionary from "../components/Dictionary";
+import PopSection from "../components/PopSection";
 
 import m1 from "../images/backgrounds/m1e.png";
 import m2 from "../images/backgrounds/m2d.png";
 import m3 from "../images/backgrounds/m3d.png";
 import eagle from "../images/backgrounds/eagle2.png";
+import colors from "../images/illustrations/colors.png";
 
 const title = "Water Sauce is an digital design agency helping regular people do extraordinary web stuff";
 const description = "Water Sauce helps companies of all sizes and industries improve their web presence through strategic web design & development, SEO, branding, email campaigns, fundraising campaigns, and UX design.";
@@ -116,11 +117,14 @@ class HomePage extends Component {
     						</ul>
     					</div>
     					<div id="messaging">
-    						<h1>We. Move.<br /><b>Mountains.</b></h1>
+    						<h2>We. Move.<br /><b>Mountains.</b></h2>
     					</div>
     				</div>
-                    <Dictionary />
-    				<HomeCards services={service_types} />
+                    <PopSection 
+                        message={"Water Sauce is a full service digital design agency that elevates brands to achieve the spectacular, tranforming products into industry needs and wants"} 
+
+                    />
+    				<HomeCards services={service_types} src={colors} alt="Colors representing spectrum of Water Sauce services" img_id="home-colors" />
                 </main>
 			</div>
 		)

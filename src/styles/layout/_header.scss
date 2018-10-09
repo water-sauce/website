@@ -45,6 +45,9 @@
     .navbar-brand {
         letter-spacing: 1px;
     }
+    .nav-dropdown-wrapper {
+        margin-right: 12px;
+    }
     ul {
         margin: 0;
         padding: 0;
@@ -53,7 +56,6 @@
         }
         li {
             display: inline-block;
-            margin-left: 12px;
             margin-bottom: 0;
             list-style: none;
             @media (max-width: $mq-ipad) {

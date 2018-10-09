@@ -1,0 +1,33 @@
+.pop-section {
+	position: relative;
+    background: repeating-linear-gradient(
+        135deg, 
+        $lightest-grey,
+        $lightest-grey 10px,
+        $white 10px,
+        $white 20px
+    );
+
+    div {
+    	padding: 4.5rem 1.5rem;
+    	background: $lightest-grey;
+    	width: calc(80%);
+        min-width: 360px;
+        @media (max-width: $mq-ipad) {
+            padding: 4rem 1.5rem;
+        }
+    }
+
+    h1 {
+    	max-width: 800px;
+    	margin: 0 auto;
+		font-family: "AvenirNext Demi", 'Prompt', sans-serif;
+	    font-feature-settings: 'onum' 1;
+	    -webkit-font-smoothing: antialiased;
+        @include font-size(36px);
+        @media (max-width: $mq-ipad) {
+            @include font-size(24px);
+        }
+    }
+
+}

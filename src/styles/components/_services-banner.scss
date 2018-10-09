@@ -52,14 +52,17 @@
 	}
 
 	.current-topic {
-		@include font-size(18px);
-		color: $white;
+		display: inline-block;
+		// padding-bottom: 0.325rem;
+		margin-bottom: 1rem;
+		@include font-size(16px);
+		font-weight: bold;
 		font-feature-settings: 'onum' 0;
 		text-transform: uppercase;
 		font-weight: 400;
-		@include font-size(16px);
 		letter-spacing: 1px;
-		margin-bottom: 1rem;
+		color: $white;
+		// border-bottom: 1px solid white;
 	}
 	
 	.topic-wrapper {
@@ -74,12 +77,12 @@
 		width: 80px;
 		text-align: center;
 		padding: 10px;
-		background: rgba(230,230,230,0.65);
+		background: rgba(240, 244, 239, 0.75);
 		@include transition(0.2s ease-in-out);
 
 		&:hover {
 			color: $grey;
-			background: rgba(230,230,230, 0.95);
+			background: rgba(240, 244, 239, 0.95);
 			text-decoration: none;
 		}
 		
@@ -98,14 +101,16 @@
     	width: auto;
     	text-align: center;
     	display: inline-block;
-    	top: 0;
-    	margin: 6px 8px;
+    	margin: 0;
+    	@extend .vertical-align-middle-pure;
 		
-	    @media only screen and (min-width: $mq-med) {
+	    @media only screen and (min-width: $mq-med-max) {
     		position: absolute;
     	    top: calc(50% - 7px);
     	    width: 300px;
-	    }
+    	    left: auto;
+    	}
+
 		&-left { 
 			left: 0;
 			&:hover {
@@ -118,7 +123,7 @@
 			    border-right: 1px solid $medium-grey;
 			}
 			.topic {
-				@media only screen and (min-width: $mq-med) {
+				@media only screen and (min-width: $mq-med-max) {
 					right: -125px;
 					transform: rotate(-90deg);
 				}
@@ -135,7 +140,7 @@
 				width: 50%;
 			}
 			.topic {
-				@media only screen and (min-width: $mq-med) {
+				@media only screen and (min-width: $mq-med-max) {
 					left: -125px;
 					transform: rotate(90deg);
 				}
@@ -237,9 +242,14 @@
 		display: inline-block;
 		// position: relative;
 
-		@media only screen and (min-width: $mq-med) {
+		@media only screen and (min-width: $mq-med-max) {
 			position: absolute;
 			top: 50%;
+		}
+		
+		@media only screen and (max-width: $mq-med-max) {
+			margin: 2px 8px;
+			vertical-align: text-top;
 		}
 
 		@media only screen and (max-width: 520px) {
