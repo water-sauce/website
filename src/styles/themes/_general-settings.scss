@@ -7,3 +7,8 @@ a {
 	color: $true-blue;
 }
 
+.hide-on-mobile {
+	@media only screen and (max-width: $mq-ipad) {
+		display: none;
+	}
+}

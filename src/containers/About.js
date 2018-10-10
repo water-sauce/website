@@ -26,7 +26,7 @@ class About extends Component {
                                     <Fragment>
                                         <p><i>noun</i> | wah-ter, saws</p>
                                         <ol>
-                                            <li>A digital design agency built on the belief that humanity should never limit our creativity</li>
+                                            <li>A digital design agency built on the belief that humanity has limitless creativity</li>
                                             <li>A collective of artists, engineers, financiers, web-afficianados, and cat-lovers</li>
                                         </ol>
                                     </Fragment>

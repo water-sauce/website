@@ -34,7 +34,7 @@ class Services extends Component {
 								cta_banner="banner-service-web-design"
 								title={
 									<Fragment>
-										Transform into a <br /> thing of beauty
+										Transform into a <br className="hide-on-mobile"/> thing of beauty
 									</Fragment>
 								}
 								subtitle={
@@ -65,7 +65,7 @@ class Services extends Component {
 								cta_banner="banner-service-seo"
 								title={
 									<Fragment>
-										Birds of a feather <br /> do SEO together
+										Birds of a feather <br className="hide-on-mobile"/> do SEO together
 									</Fragment>
 								}
 								subtitle={
@@ -96,7 +96,7 @@ class Services extends Component {
 								cta_banner="banner-service-fundraising"
 								title={
 									<Fragment>
-										Be prepared when <br /> entering the tank
+										Be prepared when <br className="hide-on-mobile"/> entering the tank
 									</Fragment>
 								}
 								subtitle={
@@ -127,7 +127,7 @@ class Services extends Component {
 								cta_banner="banner-service-branding"
 								title={
 									<Fragment>
-										Let your <br /> brand roar
+										Let your <br className="hide-on-mobile"/> brand roar
 									</Fragment>
 								}
 								subtitle={
@@ -158,7 +158,7 @@ class Services extends Component {
 								cta_banner="banner-service-email-campaigns"
 								title={
 									<Fragment>
-										Snail mail is <br /> <i>so</i> last century
+										Snail mail is <br className="hide-on-mobile"/> <i>so</i> last century
 									</Fragment>
 								}
 								subtitle={
@@ -189,7 +189,7 @@ class Services extends Component {
 								cta_banner="banner-service-ux-design"
 								title={
 									<Fragment>
-										UX is the <br /> human experience
+										UX is the <br className="hide-on-mobile"/> human experience
 									</Fragment>
 								}
 								subtitle={
