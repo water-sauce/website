@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
 
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
@@ -11,12 +11,14 @@ const description = "Water Sauce helps companies with email campaigns";
 const product_info = [
     {
         title_block: "Email Template and Content Design",
-        description:
-            "There are many things to consider when designing email templates. Sure, there are the basics like mobile optimization but the most important concept to keep in mind is crafting content for each persona within audience. That is, segmenting your subscribers and sending more targeted messages. This content can be made based on age, gender, location, and more."
-    },
-    {
-        title_block: "Campaign Execution and Evaluation",
-        description: "Once the audience is segmented & the content is created, it is time to launch the campaign! However before proceeding, one must define the metrics for success and collect data accordingly. This may be sales for promotional emails (offers/discounts), subscriptions for relational emails (newsletters), or delivery for transactional emails (welcome messages or receipts). Compiling this data of past successes + failures and then applying them to the future is critical in having ongoing successful campaigns."
+        description: (
+            <Fragment>
+            There are many things to consider when designing email templates. Sure, there are the basics like mobile optimization but the most important concept to keep in mind is crafting content for each persona within audience. That is, segmenting your subscribers and sending more targeted messages. This content can be made based on age, gender, location, and more.
+            <br/>
+            <br/>
+            Once the audience is segmented & the content is created, it is time to launch the campaign! However before proceeding, one must define the metrics for success and collect data accordingly. This may be sales for promotional emails (offers/discounts), subscriptions for relational emails (newsletters), or delivery for transactional emails (welcome messages or receipts). Compiling this data of past successes + failures and then applying them to the future is critical in having ongoing successful campaigns.
+            </Fragment>
+        )
     }
 ];
 

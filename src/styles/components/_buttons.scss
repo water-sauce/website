@@ -58,21 +58,12 @@
 		}
 	}
 	
-	
-	&-search {
-		padding: 6px 12px;
-		margin-right: 18px;
+	&-mobile-menu {
+		padding: 11px 14px 9px;
 		border: 1px solid $white;
-		letter-spacing: 0.25px;
-		color: $white;
-		background: transparent;
-	    margin-top: 6px;
-		&:hover {
-			font-weight: 500;
-			color: $white;
-			i {
-				font-weight: 500;
-			}
-		}
+		color: $white !important;
+	    @media (min-width: $mq-ipad) {
+	        display: none !important;
+	    }
 	}
 }

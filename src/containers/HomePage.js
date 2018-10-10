@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import HomeCards from "../components/HomeCards.js";
 import HeroServicesBanner from "../components/HeroServicesBanner";
 import PopSection from "../components/PopSection";
+import ScrollDown from "../components/ScrollDown";
 
 import m1 from "../images/backgrounds/m1e.png";
 import m2 from "../images/backgrounds/m2d.png";
@@ -118,12 +119,11 @@ class HomePage extends Component {
     					</div>
     					<div id="messaging">
     						<h2>We. Move.<br /><b>Mountains.</b></h2>
-                            <p>Scroll Down</p>
-                            <p className="direction direction-down">{ '\u003e' }</p>
+                            <ScrollDown other_class="white" />
     					</div>
     				</div>
                     <PopSection 
-                        message={"Water Sauce is a full service digital design agency that elevates brands to achieve the spectacular, tranforming products into industry needs and wants"} 
+                        message={"Water Sauce is a full service digital design agency that elevates brands to achieve the extraordinary."} 
 
                     />
     				<HomeCards services={service_types} src={colors} alt="Colors representing spectrum of Water Sauce services" img_id="home-colors" />

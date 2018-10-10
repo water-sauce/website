@@ -10,20 +10,15 @@ const description = "Water Sauce helps companies with Web Design";
 
 const product_info = [
     {
-        title_block: "Information Architecture — The Blueprints",
+        title_block: "Blueprints & Construction",
         description:(
             <Fragment>
                 Information Architecture is the blueprint for a website. It provides a solid foundation on how to structure content throughout its individual pages as well as overall site navigation. Good information architecture enables a user find what they’re looking for with ease. Question such as "What will a new user see when they land on the page?" or <Link to="/ux-design">"Will the user have an easy time navigating the site?"</Link> need to be answered during this process.
-            </Fragment>
-        )
-    },
-    {
-        title_block: "Web Development & Design — The Construction",
-        description: (
-            <Fragment>
+                <br/>
+                <br/>
                 Web Design and Development go hand-in-hand. If Information Architecture is the blueprint for the site, then web design is the artist's rendition of the final product. Web development provides the framing and brings the design to life. A website's look and feel can tell a company's story without too many words — if web design and development are done correctly and inline with your <Link to="/branding">branding</Link>, it should be many years before you need another update.
             </Fragment>
-            )
+        )
     }
 ];
 

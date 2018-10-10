@@ -15,13 +15,8 @@ const product_info = [
         description: (
             <Fragment>
             Water Sauce will work with your team to create or refine your existing pitch deck whilst <Link to="/branding">developing your brand</Link> and voice. This includes creating content, icons, animations, and more in order to tell your story to investors as clear and concise as possible. Our level of involvement is completely circumstantial- we can review & refine existing content, or create one from scratch!
-            </Fragment>
-        )
-    },
-    {
-        title_block: "Financial Models",
-        description: (
-            <Fragment>
+            <br/>
+            <br/>
             When raising a round, you will be asked “What is your profit margin?”, “What is your runway forecast for this round?”, and “What are your valuations expectations?” Without adequate support you'll be left out to dry. Our in-house finance team has helped raise millions in seed capital to hundreds of millions in Series C+. We can help develop, refine, or review your financial support.
             </Fragment>
         )

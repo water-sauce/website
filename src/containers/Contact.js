@@ -38,7 +38,6 @@ class ContactPage extends Component {
                             className="form-group"
                             type="text"
                             name="name"
-                            // value={this.state.value}
                             onChange={this.handleChange}>
                         </FormControl>
                         <Label for="email">Email Address:</Label>
@@ -46,7 +45,6 @@ class ContactPage extends Component {
                             className="form-group"
                             type="email"
                             name="email"
-                            // value={this.state.value}
                             onChange={this.handleChange}
                         >
                         </FormControl>
@@ -55,7 +53,6 @@ class ContactPage extends Component {
                             className="form-group"
                             type="textarea"
                             name="message"
-                            // value={this.state.value}
                             onChange={this.handleChange}
                         >
                         </FormControl>

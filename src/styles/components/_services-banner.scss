@@ -52,17 +52,17 @@
 	}
 
 	.current-topic {
+		font-family:"AvenirNext Regular";
 		display: inline-block;
-		// padding-bottom: 0.325rem;
+		padding-bottom: 0.325rem;
 		margin-bottom: 1rem;
-		@include font-size(16px);
+		@include font-size(12px);
 		font-weight: bold;
 		font-feature-settings: 'onum' 0;
 		text-transform: uppercase;
-		font-weight: 400;
-		letter-spacing: 1px;
+		letter-spacing: 2.5px;
 		color: $white;
-		// border-bottom: 1px solid white;
+		border-bottom: 1px solid white;
 	}
 	
 	.topic-wrapper {
@@ -121,7 +121,7 @@
 			}
 			@media only screen and (max-width: $mq-med) {
 				width: 50%;
-			    border-right: 1px solid $medium-grey;
+			    border-right: 1px solid #cacdca;
 			}
 			.topic {
 				@media only screen and (min-width: $mq-med-limit) {
@@ -208,6 +208,7 @@
 			margin-bottom: 28px;
 		    line-height: 23px;
 		    letter-spacing: 0.35px;
+		    @include font-size(18px);
 			@media only screen and (max-width: $mq-ipad) {
 				display: none;
 			}
@@ -241,7 +242,6 @@
 	
 	.direction {
 		display: inline-block;
-		// position: relative;
 
 		@media only screen and (min-width: $mq-med-limit) {
 			position: absolute;

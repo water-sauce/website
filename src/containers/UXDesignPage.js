@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
@@ -11,13 +12,14 @@ const description = "Water Sauce helps companies with UX Design";
 const product_info = [
     {
         title_block: "Leave a lasting impression",
-        description:
-            "Any touchpoint or interaction a person has with a brand falls under the UX umbrella. How does a company make sure this interaction is positive? Great UX comes from market research, understanding your customer base, and cracking how a product experience can not only match, but exceed their expectations."
-    },
-    {
-        title_block: "UX is more than user stories",
-        description:
-            "The UI (user interface), information architecture, and branding are all integral parts of a much larger whole. It’s crucial to understand that changing UX involves a team effort to understand your customers’ pain points and how to best guide them through your product or website. Formulating design to influence UX is solution we strive at."
+        description: (
+            <Fragment>
+            Any touchpoint or interaction a person has with a brand falls under the UX umbrella. How does a company make sure this interaction is positive? Great UX comes from market research, understanding your customer base, and cracking how a product experience can not only match, but exceed their expectations.
+            <br/>
+            <br/>
+            The UI (user interface), information architecture, and <Link to="/branding">branding</Link> are all integral parts of a much larger whole. It’s crucial to understand that changing UX involves a team effort to understand your customers’ pain points and how to best guide them through your product or website. Formulating design to influence UX is solution we strive at.
+            </Fragment>
+        )
     }
 ];
 

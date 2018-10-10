@@ -120,7 +120,7 @@
     font-family: 'Libre Baskerville', valkyrie-text, serif;
     h2 {
     	display: inline-block;
-	    padding: 2rem;
+	    // padding: 2rem;
 	    @include font-size(54px);
 	    // border: 5px solid $white;
 	    // @include box-shadow( 0px, 2px, 5px, rgba(0,0,0,0.25), true);
@@ -129,8 +129,41 @@
 	    	padding: 1.5rem;
 	    }
     }
+    p {
+    	margin: 0;
+    	font-family: "AvenirNext Regular";
+    	text-transform: uppercase;
+    	letter-spacing: 0.5px;
+    }
 }
 
+.direction-down {
+	padding: 1px 8px;
+	@include border-radius(100px);
+	display: inline-block;
+	transform: rotate(90deg);
+	@include animation( bounceee 1.5s 0.1s infinite ease-in-out );
+}
+
+.scroll-down {
+	margin: 1.5rem 0 0;
+	display: block;
+	text-align: center;
+
+	&.white {
+		color: $white;
+		.direction-down {
+			border: 2px solid $white;
+		}
+	}
+
+	&.services {
+		color: $medium-grey;
+		.direction-down {
+			border: 2px solid $medium-grey;
+		}
+	}
+}
 
 // animations
 @include keyframes( sway ){
@@ -169,5 +202,21 @@
   42.5% {
     @include transform( rotateZ(200deg) translate3d(0,2%,0) rotateZ(-200deg) );
   }
+}
+
+@include keyframes( bounceee ){
+  0% {
+    @include transform( translateY(0px) rotate(90deg) );
+  }
+
+  60% {
+    @include transform( translateY(8px) rotate(90deg) );
+  }
+}
+
+@-webkit-keyframes bounceDown {
+  0%       { margin-top:0; }
+  50%      { margin-top:8px; }
+  100%     {margin-top:0;}
 }
 
