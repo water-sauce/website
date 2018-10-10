@@ -17,10 +17,9 @@ class Popup extends React.Component {
                         <ul key={section_name} >
                         {PageLinks[section_name].map(
                             (ref, index) =>
-                            <li>
+                            <li key={`link_` + index}>
                                 <Link
                                     to={ref.link}
-                                    key={`link_` + index}
                                     onClick={this.props.closePopup}
                                 >
                                     {ref.name}

@@ -13,7 +13,7 @@ const Footer = props => (
                     return (
                         <Col xs={6} sm={3} key={section_name}>
                             <ul>
-                                <li>{section_name}</li>
+                                <li className="section-name">{section_name}</li>
                                 {PageLinks[section_name].map(ref => (
                                     <li key={ref.name}>
                                         {ref.type === "link" ? (
@@ -37,7 +37,7 @@ const Footer = props => (
                 })}
                 <Col xs={6} sm={3}>
                     <ul>
-                        <li>Contact Us</li>
+                        <li className="section-name">Contact Us</li>
                         <li>
                             <a href="mailto:info@watersauce.com?Subject=Hello%20Water%20Sauce">
                                 info@watersauce.com

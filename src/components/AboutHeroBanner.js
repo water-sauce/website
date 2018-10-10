@@ -12,7 +12,7 @@ class AboutHeroBanner extends Component {
                     <div className="content-wrapper content-wrapper-1">
                         <div className="content content-dictionary">
                             <h1>{this.props.title}</h1>
-                            <p>{this.props.description}</p>
+                            {this.props.description}
                         </div>
                     </div>
                     

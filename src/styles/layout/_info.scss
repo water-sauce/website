@@ -39,6 +39,9 @@
 .info-grid-title {
     margin-left: 18rem;
     margin-right: 2rem;
+    @media only screen and (max-width: $mq-ipad) {
+        margin: 0 15px;
+    }
 }
 
 .accent {

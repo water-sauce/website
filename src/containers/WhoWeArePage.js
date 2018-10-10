@@ -23,10 +23,11 @@ class WhoWeArePage extends Component {
                 <section className="sub-hero-about">
                     <Grid>
                         <Row>
-                            <Col xs={12} sm={6}>
+                            <Col xs={12} sm={4} md={6}>
                                 <img src={kevin} alt="Kevin the cat" />
+                                
                             </Col>
-                            <Col xs={12} sm={6}>
+                            <Col xs={12} sm={8} md={6}>
                                 <p>
                                 Headquartered in San Francisco, we are a team of bold, passionate, and idealistic thinkers who understand the ever changing environment of… have you fallen asleep yet? We don’t want to waste your time with meaningless fluff. And lets be real, we know what you’re thinking, “OK, it’s a full service design agency… but what does Water Sauce even mean?”<br/><br/>
 

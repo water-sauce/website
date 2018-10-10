@@ -101,6 +101,9 @@
     }
     .dropdown-toggle {
         text-transform: capitalize;
+        &:after {
+            vertical-align: 0.122rem;
+        }
     }
 
     &-right {

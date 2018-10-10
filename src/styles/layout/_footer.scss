@@ -13,13 +13,18 @@ footer {
 	a:hover {
 		color: $lightest-grey;
 	}
+	.section-name {
+		font-family:"AvenirNext Demi";
+		letter-spacing: 1.5px !important;
+		@include font-size(11px);
+	}
 	ul {
 		margin: 0;
 		padding: 0;
 		li {
 			list-style: none;
 			color: $white;
-			@include font-size(12px);
+			@include font-size(13px);
 			line-height: 22px;
 			&:nth-child(1) {
 				margin: 25px 0 10px;
@@ -46,6 +51,7 @@ footer {
 		}
 		&.copyright-footer {
 			display: inline-block;
+			margin-left: 15px;
 			margin-bottom: 10px;
 			li {
 				margin-right: 4px;
