@@ -16,6 +16,7 @@
 
 	&-who-we-are {
 		background: url("images/banner-backgrounds/who-we-are-bg.png");
+		@include animation( colorchange 15s 0.1s infinite alternate );
 	}
 
 	.grid-container {
@@ -27,8 +28,7 @@
 		}
 	}
 
-	.content-wrapper {
-		width: 50%;
+	.content-wrapper {		
 		@media only screen and (max-width: $mq-ipad) {
 			width: 100%;
 			img {
@@ -39,25 +39,24 @@
 
 	.content {
 		@media only screen and (min-width: $mq-ipad) {
-			max-width: 585px;
+			max-width: 100%;
+			margin-left: 15px;
+			width: 675px;
 			float: right;
-			padding: 2rem 1rem;
+			padding: 4rem 1rem;
 		}
 	}
 	
 	h1 {
+		font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
 		font-feature-settings: 'onum' 0;
-		text-transform: uppercase;
-		font-weight: 400;
-		@include font-size(24px);
 		letter-spacing: 0.5px;
-		font-weight: bold;
+		font-style: italic;
 	}
 
 
 	p {
 	 	font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
-	 	padding-top: 1.75rem;
 	 	@include font-size(16px);
 	 	line-height: 1.632;
 	 	font-feature-settings: 'onum' 1;
@@ -66,12 +65,13 @@
 
 
 	.content-wrapper-1 {
-		background-color: $dark-blue; /* Old browsers */
-		background: -moz-linear-gradient(90deg, $dark-blue 0%,   $true-blue 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(90deg, $dark-blue 0%, $true-blue 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(90deg, $dark-blue 0%, $true-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-		color: $white;
+		// background-color: $dark-blue; /* Old browsers */
+		// background: -moz-linear-gradient(90deg, $dark-blue 0%,   $true-blue 100%); /* FF3.6-15 */
+		// background: -webkit-linear-gradient(90deg, $dark-blue 0%, $true-blue 100%); /* Chrome10-25,Safari5.1-6 */
+		// background: linear-gradient(90deg, $dark-blue 0%, $true-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		width: 60%;
+		background: $white;
 		padding: 1rem;
 		@media only screen and (max-width: $mq-ipad) {
 			width: calc(100% - 30px);
@@ -80,9 +80,13 @@
 	}
 
 	.content-wrapper-2 {
+		width: 40%;
 		text-align: center;
 		@media only screen and (max-width: $mq-ipad) {
 			padding-top: 1.5rem;
+		}
+		img {
+			max-width: 85px;
 		}
 	}
 
@@ -90,3 +94,38 @@
 		width: 100px;
 	}
 }
+
+.filler {
+	height: 150px;
+	width: 100%;
+	background: repeating-linear-gradient(
+	    135deg, 
+	    $white,
+	    $white 10px,
+	    $medium-grey 10px,
+	    $medium-grey 20px
+	);
+}
+
+.sub-hero-about {
+	padding: 6rem 3rem;
+	background: $lightest-grey;
+	img {
+		max-width: 300px;
+		display: block;
+		margin: 0 auto;
+		border: 10px solid $white;
+	}
+	p {
+		@include font-size(16px);
+	}
+}
+
+@keyframes colorchange
+    {
+      0%   {background-color: $true-blue;}
+      25%  {background-color: $pink;}
+      50%  {background-color: $orange;}
+      75%  {background-color: $light-purple;}
+      100% {background-color: $light-blue;}
+    }

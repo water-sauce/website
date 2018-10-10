@@ -516,7 +516,19 @@ a {
       padding: 4px 0;
       color: #696AFD; }
   .mobile-menu button {
-    float: right; }
+    float: right;
+    border: none;
+    padding: 1px 8.5px;
+    border: 1px solid #757575;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background-clip: padding-box;
+    background: transparent; }
+    .mobile-menu button:hover {
+      cursor: pointer;
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25); }
 
 .navbar-nav {
   flex-direction: row; }
@@ -1442,7 +1454,12 @@ title-block {
     .about-banner {
       background-size: 127px !important; } }
   .about-banner-who-we-are {
-    background: url("images/banner-backgrounds/who-we-are-bg.png"); }
+    background: url("images/banner-backgrounds/who-we-are-bg.png");
+    -webkit-animation: colorchange 15s 0.1s infinite alternate;
+    -moz-animation: colorchange 15s 0.1s infinite alternate;
+    -ms-animation: colorchange 15s 0.1s infinite alternate;
+    -o-animation: colorchange 15s 0.1s infinite alternate;
+    animation: colorchange 15s 0.1s infinite alternate; }
   .about-banner .grid-container {
     display: flex;
     flex-direction: row-reverse;
@@ -1450,58 +1467,77 @@ title-block {
     @media only screen and (max-width: 48em) {
       .about-banner .grid-container {
         display: block; } }
-  .about-banner .content-wrapper {
-    width: 50%; }
-    @media only screen and (max-width: 48em) {
-      .about-banner .content-wrapper {
-        width: 100%; }
-        .about-banner .content-wrapper img {
-          max-height: 200px; } }
+  @media only screen and (max-width: 48em) {
+    .about-banner .content-wrapper {
+      width: 100%; }
+      .about-banner .content-wrapper img {
+        max-height: 200px; } }
   @media only screen and (min-width: 48em) {
     .about-banner .content {
-      max-width: 585px;
+      max-width: 100%;
+      margin-left: 15px;
+      width: 675px;
       float: right;
-      padding: 2rem 1rem; } }
+      padding: 4rem 1rem; } }
   .about-banner h1 {
+    font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
     font-feature-settings: 'onum' 0;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 24px;
-    font-size: 1.5rem;
     letter-spacing: 0.5px;
-    font-weight: bold; }
+    font-style: italic; }
   .about-banner p {
     font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
-    padding-top: 1.75rem;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.632;
     font-feature-settings: 'onum' 1;
     -webkit-font-smoothing: antialiased; }
   .about-banner .content-wrapper-1 {
-    background-color: #1B1C6A;
-    /* Old browsers */
-    background: -moz-linear-gradient(90deg, #1B1C6A 0%, #696AFD 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(90deg, #1B1C6A 0%, #696AFD 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(90deg, #1B1C6A 0%, #696AFD 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */
-    color: #FFFFFF;
+    width: 60%;
+    background: #FFFFFF;
     padding: 1rem; }
     @media only screen and (max-width: 48em) {
       .about-banner .content-wrapper-1 {
         width: calc(100% - 30px);
         margin: 1rem auto 2rem; } }
   .about-banner .content-wrapper-2 {
+    width: 40%;
     text-align: center; }
     @media only screen and (max-width: 48em) {
       .about-banner .content-wrapper-2 {
         padding-top: 1.5rem; } }
+    .about-banner .content-wrapper-2 img {
+      max-width: 85px; }
   .about-banner .accent {
     width: 100px; }
+
+.filler {
+  height: 150px;
+  width: 100%;
+  background: repeating-linear-gradient(135deg, #FFFFFF, #FFFFFF 10px, #757575 10px, #757575 20px); }
+
+.sub-hero-about {
+  padding: 6rem 3rem;
+  background: #F0F4EF; }
+  .sub-hero-about img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #FFFFFF; }
+  .sub-hero-about p {
+    font-size: 16px;
+    font-size: 1rem; }
+
+@keyframes colorchange {
+  0% {
+    background-color: #696AFD; }
+  25% {
+    background-color: #E57777; }
+  50% {
+    background-color: #FFA762; }
+  75% {
+    background-color: #E3B5E0; }
+  100% {
+    background-color: #D4EDF8; } }
 
 .about-name {
   margin: 15px 0 0;
