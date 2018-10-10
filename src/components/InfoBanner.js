@@ -1,5 +1,4 @@
 import React from "react";
-// import { Grid, Row } from "react-bootstrap";
 
 function InfoBanner(props) {
     let ProdLayout = props.product_banners.map((info, index) => (

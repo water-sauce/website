@@ -7,7 +7,6 @@ import lion from "../images/icons/simple-lion.png";
 
 const title = "Branding is storytelling through content";
 const description = "Water Sauce helps our clients define its brand. ";
-
 const product_info = [
     {
         title_block: "Branding to find your voice",
@@ -21,7 +20,6 @@ const product_info = [
         )
     }
 ];
-
 
 class BrandingPage extends Component {
     render() {

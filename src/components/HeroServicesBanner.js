@@ -1,10 +1,8 @@
-import React, { Component, Text } from "react";
-import { Grid, Row } from "react-bootstrap";
-import FontAwesome from "react-fontawesome";
-import { Transition, CSSTransitionGroup } from "react-transition-group";
+import React, { Component } from "react";
+import { Grid } from "react-bootstrap";
+import { CSSTransitionGroup } from "react-transition-group";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import ContactModal from "../components/ContactModal";
 import ScrollDown from "../components/ScrollDown";
 
 
@@ -16,10 +14,10 @@ class HeroServicesBanner extends Component {
 
 	changeTopic(e) {
 		e = e || window.event
-		if (e.keyCode == 37) {
+		if (e.keyCode === 37) {
 			document.querySelector( '.direction-left' ).click()
 		}
-		if (e.keyCode == 39) {
+		if (e.keyCode === 39) {
 			document.querySelector( '.direction-right' ).click()
 		}
 	}

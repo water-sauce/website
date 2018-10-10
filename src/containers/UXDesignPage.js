@@ -8,7 +8,6 @@ import head from "../images/icons/simple-head.png";
 
 const title = "UX Design";
 const description = "Water Sauce helps companies with UX Design";
-
 const product_info = [
     {
         title_block: "Leave a lasting impression",
@@ -33,7 +32,6 @@ class UXDesignPage extends Component {
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>
-
                 <main>
                     <SubHeroServicesBanner 
                         icon={head}

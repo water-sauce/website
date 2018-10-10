@@ -24,8 +24,3 @@ function HomeCards(props) {
 }
 
 export default HomeCards;
-
-
-// <span className="button button-true-blue margin-zero-auto">
-//     Learn More
-// </span>

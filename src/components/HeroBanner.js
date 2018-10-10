@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Row, Col } from "react-bootstrap";
 import PropTypes from "prop-types";
-// import arrow from "../images/icons/down-arrow.png";
 
 class HeroBanner extends Component {
     render() {

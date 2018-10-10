@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 import SubHeroServicesBanner from "../../components/SubHeroServicesBanner";
 import InfoBanner from "../../components/InfoBanner";
 import HeroBanner from "../../components/HeroBanner";
-
 import binoculars from "../../images/resource-icons/binoculars.jpg";
 
 const title = "What is SEO Auditing?";
 const description = "SEO Auditing means having a service or provider go through your website to figure out how best to optimize your website for speed and dsicoverability.";
-
 const product_info = [
     {
         title_block: "",

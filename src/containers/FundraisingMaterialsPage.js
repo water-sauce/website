@@ -8,7 +8,6 @@ import shark from "../images/icons/simple-shark.png";
 
 const title = "Fundraising Materials";
 const description = "Water Sauce helps companies raise money";
-
 const product_info = [
     {
         title_block: "Pitch Deck Collaboration",
@@ -39,7 +38,6 @@ class FundraisingMaterialsPage extends Component {
                         icon={shark}
                         alt="Fundraising Materials icon as a shark"
                         paragraph="The journey of fundraising can be many things; the three most noteworthy being difficult, stressful, and confusing. Things can get hectic in the juggling of networking events and meetings, but one thing that should not be neglected is your marketing materials. This is often the make-or-break factor in the fundraising process. Luckily, we’re here to help!" />
-
                     <InfoBanner product_banners={product_info} color="teal" />
                 </main>
             </div>

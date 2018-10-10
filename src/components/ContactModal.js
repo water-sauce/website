@@ -3,7 +3,6 @@ import { Form, FormGroup, FormControl, ControlLabel, Button, Label } from "react
 import Modal from "react-modal";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 
-
 Modal.setAppElement("#app");
 
 const h4Style = {

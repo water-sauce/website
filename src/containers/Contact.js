@@ -2,17 +2,14 @@ import React, { Component } from "react";
 import { Form, FormGroup, FormControl, ControlLabel, Button, Label } from "react-bootstrap";
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 
-
 class ContactPage extends Component {
     constructor(){
         super();
-
         this.state = {
             name: '',
             email: '',
             message: ''
         };
-
         this.handleChange = this.handleChange.bind(this);
     }
 

@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import { Navbar, Nav, NavItem, NavDropdown } from "react-bootstrap";
 import logo from "../images/logo.svg";
 import PageLinks from "../routers/PageLinks";
 import MobileMenu from "../components/MobileMenu";
 
 class Header extends Component {
-
     render(props) {
         return (
             <Navbar sticky="top" collapseOnSelect>

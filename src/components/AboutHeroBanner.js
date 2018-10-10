@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 class AboutHeroBanner extends Component {
     render(props) {
@@ -22,14 +21,4 @@ class AboutHeroBanner extends Component {
     }
 }
 
-AboutHeroBanner.propTypes = {
-    
-};
-
 export default AboutHeroBanner;
-
-
-// <ContactModal
-//     cta={this.props.cta}
-//     class={this.props.cta_contact_us_class}
-// />

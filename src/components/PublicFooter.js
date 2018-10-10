@@ -61,7 +61,3 @@ const Footer = props => (
 );
 
 export default Footer;
-
-// <li>
-   //  | <a href="/site-map">Site Map</a>
-// </li>

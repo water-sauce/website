@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import Parallax from 'parallax-js';
 import { Helmet } from "react-helmet";
 import HomeCards from "../components/HomeCards.js";
-import HeroServicesBanner from "../components/HeroServicesBanner";
 import PopSection from "../components/PopSection";
 import ScrollDown from "../components/ScrollDown";
 
@@ -14,7 +13,6 @@ import colors from "../images/illustrations/colors.png";
 
 const title = "Water Sauce is an digital design agency helping regular people do extraordinary web stuff";
 const description = "Water Sauce helps companies of all sizes and industries improve their web presence through strategic web design & development, SEO, branding, email campaigns, fundraising campaigns, and UX design.";
-
 const service_types = [
     {
         title: "Web Design",

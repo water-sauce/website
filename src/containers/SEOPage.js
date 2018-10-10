@@ -7,9 +7,6 @@ import parrot from "../images/icons/simple-parrot.png";
 const title = "SEO optimization & SEO auditing as a service";
 const description =
     "Water Sauce will provide a free site audit.";
-
-
-
 const product_info = [
     {
         title_block: "Strategic SEO Optimization",
@@ -24,7 +21,6 @@ const product_info = [
     }
 ];
 
-
 class SEOPage extends Component {
     render() {
         return (
@@ -35,7 +31,6 @@ class SEOPage extends Component {
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>
-
                 <main>
                     <SubHeroServicesBanner 
                         icon={parrot}

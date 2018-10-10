@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Form, FormGroup, FormControl, ControlLabel, Button, Label } from "react-bootstrap";
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 import PageLinks from "../routers/PageLinks";
-
 
 class Popup extends React.Component {
   render() {

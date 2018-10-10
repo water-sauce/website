@@ -7,7 +7,6 @@ import snail from "../images/icons/simple-snail.png";
 
 const title = "Email Campaign Management";
 const description = "Water Sauce helps companies with email campaigns";
-
 const product_info = [
     {
         title_block: "Email Template and Content Design",
@@ -39,7 +38,6 @@ class EmailCampaignsPage extends Component {
                         alt="email campaign icon as a snail"
                         paragraph="Say you have a new product and a list of existing clients, leads, etc. How do you spread awareness? You could send a mass email, but the average clickthrough rate for these types of strategies is a measly 3.1%. We can help you beat these odds through strategic audience segmentation, content development, campaign execution, and thoughtful campaign evaluation." 
                     />
-
                     <InfoBanner product_banners={product_info} color="purple" />
                 </main>
             </div>

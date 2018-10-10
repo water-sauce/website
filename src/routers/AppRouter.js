@@ -13,7 +13,7 @@ import Resources from "../containers/Resources";
 import About from "../containers/About";
 
 //  CONTACT
-import ContactPage from "../containers/Contact";
+// import ContactPage from "../containers/Contact";
 
 //  OTHER PAGES
 import NotFoundPage from "../containers/NotFoundPage.js";
@@ -59,10 +59,6 @@ const routes = [
         path: "/who-we-are",
         component: About,
     },
-    {
-        path: "/contact",
-        component: ContactPage,
-    }
 ];
 
 class AppRouter extends Component {

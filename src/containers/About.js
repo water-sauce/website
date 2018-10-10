@@ -3,8 +3,6 @@ import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
 import AboutHeroBanner from "../components/AboutHeroBanner";
-import ContactBanner from "../components/ContactBanner";
-
 import WhoWeArePage from "./WhoWeArePage";
 import ws_bottle from "../images/icons/ws-bottle.png";
 

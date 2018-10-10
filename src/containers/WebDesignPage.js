@@ -7,7 +7,6 @@ import butterfly from "../images/icons/simple-butterfly.png";
 
 const title = "Web Design";
 const description = "Water Sauce helps companies with Web Design";
-
 const product_info = [
     {
         title_block: "Blueprints & Construction",
@@ -32,7 +31,6 @@ class WebDesignPage extends Component {
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
                 </Helmet>
-
                 <main>
                     <SubHeroServicesBanner
                         icon={butterfly}
