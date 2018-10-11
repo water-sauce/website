@@ -113,17 +113,22 @@
     }
 }
 
-.mobile-menu {
+.mobile-menu-wrapper {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255,255,255,0.98);
+    background: repeating-linear-gradient(
+        135deg, 
+        $lightest-grey,
+        $lightest-grey 10px,
+        $white 10px,
+        $white 20px
+    );
     width: 100%;
     height: 100%;
     z-index: 999999999;
-    padding: 1.5rem 2.5rem;
     overflow-x: scroll;
     p {
         text-transform: uppercase;
@@ -133,7 +138,16 @@
         margin-bottom: 0.375rem;
     }
     div {
-        margin-bottom: 2.25rem;
+        margin-top: 2.25rem;
+    }
+    .mobile-menu {
+        padding: 2rem;
+        background: rgba(255,255,255,0.98);
+        margin-left: 5rem;
+        height: 100%;
+        @media (max-width: $mq-xsmall) {
+            margin-left: 2rem;
+        }
     }
     li {
         list-style: none;
@@ -150,6 +164,7 @@
         border: 1px solid $medium-grey;
         @include border-radius(100px);
         background: transparent;
+        margin: 1rem;
 
         &:hover {
             cursor: pointer;

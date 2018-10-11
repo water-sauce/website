@@ -5,31 +5,33 @@ import PageLinks from "../routers/PageLinks";
 class Popup extends React.Component {
   render() {
     return (
-        <div className='mobile-menu'>
+        <div className="mobile-menu-wrapper">
             <button onClick={this.props.closePopup}>X</button>
-            {Object.keys(PageLinks).map((section_name, index) => {
-                return (
-                    <div>
-                        <p>{section_name}</p>
-                        <ul key={section_name} >
-                        {PageLinks[section_name].map(
-                            (ref, index) =>
-                            <li key={`link_` + index}>
-                                <Link
-                                    to={ref.link}
-                                    onClick={this.props.closePopup}
-                                >
-                                    {ref.name}
-                                </Link>
-                            </li>
-                        )}
-                        </ul>
-                    </div>
-                );
-            })}
-            <div>
-                <a className="button button-blue" href="mailto:info@watersauce.com?Subject=Hello%20Water%20Sauce">Contact Us</a>
-            </div>
+            <section className="mobile-menu">
+                {Object.keys(PageLinks).map((section_name, index) => {
+                    return (
+                        <div key={"section_" + index}>
+                            <p>{section_name}</p>
+                            <ul key={section_name} >
+                            {PageLinks[section_name].map(
+                                (ref, index) =>
+                                <li key={`link_` + index}>
+                                    <Link
+                                        to={ref.link}
+                                        onClick={this.props.closePopup}
+                                    >
+                                        {ref.name}
+                                    </Link>
+                                </li>
+                            )}
+                            </ul>
+                        </div>
+                    );
+                })}
+                <div>
+                    <a className="button button-blue" href="mailto:info@watersauce.com?Subject=Hello%20Water%20Sauce">Contact Us</a>
+                </div>
+            </section>
         </div>
     );
   }

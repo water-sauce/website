@@ -32,6 +32,7 @@
 		background-size: 127px !important;
 	}
 
+
 	&-branding {
 		background: url("images/banner-backgrounds/branding-bg.png");
 	}
@@ -194,6 +195,9 @@
 			@include font-size(36px);
 			text-shadow: 1px 1px $medium-grey;
 		}
+		@media only screen and (max-width: $mq-xsmall) {
+			@include font-size(32px);
+		}
 	}
 
 	.cta-wrapper {
@@ -201,7 +205,10 @@
 		position: relative;
 		z-index: 2;
 		@media only screen and (max-width: $mq-ipad) {
-			padding: 2rem;
+			padding: 1.5rem;
+		}
+		@media only screen and (max-width: $mq-xsmall) {
+			padding: 1rem;
 		}
 		p {
 			max-width: 450px;
@@ -275,6 +282,9 @@
 			@media only screen and (max-width: $mq-ipad) {
 				height: 350px;
 			}
+			@media only screen and (max-width: $mq-xsmall) {
+				height: 280px;
+			}
 		}
 		
 	}
@@ -288,6 +298,9 @@
 			@media only screen and (max-width: $mq-ipad) {
 				height: 350px;
 			}
+			@media only screen and (max-width: $mq-xsmall) {
+				height: 280px;
+			}
 		}
 	}
 
@@ -300,7 +313,10 @@
 			-webkit-transform: scaleX(-1);
 			transform: scaleX(-1);
 			@media only screen and (max-width: $mq-ipad) {
-				height: 345px;
+				height: 325px;
+			}
+			@media only screen and (max-width: $mq-xsmall) {
+				height: 280px;
 			}
 		}
 	}
@@ -318,6 +334,9 @@
 				left: 0;
 				top: 0;
 			}
+			@media only screen and (max-width: $mq-xsmall) {
+				height: 280px;
+			}
 		}
 	}
 
@@ -332,6 +351,9 @@
 			@media only screen and (max-width: $mq-ipad) {
 				height: 310px;
 			}
+			@media only screen and (max-width: $mq-xsmall) {
+				height: 280px;
+			}
 		}
 	}
 
@@ -343,6 +365,9 @@
 			height: 425px;
 			@media only screen and (max-width: $mq-ipad) {
 				height: 325px;
+			}
+			@media only screen and (max-width: $mq-xsmall) {
+				height: 280px;
 			}
 		}
 	}

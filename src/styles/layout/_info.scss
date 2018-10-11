@@ -1,8 +1,18 @@
 .info-wrapper {
-    max-width: 1000px;
-    margin: 6rem auto;
     display: block;
     position: relative;
+    max-width: 1000px;
+    margin: 6rem auto;
+    // background: 
+    //    linear-gradient(135deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
+    //    linear-gradient(225deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
+    //    linear-gradient(315deg, $lightest-grey 25%, transparent 25%),
+    //    linear-gradient(45deg, $lightest-grey 25%, transparent 25%); 
+}
+
+.info-background {
+
+    background: $white;
 }
 
 .info-grid {

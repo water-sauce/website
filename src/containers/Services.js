@@ -96,7 +96,7 @@ class Services extends Component {
 								cta_banner="banner-service-fundraising"
 								title={
 									<Fragment>
-										Be prepared when <br className="hide-on-mobile"/> entering the tank
+										Be prepared when <br className="hide-on-mobile"/>you enter the tank
 									</Fragment>
 								}
 								subtitle={

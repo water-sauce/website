@@ -51,7 +51,7 @@ const product_info = [
         title_block: "Re-focused Content",
         description: (
             <Fragment>
-                Good keyword-focused content should be the primary goal of every SEO strategy. As Google’s algorithm has evolved, this has been an increasing focus within on how they rank pages. <a href="https://audseo.com/blog/why-content-matters-in-a-local-seo-strategy/" target="_blank" rel="noopener noreferrer">Pages with great content</a> that provide relevant results from search queries will be rewarded with more points, thus ranking higher. 
+                Good keyword-focused content should be the primary goal of every SEO strategy. As Google’s algorithm has evolved, this has been an increasing focus on how they rank pages. <a href="https://audseo.com/blog/why-content-matters-in-a-local-seo-strategy/" target="_blank" rel="noopener noreferrer">Pages with great content</a> that provide relevant results from search queries will be rewarded with more points, thus ranking higher. 
                 <br/><br/>
                 Like going to the gym consistently, results will eventually show overtime as long as the content stays consistent and fresh. <a href="mailto:info@watersauce.com">Contact Us</a> if you’re interested in seeing how we can help.
             </Fragment> 

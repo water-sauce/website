@@ -170,6 +170,9 @@ footer ul li a, .a-hover {
 .border-grey {
   border: 1px solid #A3ABB5; }
 
+.m-0 {
+  margin: 0; }
+
 .m-0-auto {
   margin: 0 auto; }
 
@@ -267,6 +270,9 @@ footer ul li a, .a-hover {
 
 .p-2-1 {
   padding: 2rem 1rem; }
+
+.p-0-2 {
+  padding: 0 2rem; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -387,6 +393,10 @@ html, body {
 a {
   color: #696AFD; }
 
+@media only screen and (max-width: 48em) {
+  .hide-on-mobile {
+    display: none; } }
+
 .Datanyze-logo {
   width: 150px; }
 
@@ -490,34 +500,41 @@ a {
     .navbar-right {
       display: none; } }
 
-.mobile-menu {
+.mobile-menu-wrapper {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.98);
+  background: repeating-linear-gradient(135deg, #F0F4EF, #F0F4EF 10px, #FFFFFF 10px, #FFFFFF 20px);
   width: 100%;
   height: 100%;
   z-index: 999999999;
-  padding: 1.5rem 2.5rem;
   overflow-x: scroll; }
-  .mobile-menu p {
+  .mobile-menu-wrapper p {
     text-transform: uppercase;
     font-size: 12px;
     font-size: 0.75rem;
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 0.375rem; }
-  .mobile-menu div {
-    margin-bottom: 2.25rem; }
-  .mobile-menu li {
+  .mobile-menu-wrapper div {
+    margin-top: 2.25rem; }
+  .mobile-menu-wrapper .mobile-menu {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.98);
+    margin-left: 5rem;
+    height: 100%; }
+    @media (max-width: 25em) {
+      .mobile-menu-wrapper .mobile-menu {
+        margin-left: 2rem; } }
+  .mobile-menu-wrapper li {
     list-style: none;
     margin-bottom: 0.25rem; }
-    .mobile-menu li a {
+    .mobile-menu-wrapper li a {
       padding: 4px 0;
       color: #696AFD; }
-  .mobile-menu button {
+  .mobile-menu-wrapper button {
     float: right;
     border: none;
     padding: 1px 8.5px;
@@ -525,8 +542,9 @@ a {
     -webkit-border-radius: 100px;
     border-radius: 100px;
     background-clip: padding-box;
-    background: transparent; }
-    .mobile-menu button:hover {
+    background: transparent;
+    margin: 1rem; }
+    .mobile-menu-wrapper button:hover {
       cursor: pointer;
       -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
@@ -664,10 +682,13 @@ footer {
   padding: 80px 0 105px; }
 
 .info-wrapper {
-  max-width: 1000px;
-  margin: 6rem auto;
   display: block;
-  position: relative; }
+  position: relative;
+  max-width: 1000px;
+  margin: 6rem auto; }
+
+.info-background {
+  background: #FFFFFF; }
 
 .info-grid {
   margin: 0 0 5rem;
@@ -1169,13 +1190,20 @@ title-block {
         font-size: 36px;
         font-size: 2.25rem;
         text-shadow: 1px 1px #757575; } }
+    @media only screen and (max-width: 25em) {
+      .banner-service h4 {
+        font-size: 32px;
+        font-size: 2rem; } }
   .banner-service .cta-wrapper {
     padding: 2.5rem 3rem;
     position: relative;
     z-index: 2; }
     @media only screen and (max-width: 48em) {
       .banner-service .cta-wrapper {
-        padding: 2rem; } }
+        padding: 1.5rem; } }
+    @media only screen and (max-width: 25em) {
+      .banner-service .cta-wrapper {
+        padding: 1rem; } }
     .banner-service .cta-wrapper p {
       max-width: 450px;
       margin-bottom: 28px;
@@ -1229,6 +1257,9 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service-web-design #contact-butterfly {
         height: 350px; } }
+    @media only screen and (max-width: 25em) {
+      .banner-service-web-design #contact-butterfly {
+        height: 280px; } }
   .banner-service-seo .container {
     background: #E3B5E0; }
   .banner-service-seo #contact-parrot {
@@ -1236,6 +1267,9 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service-seo #contact-parrot {
         height: 350px; } }
+    @media only screen and (max-width: 25em) {
+      .banner-service-seo #contact-parrot {
+        height: 280px; } }
   .banner-service-branding .container {
     background: #FFA762; }
   .banner-service-branding #contact-lion {
@@ -1244,7 +1278,10 @@ title-block {
     transform: scaleX(-1); }
     @media only screen and (max-width: 48em) {
       .banner-service-branding #contact-lion {
-        height: 345px; } }
+        height: 325px; } }
+    @media only screen and (max-width: 25em) {
+      .banner-service-branding #contact-lion {
+        height: 280px; } }
   .banner-service-fundraising .container {
     background: #93E2DD; }
   .banner-service-fundraising #contact-shark {
@@ -1256,6 +1293,9 @@ title-block {
         height: 310px;
         left: 0;
         top: 0; } }
+    @media only screen and (max-width: 25em) {
+      .banner-service-fundraising #contact-shark {
+        height: 280px; } }
   .banner-service-email-campaigns .container {
     background: #B271AE; }
   .banner-service-email-campaigns #contact-snail {
@@ -1265,6 +1305,9 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service-email-campaigns #contact-snail {
         height: 310px; } }
+    @media only screen and (max-width: 25em) {
+      .banner-service-email-campaigns #contact-snail {
+        height: 280px; } }
   .banner-service-ux-design .container {
     background: #E57777; }
   .banner-service-ux-design #contact-face {
@@ -1272,6 +1315,9 @@ title-block {
     @media only screen and (max-width: 48em) {
       .banner-service-ux-design #contact-face {
         height: 325px; } }
+    @media only screen and (max-width: 25em) {
+      .banner-service-ux-design #contact-face {
+        height: 280px; } }
 
 @-webkit-keyframes leftbounce {
   0%, 100% {
@@ -1544,7 +1590,7 @@ title-block {
   .sub-hero-about img {
     position: relative;
     max-width: 100%;
-    width: 300px;
+    width: 350px;
     display: block;
     margin: 0 auto 2rem;
     border: 10px solid #FFFFFF;
