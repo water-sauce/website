@@ -62,9 +62,9 @@ footer ul li a, .a-hover {
   footer ul li a:hover, .a-hover:hover {
     text-decoration: underline; }
 
-.a-underline {
+.not-found-haiku a, .a-underline {
   text-decoration: underline; }
-  .a-underline:hover {
+  .not-found-haiku a:hover, .a-underline:hover {
     text-decoration: none; }
 
 .a-underline-important {
@@ -894,9 +894,7 @@ title-block {
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(150, 150, 150, 0.3);
-  border-bottom-color: rgba(125, 125, 125, 0.3);
-  box-shadow: inset 0px 0px 0px 1px #fff; }
+  border-bottom-color: rgba(125, 125, 125, 0.3); }
   @media (max-width: 62em) {
     .home-card {
       margin: 10px 0; } }
@@ -929,20 +927,18 @@ title-block {
     font-size: 28px;
     font-size: 1.75rem; }
   .home-card-0 {
-    background: #fbc54b;
-    border: 4px solid #fbc54b; }
+    background: #fbc54b; }
     .home-card-0 img {
       filter: grayscale(1) brightness(0.85);
       /* IE6-9 */
       -webkit-filter: grayscale(100%) brightness(85%);
       /* Chrome 19+ & Safari 6+ */ }
   .home-card-1 {
-    background: #E3B5E0;
-    border: 4px solid #E3B5E0; }
+    background: #E3B5E0; }
   .home-card-2 {
-    background: #FFA762;
-    border: 4px solid #FFA762; }
+    background: #FFA762; }
     .home-card-2 img {
+      bottom: 1px;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
       width: 325px;
@@ -951,15 +947,13 @@ title-block {
       -webkit-filter: grayscale(100%) brightness(120%);
       /* Chrome 19+ & Safari 6+ */ }
   .home-card-3 {
-    background: #93E2DD;
-    border: 4px solid #93E2DD; }
+    background: #93E2DD; }
     .home-card-3 img {
       width: 275px;
       right: -10px;
       bottom: -10px; }
   .home-card-4 {
-    background: #B271AE;
-    border: 4px solid #B271AE; }
+    background: #B271AE; }
     .home-card-4 img {
       width: 275px;
       bottom: -20px;
@@ -969,8 +963,7 @@ title-block {
       -webkit-filter: grayscale(100%) brightness(120%);
       /* Chrome 19+ & Safari 6+ */ }
   .home-card-5 {
-    background: #E57777;
-    border: 4px solid #E57777; }
+    background: #E57777; }
     .home-card-5 img {
       width: 250px; }
 
@@ -2093,3 +2086,31 @@ a.about-name:hover {
     margin-top: 8px; }
   100% {
     margin-top: 0; } }
+
+.not-found-page {
+  background: url("images/banner-backgrounds/404-bg.png");
+  background-repeat: repeat;
+  background-size: 254px;
+  background-attachment: fixed;
+  height: 100%; }
+
+.not-found-haiku {
+  max-width: 600px;
+  padding: 5rem 2rem;
+  margin: 0 auto;
+  text-align: center; }
+  .not-found-haiku p {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-size: 0.8125rem; }
+  .not-found-haiku div {
+    background-color: #FFFFFF;
+    padding: 3rem 1rem;
+    border: 4px solid #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #B53131; }
+  .not-found-haiku h4 {
+    margin: 1.5rem 0;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 34px;
+    font-family: "AvenirNext ThinItalic"; }
