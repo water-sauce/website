@@ -8,7 +8,7 @@ a {
 }
 
 .hide-on-mobile {
-	@media only screen and (max-width: $mq-ipad) {
+	@media only screen and (max-width: $mq-xsmall) {
 		display: none;
 	}
 }

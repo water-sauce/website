@@ -42,9 +42,18 @@
 		@media only screen and (min-width: $mq-ipad) {
 			max-width: 100%;
 			margin-left: 15px;
-			width: 675px;
+			width: 725px;
 			float: right;
 			padding: 4rem 1rem;
+		}
+	}
+
+	.content-dictionary {
+		li {
+			margin-bottom: 0.125rem;
+			@include font-size(16px);
+			font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
+			font-feature-settings: 'onum' 0;
 		}
 	}
 	
@@ -74,7 +83,7 @@
 		// background: -webkit-linear-gradient(90deg, $dark-blue 0%, $true-blue 100%); /* Chrome10-25,Safari5.1-6 */
 		// background: linear-gradient(90deg, $dark-blue 0%, $true-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-		width: 60%;
+		width: 62.5%;
 		background: $white;
 		padding: 1rem;
 		@media only screen and (max-width: $mq-ipad) {
@@ -84,7 +93,7 @@
 	}
 
 	.content-wrapper-2 {
-		width: 40%;
+		width: 37.5%;
 		text-align: center;
 		@media only screen and (max-width: $mq-ipad) {
 			padding-top: 1.5rem;
@@ -132,6 +141,10 @@
 	}
 	p {
 		@include font-size(16px);
+		// font-family: 'Libre Baskerville', Georgia, valkyrie-text, serif;
+		line-height: 1.632;
+		font-feature-settings: 'onum' 1;
+		-webkit-font-smoothing: antialiased;
 	}
 }
 
