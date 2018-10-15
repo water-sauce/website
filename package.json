@@ -34,6 +34,7 @@
         "react-transition-group": "^1.2.1",
         "redux": "^3.7.2",
         "redux-thunk": "^2.2.0",
+        "sitemap": "^2.0.1",
         "stylelint_d": "^1.2.0",
         "tilt.js": "^1.2.1"
     },
