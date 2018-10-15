@@ -1,21 +1,22 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
 import parrot from "../images/icons/simple-parrot.png";
 
-const title = "SEO optimization & SEO auditing as a service";
-const description =
-    "Water Sauce will provide a free site audit.";
+const title = "Water Sauce | SEO optimization as a service";
+const description = "Your website's SEO strategy should be well thought out and executed in order to help gain website traffic. We can help with auditing your current pages to optimize for search engines.";
 const product_info = [
     {
         title_block: "Strategic SEO Optimization",
         description: (
             <Fragment>
-            SEO Optimization requires an examination of how the various parts of a website contribute to the overall SEO and discoverability strategy. This means optimizing HTML for search engines with the proper markup language, having images compressed, writing meta titles correctly, and a million other things. No worries, there’s a science to it and we’ve got the formula.
+            SEO Optimization requires an examination of how the various parts of a website contribute to the overall discoverability strategy. This means optimizing HTML for search engines with the proper markup language, compressing images, writing meta titles correctly, etc. There’s a science to it and we’ve got the formula!
             <br/>
             <br/>
-            Your website’s overall SEO HTML structure needs help! Google is the ever-evolving algorithm constantly changing, and it’s now more important than ever to have a strong web presence. With decades of combined experience in the startup world and an expansive network of marketeers and engineers, we have the resources and connections to make sure that your website’s SEO is ahead of the curve.
+            Google is the ever-evolving algorithm that's constantly changing, and it’s now more important than ever to have a <Link to="/web-design">strong web presence</Link>. With ample experience in the startup world and an expansive network of marketers and engineers, we have the resources and connections to make sure that your website’s SEO is ahead of the curve.
             </Fragment>
         )
     }
@@ -30,6 +31,9 @@ class SEOPage extends Component {
                     <link rel="canonical" href="https://www.watersauce.com/seo" />
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
+                    <meta property="og:url" content="https://www.watersauce.com/seo" />
+                    <meta property="og:title" content={title} />
+                    <meta property="og:description" content={description} />
                 </Helmet>
                 <main>
                     <SubHeroServicesBanner 

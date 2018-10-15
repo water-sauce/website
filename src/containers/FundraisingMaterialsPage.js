@@ -6,17 +6,17 @@ import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
 import shark from "../images/icons/simple-shark.png";
 
-const title = "Fundraising Materials";
-const description = "Water Sauce helps companies raise money";
+const title = "Water Sauce | Helping with Fundraising Materials as a service";
+const description = "We have worked with companies to help raise millions in seed capital to hundreds of millions in Series C+. We provide financial support to companies that need help with projections and sales decks.";
 const product_info = [
     {
         title_block: "Pitch Deck Collaboration",
         description: (
             <Fragment>
-            Water Sauce will work with your team to create or refine your existing pitch deck whilst <Link to="/branding">developing your brand</Link> and voice. This includes creating content, icons, animations, and more in order to tell your story to investors as clear and concise as possible. Our level of involvement is completely circumstantial- we can review & refine existing content, or create one from scratch!
+            Water Sauce will work with your team to create or refine your existing pitch deck whilst developing your <Link to="/branding">brand and voice</Link>. This includes creating content, icons, animations, and more in order to tell your story to investors as clear and concise as possible.
             <br/>
             <br/>
-            When raising a round, you will be asked “What is your profit margin?”, “What is your runway forecast for this round?”, and “What are your valuations expectations?” Without adequate support you'll be left out to dry. Our in-house finance team has helped raise millions in seed capital to hundreds of millions in Series C+. We can help develop, refine, or review your financial support.
+            Our in-house finance team has helped raise millions in seed capital to hundreds of millions in Series C+.  We can help develop, refine, or review your financial support. Our level of involvement is completely circumstantial- we can review & refine existing content, or create one from scratch!
             </Fragment>
         )
     }
@@ -31,6 +31,9 @@ class FundraisingMaterialsPage extends Component {
                     <link rel="canonical" href="https://www.watersauce.com/fundraising-materials" />
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
+                    <meta property="og:url" content="https://www.watersauce.com/fundraising-materials" />
+                    <meta property="og:title" content={title} />
+                    <meta property="og:description" content={description} />
                 </Helmet>
 
                 <main>

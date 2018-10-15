@@ -6,8 +6,8 @@ import InfoBanner from "../../components/InfoBanner";
 import HeroBanner from "../../components/HeroBanner";
 import binoculars from "../../images/resource-icons/binoculars.jpg";
 
-const title = "What is SEO Auditing?";
-const description = "SEO Auditing means having a service or provider go through your website to figure out how best to optimize your website for speed and dsicoverability.";
+const title = "Water Sauce | What is SEO Auditing?";
+const description = "SEO Auditing means having a service or provider go through your website to figure out how best to optimize your website for speed and discoverability.";
 const product_info = [
     {
         title_block: "",
@@ -65,9 +65,12 @@ class WhatIsSEOAuditingPage extends Component {
             <div>
                 <Helmet>
                     <title>{title}</title>
-                    <link rel="canonical" href="https://wwww.watersauce.com/what-is-seo-auditing" />
+                    <link rel="canonical" href="https://www.watersauce.com/what-is-seo-auditing" />
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
+                    <meta property="og:url" content="https://www.watersauce.com/what-is-seo-auditing" />
+                    <meta property="og:title" content={title} />
+                    <meta property="og:description" content={description} />
                 </Helmet>
 
                 <main>

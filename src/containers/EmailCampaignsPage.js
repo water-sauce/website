@@ -1,21 +1,22 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 import SubHeroServicesBanner from "../components/SubHeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
 import snail from "../images/icons/simple-snail.png";
 
-const title = "Email Campaign Management";
-const description = "Water Sauce helps companies with email campaigns";
+const title = "Water Sauce | Email Campaign Management";
+const description = "Email campaigns can be tricky to implement and design - we're here to help you get the most opens and segment your audience into groups for more targeted messaging.";
 const product_info = [
     {
-        title_block: "Email Template and Content Design",
+        title_block: "Segmentation, Content Design, and Evaluation",
         description: (
             <Fragment>
-            There are many things to consider when designing email templates. Sure, there are the basics like mobile optimization but the most important concept to keep in mind is crafting content for each persona within audience. That is, segmenting your subscribers and sending more targeted messages. This content can be made based on age, gender, location, and more.
+            There are many things to consider when designing email templates, but the most important concept to keep in mind is crafting content & tailoring a <Link to="ux-design">User Experience</Link> for each persona within an audience. That is, segmenting your subscribers (based on age, gender, location, etc.) and sending more targeted messages.
             <br/>
             <br/>
-            Once the audience is segmented & the content is created, it is time to launch the campaign! However before proceeding, one must define the metrics for success and collect data accordingly. This may be sales for promotional emails (offers/discounts), subscriptions for relational emails (newsletters), or delivery for transactional emails (welcome messages or receipts). Compiling this data of past successes + failures and then applying them to the future is critical in having ongoing successful campaigns.
+            Once a campaigned is launched, it is crucial to define the metrics for success and collect data accordingly. This may be sales for promotional emails, subscription bumps for relational emails, or simply delivery for transactional emails. Compiling this data of past successes + failures and applying them to the future is critical in having ongoing successful campaigns.
             </Fragment>
         )
     }
@@ -30,6 +31,9 @@ class EmailCampaignsPage extends Component {
                     <link rel="canonical" href="https://www.watersauce.com/email-campaigns" />
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
+                    <meta property="og:url" content="https://www.watersauce.com/email-campaigns" />
+                    <meta property="og:title" content={title} />
+                    <meta property="og:description" content={description} />
                 </Helmet>
 
                 <main>

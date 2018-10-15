@@ -11,7 +11,7 @@ import m3 from "../images/backgrounds/m3d.png";
 import eagle from "../images/backgrounds/eagle2.png";
 import colors from "../images/illustrations/colors.png";
 
-const title = "Water Sauce is an digital design agency helping regular people do extraordinary web stuff";
+const title = "Water Sauce is an digital design agency helping companies achieve the extraordinary";
 const description = "Water Sauce helps companies of all sizes and industries improve their web presence through strategic web design & development, SEO, branding, email campaigns, fundraising campaigns, and UX design.";
 const service_types = [
     {

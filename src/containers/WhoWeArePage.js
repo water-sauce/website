@@ -4,8 +4,8 @@ import { Grid, Row, Col } from "react-bootstrap";
 
 import kevin from '../images/photos/kevin.jpg';
 
-const title = "Water Sauce | About Us Page";
-const description = "Water Sauce is an agency that helps every company become both a need and a want to its target audience.";
+const title = "Water Sauce | About Us page";
+const description = "Water Sauce is a digital design agency that makes brands extraordinary. We help everyday companies and products become both a need and a want with its target audience.";
 
 class WhoWeArePage extends Component {
     render() {
@@ -16,6 +16,9 @@ class WhoWeArePage extends Component {
                     <link rel="canonical" href="https://www.watersauce.com/who-we-are" />
                     <meta name="twitter:title" content={title} />
                     <meta name="twitter:description" content={description} />
+                    <meta property="og:url" content="https://www.watersauce.com/who-we-are" />
+                    <meta property="og:title" content={title} />
+                    <meta property="og:description" content={description} />
                 </Helmet>
 
                 <div className="filler" />
