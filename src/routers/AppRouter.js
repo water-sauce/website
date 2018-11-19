@@ -24,10 +24,6 @@ const routes = [
         component: HomePage,
     },
     {
-        path: "/all-Services",
-        component: Services,
-    },
-    {
         path: "/web-design",
         component: Services,
     },
