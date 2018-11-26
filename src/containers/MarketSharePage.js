@@ -38,7 +38,7 @@ const numbers = [
 const project_info_1 = [
     {
         title: "My Role",
-        description: <Fragment><p>I played the role of project manager and main developer. It started with a conversation between our Marketing Manager and I. He wanted to revamp these pages, but ue to other features being ahead in the Product pipeline, it was not a high priority. I sat down with him and our VP of Product to create an overall vision of what we wanted to accomplish. We came up with a game plan to introduce more graphs, improve the overall user flow, and create stronger CTAs.</p></Fragment>
+        description: <Fragment><p>I played the role of project manager and main developer. It started with a conversation between our Marketing Manager and I. He wanted to revamp these pages, but due to other features being ahead in the Product pipeline, it was not a high priority. I sat down with him and our VP of Product to create an overall vision of what we wanted to accomplish. We came up with a game plan to introduce more graphs, improve the overall user flow, and create stronger CTAs.</p></Fragment>
     }
 ]
 const project_info_2 = [
