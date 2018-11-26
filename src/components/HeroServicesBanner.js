@@ -49,7 +49,13 @@ class HeroServicesBanner extends Component {
 								<h4>{this.props.title}</h4>
 							</hgroup>
 							<p>{this.props.subtitle}</p>
-							{ this.props.links === false ? '' : 
+							{ this.props.links === false ? 
+								<div className="cta-information">
+									<a className="button button-orange" href={this.props.href} target="_blank">
+									See Product
+									</a>
+								</div>
+							 : 
 							<div className="cta-information">
 								<a className="button button-blue" href="mailto:info@watersauce.com?Subject=Hello%20Water%20Sauce">{this.props.cta}</a>
 							</div>

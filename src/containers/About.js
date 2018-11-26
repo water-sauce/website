@@ -61,6 +61,7 @@ class About extends Component {
                                 links={false}
                                 img_src_1={market_share}
                                 img_id_1="market-share"
+                                href="https://www.datanyze.com/market-share"
                             />
                         )}
                     />
@@ -84,6 +85,7 @@ class About extends Component {
                                 links={false}
                                 img_src_1={chrome_extension}
                                 img_id_1="chrome-extension"
+                                href="https://chrome.google.com/webstore/detail/sales-prospecting-datanyz/mlholfadgbpidekmhdibonbjhdmpmafd?hl=en-US"
                             />
                         )}
                     />

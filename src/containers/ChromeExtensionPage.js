@@ -64,7 +64,7 @@ const product_info_2 = [
         title_block: "The Results",
         description: (
             <Fragment>
-            It took a complete team effort to promote this very powerful tool, but the results paid off. The overall star rating in the Google Chrome Store rose by half a star to 4.5 with over 48,000+ users. Today, the current iteration of the Chrome Extension is still running successfully and now has 7 data tabs (Firmographics, Technographics, Employees, Tweets, Salesforce, SEO, In the News).
+            It took a complete team effort to promote this very powerful tool, but the results paid off. The overall star rating in the Google Chrome Store rose by 0.3 to 4.4 over a year period. Today, the current iteration of the Chrome Extension is still running successfully with over 48,000+ users and 7 data tabs (Firmographics, Technographics, Employees, Tweets, Salesforce, SEO, In the News).
             </Fragment>
         )
     }
