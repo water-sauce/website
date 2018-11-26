@@ -1320,8 +1320,8 @@ title-block {
       background: linear-gradient(to right, #696AFD 0%, #93E2DD 100%); }
     .banner-service-portfolio #market-share,
     .banner-service-portfolio #chrome-extension {
-      right: 1rem;
-      max-height: 440px; }
+      right: 1.25rem;
+      max-height: 465px; }
       @media only screen and (max-width: 62em) {
         .banner-service-portfolio #market-share,
         .banner-service-portfolio #chrome-extension {
