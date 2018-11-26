@@ -1320,6 +1320,10 @@ title-block {
     .banner-service-portfolio #chrome-extension {
       right: 1rem;
       max-height: 440px; }
+      @media only screen and (max-width: 62em) {
+        .banner-service-portfolio #market-share,
+        .banner-service-portfolio #chrome-extension {
+          display: none; } }
 
 @-webkit-keyframes leftbounce {
   0%, 100% {
@@ -2176,12 +2180,15 @@ a.about-name:hover {
   margin: 1.5rem 0 0; }
 
 .padding-info h5 {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   font-size: 14px;
   font-size: 0.875rem;
   letter-spacing: 0.5px;
   font-weight: 500;
   text-transform: uppercase; }
+
+.padding-info img {
+  max-width: 100%; }
 
 .image-row {
   text-align: center; }
