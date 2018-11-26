@@ -1310,7 +1310,8 @@ title-block {
       .banner-service-ux-design #contact-face {
         height: 280px; } }
   .banner-service-portfolio {
-    background: repeating-linear-gradient(135deg, #F0F4EF, #F0F4EF 10px, #FFFFFF 10px, #FFFFFF 20px); }
+    background: repeating-linear-gradient(135deg, #F0F4EF, #F0F4EF 10px, #FFFFFF 10px, #FFFFFF 20px);
+    background-size: 100% !important; }
     .banner-service-portfolio .container {
       background: -webkit-linear-gradient(left, #696AFD 0%, #93E2DD 100%);
       background: -moz-linear-gradient(left, #696AFD 0%, #93E2DD 100%);
