@@ -55,6 +55,14 @@ const routes = [
         path: "/who-we-are",
         component: About,
     },
+    {
+        path: "/market-share",
+        component: About,
+    },
+    {
+        path: "/chrome-extension",
+        component: About,
+    },
 ];
 
 class AppRouter extends Component {

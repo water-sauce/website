@@ -252,9 +252,15 @@ footer ul li a, .a-hover {
 .p-1 {
   padding: 1rem; }
 
+.p-1px {
+  padding: 1px 0; }
+
 .padding-column {
   padding-left: 15px;
   padding-right: 15px; }
+
+.padding-info {
+  padding: 110px 0 100px; }
 
 .p-2-0 {
   padding: 2rem 0; }
@@ -397,9 +403,6 @@ a {
   .hide-on-mobile {
     display: none; } }
 
-.Datanyze-logo {
-  width: 150px; }
-
 .navbar::before {
   position: absolute;
   display: block;
@@ -408,16 +411,12 @@ a {
   left: 0;
   right: 0;
   height: 7.5px;
-  background: #6769ff;
+  background: #696AFD;
   /* Old browsers */
-  background: -moz-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  background: -webkit-linear-gradient(45deg, #696AFD 0%, #e57777 88%, #ffa762 100%);
+  background: -moz-linear-gradient(45deg, #696AFD 0%, #e57777 88%, #ffa762 100%);
+  background: -o-linear-gradient(45deg, #696AFD 0%, #e57777 88%, #ffa762 100%);
+  background: linear-gradient(45deg, #696AFD 0%, #e57777 88%, #ffa762 100%);
   width: 100%; }
 
 #header-offset {
@@ -1034,9 +1033,8 @@ title-block {
 
 .banner-service {
   position: relative;
-  background: linear-gradient(135deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(225deg, #F0F4EF 25%, transparent 25%) -12.5px 0, linear-gradient(315deg, #F0F4EF 25%, transparent 25%), linear-gradient(45deg, #F0F4EF 25%, transparent 25%);
   background-size: 25px 25px;
-  background-color: #FFFFFF;
+  background-color: #F0F4EF;
   padding: 110px 0 100px;
   background-repeat: repeat;
   background-size: 254px !important;
@@ -1169,6 +1167,7 @@ title-block {
         width: 100%;
         display: block; } }
   .banner-service h4 {
+    max-width: 475px;
     font-size: 48px;
     font-size: 3rem;
     line-height: 1.25;
@@ -1310,6 +1309,17 @@ title-block {
     @media only screen and (max-width: 25em) {
       .banner-service-ux-design #contact-face {
         height: 280px; } }
+  .banner-service-portfolio {
+    background: repeating-linear-gradient(135deg, #F0F4EF, #F0F4EF 10px, #FFFFFF 10px, #FFFFFF 20px); }
+    .banner-service-portfolio .container {
+      background: -webkit-linear-gradient(left, #696AFD 0%, #93E2DD 100%);
+      background: -moz-linear-gradient(left, #696AFD 0%, #93E2DD 100%);
+      background: -o-linear-gradient(left, #696AFD 0%, #93E2DD 100%);
+      background: linear-gradient(to right, #696AFD 0%, #93E2DD 100%); }
+    .banner-service-portfolio #market-share,
+    .banner-service-portfolio #chrome-extension {
+      right: 1rem;
+      max-height: 440px; }
 
 @-webkit-keyframes leftbounce {
   0%, 100% {
@@ -2124,3 +2134,62 @@ a.about-name:hover {
     font-size: 1.5rem;
     line-height: 34px;
     font-family: "AvenirNext ThinItalic"; }
+
+.portfolio-screenshots {
+  -webkit-box-shadow: 0px 3px 5px rgba(163, 163, 163, 0.5);
+  -moz-box-shadow: 0px 3px 5px rgba(163, 163, 163, 0.5);
+  box-shadow: 0px 3px 5px rgba(163, 163, 163, 0.5); }
+
+.portfolio-info-section {
+  padding: 110px 0 100px;
+  background: #262627;
+  color: #FFFFFF; }
+  .portfolio-info-section h3 {
+    letter-spacing: 0.5px;
+    color: #93E2DD;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    text-transform: uppercase; }
+  .portfolio-info-section h4 {
+    letter-spacing: 1px;
+    color: #93E2DD;
+    font-size: 16px;
+    font-size: 1rem;
+    text-transform: uppercase; }
+  .portfolio-info-section hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.45); }
+
+.portfolio-numbers {
+  margin: 1.5rem 0; }
+  .portfolio-numbers p {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-size: 1.5rem; }
+
+.portfolio-info p {
+  margin-bottom: 0; }
+
+.portfolio-info ol {
+  padding-left: 1rem; }
+
+.portfolio-info div {
+  margin: 1.5rem 0 0; }
+
+.padding-info h5 {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.image-row {
+  text-align: center; }
+  .image-row img {
+    display: inline-block;
+    max-width: 350px; }
+    .image-row img:nth-child(1) {
+      z-index: 2; }
+    .image-row img:nth-child(2) {
+      margin-left: -0.25rem;
+      z-index: 1; }

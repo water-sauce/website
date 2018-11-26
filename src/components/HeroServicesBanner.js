@@ -25,14 +25,17 @@ class HeroServicesBanner extends Component {
 	render(props) {
 		return (
 			<section className={this.props.cta_banner + " banner-service"} key="example">
-				<Link ref={this.prevTopic} className="topic-left topic-wrapper" to={this.props.prev_link}>
-					<p className="direction direction-left">{ '\u003e' }</p>
-			        <p className="topic">{this.props.prev_topic}</p>
-				</Link>
-				<Link ref={this.nextTopic} className="topic-right topic-wrapper" to={this.props.next_link}>
-					<p className="topic">{this.props.next_topic}</p>
-					<p className="direction direction-right">{ '\u003e' }</p>
-				</Link>
+				{ this.props.links === false ? '' :  
+				<span>
+					<Link ref={this.prevTopic} className="topic-left topic-wrapper" to={this.props.prev_link}>
+						<p className="direction direction-left">{ '\u003e' }</p>
+				        <p className="topic">{this.props.prev_topic}</p>
+					</Link>
+					<Link ref={this.nextTopic} className="topic-right topic-wrapper" to={this.props.next_link}>
+						<p className="topic">{this.props.next_topic}</p>
+						<p className="direction direction-right">{ '\u003e' }</p>
+					</Link>
+				</span> }
 				<CSSTransitionGroup
 			      transitionName="bannerTransition"
 			      transitionAppear={true}
@@ -46,9 +49,11 @@ class HeroServicesBanner extends Component {
 								<h4>{this.props.title}</h4>
 							</hgroup>
 							<p>{this.props.subtitle}</p>
+							{ this.props.links === false ? '' : 
 							<div className="cta-information">
 								<a className="button button-blue" href="mailto:info@watersauce.com?Subject=Hello%20Water%20Sauce">{this.props.cta}</a>
 							</div>
+							}
 						</div>
 						<img src={this.props.img_src_1} alt={this.props.img_alt_1} id={this.props.img_id_1}/>
 					</Grid>

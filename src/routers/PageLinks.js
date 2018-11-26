@@ -44,6 +44,16 @@ const PageLinks = {
             name: "Who We Are",
             link: "/who-we-are"
         },
+        // {
+        //     type: "link",
+        //     name: "Market Share",
+        //     link: "/market-share"
+        // },
+        // {
+        //     type: "link",
+        //     name: "Chrome Extension",
+        //     link: "/chrome-extension"
+        // },
     ],
 };
 

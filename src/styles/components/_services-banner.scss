@@ -11,13 +11,8 @@
 
 .banner-service {
 	position: relative;
-	background: 
-	   linear-gradient(135deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
-	   linear-gradient(225deg, $lightest-grey 25%, transparent 25%) -12.5px 0,
-	   linear-gradient(315deg, $lightest-grey 25%, transparent 25%),
-	   linear-gradient(45deg, $lightest-grey 25%, transparent 25%);	
 	background-size: 25px 25px;
-	background-color: $white;
+	background-color: $lightest-grey;
 	padding: 110px 0 100px;
 	background-repeat: repeat;
 	background-size: 254px !important;
@@ -183,6 +178,7 @@
 	}
 	
 	h4 {
+	    max-width: 475px;
 		@include font-size(48px);
 		line-height: 1.25;
 		margin-bottom: 12px;
@@ -369,6 +365,18 @@
 			@media only screen and (max-width: $mq-xsmall) {
 				height: 280px;
 			}
+		}
+	}
+
+	&-portfolio {
+		background: repeating-linear-gradient(135deg, #F0F4EF, #F0F4EF 10px, #FFFFFF 10px, #FFFFFF 20px);
+		.container {
+			@include linear-gradient(left, $true-blue 0%, $teal 100%);
+		}
+		#market-share,
+		#chrome-extension {
+			right: 1rem;
+		    max-height: 440px;
 		}
 	}
 }

@@ -1,7 +1,3 @@
-.Datanyze-logo {
-    width: 150px;
-}
-
 .navbar::before {
     position: absolute;
     display: block;
@@ -10,11 +6,8 @@
     left: 0;
     right: 0;
     height: 7.5px;
-    background: #6769ff; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #6769ff 0%, #e57777 88%, #ffa762 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #6769ff 0%,#e57777 88%,#ffa762 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #6769ff 0%,#e57777 88%,#ffa762 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6769ff', endColorstr='#ffa762',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: $true-blue; /* Old browsers */
+    @include linear-gradient(45deg, $true-blue 0%, #e57777 88%, #ffa762 100%);
     width: 100%;
 }
 
