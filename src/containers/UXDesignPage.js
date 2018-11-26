@@ -13,7 +13,7 @@ const product_info = [
         title_block: "Leave a lasting impression",
         description: (
             <Fragment>
-            Any touchpoint or interaction a person has with a brand falls under the UX umbrella. This can be as simple as <Link to="/email-campaign">an email</Link> or as complex as a mobile app. Great UX comes from market research, understanding your customer base, and cracking how a product experience can not only match, but exceed their expectations.
+            Any touchpoint or interaction a person has with a brand falls under the UX umbrella. This can be as simple as <Link to="/email-campaigns">an email</Link> or as complex as a mobile app. Great UX comes from market research, understanding your customer base, and cracking how a product experience can not only match, but exceed their expectations.
             <br/>
             <br/>
             The UI (User Interface), information architecture, and <Link to="/branding">branding</Link> are all integral parts of a much larger whole. It’s crucial to understand that changing UX involves a team effort to understand your customers’ pain points and how to best guide them through your website. Formulating <Link to="/web-design">design</Link> to influence UX is solution we strive at.

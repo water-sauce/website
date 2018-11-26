@@ -372,6 +372,7 @@
 		background: repeating-linear-gradient(135deg, #F0F4EF, #F0F4EF 10px, #FFFFFF 10px, #FFFFFF 20px);
 		background-size: 100% !important;
 		.container {
+			width: 1120px;
 			@include linear-gradient(left, $true-blue 0%, $teal 100%);
 		}
 		#market-share,
