@@ -78,12 +78,10 @@ class AppRouter extends Component {
             )
         );
         return (
-            <div>
-                <Switch>
-                    {routeComponents}
-                    <Route component={NotFoundPage} />
-                </Switch>
-            </div>
+            <Switch>
+                {routeComponents}
+                <Route component={NotFoundPage} />
+            </Switch>
         );
     }
 }

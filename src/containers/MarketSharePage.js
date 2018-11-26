@@ -13,8 +13,8 @@ import ms_2 from '../images/portfolio/single-tech-after.jpg';
 import ms_3 from '../images/portfolio/ms-versus.png';
 import ms_4 from '../images/portfolio/landing.png';
 
-const title = "Water Sauce | About Us page";
-const description = "Water Sauce is a digital design agency that makes brands extraordinary. We help everyday companies and products become both a need and a want with its target audience.";
+const title = "Water Sauce | Datanyze Market Share Design";
+const description = "Calvin Jhunjhnuwala | A focus on a product I designed and developed while working at Datanyze | Market Share";
 
 const numbers = [
     {
@@ -52,7 +52,7 @@ const project_info_2 = [
             <ol>
                 <li>Visualize the data in a more compelling way</li>
                 <li>Give potential customers insight without revealing too much</li>
-                <li>Make sure the pages are responsive and look good on Mobile</li>
+                <li>Make sure the pages were responsive and looked good on Mobile</li>
             </ol>
         </Fragment>
     }
@@ -63,10 +63,10 @@ const product_info = [
         title_block: "The Process",
         description: (
             <Fragment>
-            The first thing we needed to do was to define and understand the scope of the project. What were the main goals, how were changes going to affect SEO, and what elements could we improve upon. I printed out pages for the 4 different page types and started to go over each element with Marketing and Product to see what was still necessary.
+            The first thing we did was define and understand the scope of the project. What were the main goals, how were changes going to affect SEO, and what elements could we improve upon. I printed out pages for the 4 different page types and started to go over each element with Marketing and Product to see what was still necessary.
             <br />
             <br />
-            After that, it was a matter of understanding which components could be reused and restyled and what needed to be built. It was also important that we build an ideal user flow that was consistent and increased the likelihood of sign ups.
+            After that, it was a matter of understanding which components could be reused and restyled and what needed to be built. It was also important that we build an ideal user flow that was consistent and increased the likelihood of user sign ups.
             </Fragment>
         )
     },
@@ -74,7 +74,7 @@ const product_info = [
         title_block: "Entice with Data Visualization",
         description: (
             <Fragment>
-            I ran a small User Feedback session for the mock ups and gathered information on which data points were most important. For us, it was evident that we needed a modern JS library to let the data tell a story in a more compelling way. I knew that D3.js would be perfect for implementing and Improving the visuals. D3 was a relatively newer library at the time, and because the charts are built in SVGs, it seemed like the best JS library to build with. I implemented a variety of Pie Charts, Donut Charts, and Bar Graphs.
+            I ran a small User Feedback session for the mock ups and gathered information on which data points were most important. For us, it was evident that we needed a modern JS library to let the data tell a story in a more compelling way. I knew that D3.js would be perfect for implementing and improving the visuals. I implemented a variety of Pie Charts, Donut Charts, and Bar Graphs.
             </Fragment>
         )
     }
@@ -85,7 +85,7 @@ const product_info_2 = [
         title_block: "The Results",
         description: (
             <Fragment>
-            The redesign proved easier to navigate and the numbers were able to back up our research and assumptions. It was an all-around success that involved every team pitching in.
+            Over a 6 month comparison period, the redesign proved to be a success. The redesign was easier to navigate and the numbers were able to back up our research and assumptions. It was an all-around success that involved every team pitching in.
             </Fragment>
         )
     }
