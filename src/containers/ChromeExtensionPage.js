@@ -2,9 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
 import { Grid, Row, Col } from "react-bootstrap";
 
-import HeroServicesBanner from "../components/HeroServicesBanner";
 import InfoBanner from "../components/InfoBanner";
-import PortfolioNumbersSection from "../components/PortfolioNumbersSection";
 import PortfolioInfoSection from "../components/PortfolioInfoSection";
 
 import cx_1 from '../images/portfolio/chrome-extension-before.jpg';
